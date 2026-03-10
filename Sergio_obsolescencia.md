@@ -88,7 +88,7 @@
   color: white;
   margin: 20px auto;
 ">
-  <h1 style="margin: 0; font-size: 2.2em;">🕰️ Obsolescencia Programada</h1>
+  <h1 style="margin: 0; font-size: 2.2em;">Obsolescencia Programada</h1>
 </div>
 > **"Un producto que no se desgasta es una tragedia para los negocios."**
 
