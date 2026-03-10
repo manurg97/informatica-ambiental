@@ -147,7 +147,7 @@ En 1924, los principales fabricantes de bombillas del mundo formaron el **Cartel
 ## 🌍 4. El Impacto en nuestro Planeta
 
 <div class="tarjeta-sergio" style="text-align: center; border: none; box-shadow: none;">
-  <img src="consecuencias-1" class="img-cartoon" alt="Consecuencias de la obsolescencia programada">
+  <img src="consecuencias-1.png" class="img-cartoon" alt="Consecuencias de la obsolescencia programada">
   <p style="font-style: italic; color: #666; font-size: 0.9em; margin-top: 10px;">
     Consecuencias de la obsolescencia programada: producción, consumo, gastos y residuos.
   </p>
