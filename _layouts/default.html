@@ -6,7 +6,7 @@
     <title>Informática Ambiental</title>
     <style>
         :root {
-            --bg-dark: #0f172a; /* Fondo principal oscuro */
+            --bg-dark: #0f172a; 
             --sidebar-bg: #1e293b;
             --card-bg: #ffffff;
             --pablo: #38bdf8;
@@ -24,22 +24,24 @@
             min-height: 100vh;
         }
 
-        /* --- MENÚ IZQUIERDA --- */
+        /* --- BARRA LATERAL IZQUIERDA (NAVEGACIÓN) --- */
         nav {
-            width: 300px;
+            width: 260px;
             background-color: var(--sidebar-bg);
             position: fixed;
+            left: 0;
             height: 100vh;
             padding: 40px 20px;
             display: flex;
             flex-direction: column;
             box-sizing: border-box;
             border-right: 1px solid rgba(255,255,255,0.05);
+            z-index: 10;
         }
 
         nav h1 {
             color: white;
-            font-size: 1.1rem;
+            font-size: 1rem;
             text-transform: uppercase;
             letter-spacing: 2px;
             margin-bottom: 40px;
@@ -48,13 +50,8 @@
             padding-bottom: 20px;
         }
 
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        nav ul li { margin-bottom: 10px; }
+        nav ul { list-style: none; padding: 0; margin: 0; }
+        nav ul li { margin-bottom: 8px; }
 
         nav ul li a {
             color: var(--text-muted);
@@ -64,164 +61,140 @@
             border-radius: 10px;
             transition: all 0.3s ease;
             font-weight: 500;
+            font-size: 0.95rem;
         }
 
-        /* --- EFECTO REACCIÓN DERECHA --- */
         nav ul li a:hover {
             background: rgba(255,255,255,0.05);
             color: white;
-            transform: translateX(15px);
+            transform: translateX(10px);
         }
 
-        .link-pablo:hover { box-shadow: -4px 0 0 var(--pablo); }
-        .link-manuel:hover { box-shadow: -4px 0 0 var(--manuel); }
-        .link-sergio:hover { box-shadow: -4px 0 0 var(--sergio); }
-
-        /* --- NUEVA LEYENDA ESTILO BADGE --- */
-        .leyenda-simple {
-            margin-top: auto;
-            padding-top: 20px;
-            border-top: 1px solid rgba(255,255,255,0.1);
-        }
-
-        .status-title {
-            color: white;
-            font-size: 0.7rem;
-            letter-spacing: 1.5px;
-            margin-bottom: 15px;
-            opacity: 0.5;
-            text-transform: uppercase;
-        }
-
-        .status-group {
+        /* --- PANEL DERECHO (LEYENDA) --- */
+        aside {
+            width: 240px;
+            position: fixed;
+            right: 0;
+            height: 100vh;
+            padding: 60px 25px;
+            box-sizing: border-box;
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 20px;
+            background: linear-gradient(to left, rgba(15, 23, 42, 0.8), transparent);
         }
 
-        .status-item {
+        .author-card {
+            background: rgba(30, 41, 59, 0.5);
+            padding: 15px;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            transition: all 0.4s ease;
             display: flex;
-            align-items: center;
-            padding: 8px 12px;
-            border-radius: 8px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
+            flex-direction: column;
+            align-items: flex-end; /* Alineado a la derecha */
         }
 
-        .status-dot {
-            width: 6px;
-            height: 6px;
-            border-radius: 50%;
-            margin-right: 10px;
+        .author-card:hover {
+            transform: scale(1.05);
+            border-color: rgba(255, 255, 255, 0.2);
+            background: rgba(30, 41, 59, 0.8);
         }
 
-        /* Colores específicos para cada autor */
-        .badge-pablo { color: var(--pablo); border-color: rgba(56, 189, 248, 0.2); }
-        .badge-pablo .status-dot { background-color: var(--pablo); box-shadow: 0 0 8px var(--pablo); }
-
-        .badge-manuel { color: var(--manuel); border-color: rgba(74, 222, 128, 0.2); }
-        .badge-manuel .status-dot { background-color: var(--manuel); box-shadow: 0 0 8px var(--manuel); }
-
-        .badge-sergio { color: var(--sergio); border-color: rgba(192, 132, 252, 0.2); }
-        .badge-sergio .status-dot { background-color: var(--sergio); box-shadow: 0 0 8px var(--sergio); }
-
-        .status-item:hover {
-            background: rgba(255, 255, 255, 0.08);
-            transform: translateY(-2px);
+        .author-name {
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-bottom: 4px;
         }
 
-        /* --- CONTENEDOR CENTRAL --- */
+        .author-role {
+            font-size: 0.75rem;
+            opacity: 0.6;
+            color: white;
+        }
+
+        /* Colores por autor */
+        .card-pablo { border-right: 4px solid var(--pablo); color: var(--pablo); }
+        .card-manuel { border-right: 4px solid var(--manuel); color: var(--manuel); }
+        .card-sergio { border-right: 4px solid var(--sergio); color: var(--sergio); }
+
+        /* --- CONTENIDO CENTRAL --- */
         main {
-            margin-left: 300px;
+            margin-left: 260px; /* Espacio para nav */
+            margin-right: 240px; /* Espacio para aside */
             flex-grow: 1;
             display: flex;
             justify-content: center;
-            align-items: flex-start;
-            padding: 60px 20px;
+            padding: 60px 40px;
         }
 
         .content-card {
             background: var(--card-bg);
             width: 100%;
-            max-width: 800px;
+            max-width: 750px;
             padding: 50px;
-            border-radius: 24px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            border-radius: 28px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
             min-height: 80vh;
         }
 
-        /* Estilos de texto */
-        .content-card h1 { margin-top: 0; color: var(--bg-dark); border-bottom: 2px solid #f1f5f9; padding-bottom: 15px; }
-        .content-card h3 { color: var(--sidebar-bg); margin-top: 25px; }
+        .content-card h1 { color: var(--bg-dark); border-bottom: 2px solid #f1f5f9; padding-bottom: 15px; }
         .content-card p { line-height: 1.8; color: #475569; font-size: 1.1rem; }
-        
-        /* Media Query para Móviles */
-        @media (max-width: 768px) {
+
+        /* Ajuste para tablets/móviles */
+        @media (max-width: 1100px) {
+            aside { position: relative; width: 100%; height: auto; flex-direction: row; justify-content: center; padding: 20px; background: none; order: 3; }
+            nav { width: 100%; height: auto; position: relative; order: 1; }
+            main { margin: 0; order: 2; padding: 20px; }
             body { flex-direction: column; }
-            nav { width: 100%; height: auto; position: relative; padding: 20px; }
-            main { margin-left: 0; padding: 20px; }
+            .author-card { align-items: center; border-right: none; border-bottom: 4px solid; }
         }
     </style>
 </head>
 <body>
 
     <nav>
-        <h1>Informática Ambiental</h1>
+        <h1>ECO-TECH</h1>
         <ul>
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="Pablo_contaminacion.html" class="link-pablo">Contaminación ambiental</a></li>
-            <li><a href="Manuel_residuos.html" class="link-manuel">Residuos informáticos</a></li>
-            <li><a href="Sergio_obsolescencia.html" class="link-sergio">Obsolescencia programada</a></li>
-            <li><a href="Sergio_informatica.html" class="link-sergio">Informática ecológica</a></li>
+            <li><a href="Pablo_contaminacion.html">Contaminación</a></li>
+            <li><a href="Manuel_residuos.html">Residuos</a></li>
+            <li><a href="Sergio_obsolescencia.html">Obsolescencia</a></li>
+            <li><a href="Sergio_informatica.html">Informática Verde</a></li>
             <li><a href="referencias.html">Referencias</a></li>
         </ul>
-
-        <div class="leyenda-simple">
-            <p class="status-title">Contribuyentes</p>
-            <div class="status-group">
-                <div class="status-item badge-pablo">
-                    <span class="status-dot"></span> Pablo
-                </div>
-                <div class="status-item badge-manuel">
-                    <span class="status-dot"></span> Manuel
-                </div>
-                <div class="status-item badge-sergio">
-                    <span class="status-dot"></span> Sergio
-                </div>
-            </div>
-        </div>
     </nav>
 
     <main>
         <article class="content-card">
-            <h1>Tecnología y Medio Ambiente: Un Desafío Global</h1>
-
+            <h1>Tecnología y Medio Ambiente</h1>
             <p>
-                Bienvenido al portal de <strong>Informática Ambiental</strong>. En un mundo cada vez más digitalizado, la relación entre el avance tecnológico y la salud de nuestro planeta se ha vuelto crítica. Aunque la informática nos ofrece herramientas para optimizar recursos, su producción y desecho generan impactos que no podemos ignorar.
+                Bienvenido al portal de <strong>Informática Ambiental</strong>. Aquí analizamos cómo la era digital impacta nuestro entorno natural y qué soluciones podemos implementar para un futuro sostenible.
             </p>
-
-            <div style="background: #f8fafc; padding: 25px; border-radius: 15px; border-left: 5px solid var(--pablo); margin: 30px 0;">
-                <h3 style="margin-top: 0;">¿Qué exploraremos aquí?</h3>
-                <ul style="color: #475569; line-height: 1.6; margin-bottom: 0;">
-                    <li><strong>Contaminación:</strong> El costo energético de los centros de datos y la huella de carbono digital.</li>
-                    <li><strong>Residuos Electrónicos:</strong> El ciclo de vida de los componentes y el reto del reciclaje de hardware.</li>
-                    <li><strong>Obsolescencia Programada:</strong> La estrategia industrial tras la corta vida útil de nuestros dispositivos.</li>
-                    <li><strong>Green IT:</strong> Soluciones y buenas prácticas para una informática más sostenible y consciente.</li>
-                </ul>
+            <p>
+                Desde la huella de carbono de los grandes servidores hasta la gestión de metales pesados en dispositivos desechados, la responsabilidad del sector tecnológico es hoy más grande que nunca.
+            </p>
+            <div style="margin-top: 30px; padding: 20px; background: #f1f5f9; border-radius: 12px; font-size: 0.95rem; color: #64748b;">
+                <strong>Nota:</strong> Usa el menú lateral izquierdo para navegar por los temas y observa a la derecha los autores responsables de cada sección.
             </div>
-
-            <p>
-                Navega a través del menú lateral para conocer a fondo cada una de estas problemáticas y descubrir cómo, desde el desarrollo y el uso responsable, podemos mitigar el impacto ambiental de la era digital.
-            </p>
-
-            <p style="text-align: center; color: var(--text-muted); font-style: italic; margin-top: 40px; border-top: 1px solid #f1f5f9; padding-top: 20px;">
-                "La tecnología es un siervo útil, pero un amo peligroso." — Christian Lous Lange.
-            </p>
         </article>
     </main>
+
+    <aside>
+        <div class="author-card card-pablo">
+            <span class="author-name">Pablo</span>
+            <span class="author-role">Contaminación Digital</span>
+        </div>
+        <div class="author-card card-manuel">
+            <span class="author-name">Manuel</span>
+            <span class="author-role">Gestión de Residuos</span>
+        </div>
+        <div class="author-card card-sergio">
+            <span class="author-name">Sergio</span>
+            <span class="author-role">Obsolescencia & Green IT</span>
+        </div>
+    </aside>
 
 </body>
 </html>
