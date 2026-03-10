@@ -3,49 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }} | Informática-Ambiental</title>
+    <title>Informática-Ambiental</title>
     <style>
         :root {
-            --bg-body: #0f172a; /* Azul muy oscuro tipo terminal */
-            --bg-card: #ffffff;
-            --sidebar-color: #1e293b;
-            --pablo-color: #38bdf8;   /* Azul cielo */
-            --manuel-color: #4ade80;  /* Verde neón */
-            --sergio-color: #c084fc;  /* Morado brillante */
-            --text-nav: #94a3b8;
+            --bg-dark: #0f172a; /* Fondo principal oscuro */
+            --sidebar-bg: #1e293b;
+            --card-bg: #ffffff;
+            --pablo: #38bdf8;
+            --manuel: #4ade80;
+            --sergio: #c084fc;
+            --text-muted: #94a3b8;
         }
 
         body {
-            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            font-family: 'Inter', -apple-system, sans-serif;
             margin: 0;
             display: flex;
-            background-color: var(--bg-body);
-            color: #334155;
+            background-color: var(--bg-dark);
+            color: #1e293b;
             min-height: 100vh;
         }
 
-        /* --- SIDEBAR IZQUIERDA --- */
+        /* --- MENÚ IZQUIERDA --- */
         nav {
-            width: 320px;
-            background-color: var(--sidebar-color);
-            color: white;
+            width: 300px;
+            background-color: var(--sidebar-bg);
             position: fixed;
             height: 100vh;
-            padding: 40px 25px;
-            box-sizing: border-box;
+            padding: 40px 20px;
             display: flex;
             flex-direction: column;
-            border-right: 1px solid rgba(255,255,255,0.1);
+            box-sizing: border-box;
+            border-right: 1px solid rgba(255,255,255,0.05);
         }
 
         nav h1 {
-            font-size: 1.2rem;
-            color: #f8fafc;
+            color: white;
+            font-size: 1.1rem;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
+            letter-spacing: 2px;
             margin-bottom: 40px;
-            border-left: 4px solid var(--pablo-color);
-            padding-left: 15px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 20px;
         }
 
         nav ul {
@@ -54,117 +54,98 @@
             margin: 0;
         }
 
-        nav ul li {
-            margin-bottom: 8px;
-        }
+        nav ul li { margin-bottom: 10px; }
 
         nav ul li a {
-            color: var(--text-nav);
+            color: var(--text-muted);
             text-decoration: none;
             display: block;
             padding: 12px 15px;
-            border-radius: 8px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
             font-weight: 500;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
 
-        /* --- EFECTO REACCIÓN A LA DERECHA --- */
+        /* --- EFECTO REACCIÓN DERECHA --- */
         nav ul li a:hover {
-            background-color: rgba(255, 255, 255, 0.05);
-            color: #fff;
-            transform: translateX(20px); /* Empuje a la derecha */
+            background: rgba(255,255,255,0.05);
+            color: white;
+            transform: translateX(15px);
         }
 
-        /* Colores de hover por autor */
-        .pablo:hover { box-shadow: -4px 0 0 var(--pablo-color); }
-        .manuel:hover { box-shadow: -4px 0 0 var(--manuel-color); }
-        .sergio:hover { box-shadow: -4px 0 0 var(--sergio-color); }
+        .link-pablo:hover { box-shadow: -4px 0 0 var(--pablo); }
+        .link-manuel:hover { box-shadow: -4px 0 0 var(--manuel); }
+        .link-sergio:hover { box-shadow: -4px 0 0 var(--sergio); }
 
-        /* --- LEYENDA DE COLORES --- */
-        .leyenda {
+        /* --- LEYENDA SIMPLE --- */
+        .leyenda-simple {
             margin-top: auto;
-            background: rgba(15, 23, 42, 0.5);
-            padding: 20px;
-            border-radius: 12px;
-            font-size: 0.85rem;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
         }
 
-        .leyenda h3 {
-            margin: 0 0 10px 0;
-            font-size: 0.75rem;
-            color: #64748b;
-            text-transform: uppercase;
-        }
-
-        .autor-item {
+        .autor {
             display: flex;
             align-items: center;
-            margin-bottom: 6px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 8px;
         }
 
-        .circle {
-            width: 10px;
-            height: 10px;
+        .dot {
+            width: 8px;
+            height: 8px;
             border-radius: 50%;
-            margin-right: 10px;
+            margin-right: 12px;
         }
 
-        /* --- CONTENIDO PRINCIPAL --- */
+        /* --- CONTENEDOR CENTRAL --- */
         main {
-            margin-left: 320px;
-            width: 100%;
-            padding: 60px;
+            margin-left: 300px;
+            flex-grow: 1;
             display: flex;
             justify-content: center;
+            align-items: flex-start;
+            padding: 60px 20px;
         }
 
-        .content-wrapper {
-            background: var(--bg-card);
+        .content-card {
+            background: var(--card-bg);
             width: 100%;
-            max-width: 850px;
+            max-width: 800px;
             padding: 50px;
-            border-radius: 20px;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            min-height: 80vh;
         }
 
-        /* Estilo Markdown básico */
-        h1, h2 { color: #1e293b; }
-        p { line-height: 1.7; font-size: 1.1rem; }
+        /* Estilos de texto dentro de las páginas */
+        .content-card h1 { margin-top: 0; color: var(--bg-dark); border-bottom: 2px solid #f1f5f9; padding-bottom: 15px; }
+        .content-card p { line-height: 1.8; color: #475569; font-size: 1.1rem; }
     </style>
 </head>
 <body>
 
     <nav>
-        <h1>Informática-Ambiental</h1>
-        
+        <h1>Informática Ambiental</h1>
         <ul>
-            <li><a href="index.html">🏠 Inicio</a></li>
-            <li><a href="Pablo_contaminacion.html" class="pablo">🌍 Qué es la contaminación</a></li>
-            <li><a href="Manuel_residuos.html" class="manuel">♻️ Residuos informáticos</a></li>
-            <li><a href="Sergio_obsolescencia.html" class="sergio">⏳ Obsolescencia programada</a></li>
-            <li><a href="Sergio_informatica.html" class="sergio">🍃 Informática ecológica</a></li>
-            <li><a href="referencias.html">📚 Referencias</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Pablo_contaminacion.html" class="link-pablo">Contaminación ambiental</a></li>
+            <li><a href="Manuel_residuos.html" class="link-manuel">Residuos informáticos</a></li>
+            <li><a href="Sergio_obsolescencia.html" class="link-sergio">Obsolescencia programada</a></li>
+            <li><a href="Sergio_informatica.html" class="link-sergio">Informática ecológica</a></li>
+            <li><a href="referencias.html">Referencias</a></li>
         </ul>
 
-        <div class="leyenda">
-            <h3>Responsables</h3>
-            <div class="autor-item">
-                <div class="circle" style="background: var(--pablo-color);"></div>
-                <span>Pablo: Contaminación</span>
-            </div>
-            <div class="autor-item">
-                <div class="circle" style="background: var(--sergio-color);"></div>
-                <span>Sergio: Info & Obsolescencia</span>
-            </div>
-            <div class="autor-item">
-                <div class="circle" style="background: var(--manuel-color);"></div>
-                <span>Manuel: Residuos</span>
-            </div>
+        <div class="leyenda-simple">
+            <div class="autor"><span class="dot" style="background: var(--pablo);"></span> Pablo</div>
+            <div class="autor"><span class="dot" style="background: var(--sergio);"></span> Sergio</div>
+            <div class="autor"><span class="dot" style="background: var(--manuel);"></span> Manuel</div>
         </div>
     </nav>
 
     <main>
-        <article class="content-wrapper">
+        <article class="content-card">
             {{ content }}
         </article>
     </main>
