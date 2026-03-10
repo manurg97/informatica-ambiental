@@ -113,7 +113,7 @@
 </div>
 
 <div style="text-align:center; margin: 25px 0;">
-  <img src="informatica-eco.jpg" 
+  <img src="informatica-eco.jpeg" 
        alt="Informática ecológica" 
        style="
          max-width: 100%;
