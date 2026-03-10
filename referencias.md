@@ -60,9 +60,4 @@
       <td>Wikipedia – Obsolescencia Programada</td>
       <td><a href="https://es.wikipedia.org/wiki/Obsolescencia_programada">Visitar</a></td>
     </tr>
-    <tr>
-      <td>Greenpeace</td>
-      <td><a href="https://www.greenpeace.org">Visitar</a></td>
-    </tr>
-    <tr>
-      <td>Naciones
+   
