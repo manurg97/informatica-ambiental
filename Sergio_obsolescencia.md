@@ -4,89 +4,111 @@ title: Obsolescencia Programada - Sergio
 ---
 
 <style>
-  /* Contenedor de las tarjetas */
-  .grid-trabajo {
+  /* --- CONTENEDOR DE TARJETAS --- */
+  .grid-visual {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    margin: 25px 0;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    margin: 30px 0;
   }
 
-  /* Estilo base de cada tarjeta */
-  .tarjeta-analisis {
+  /* --- ESTILO DE LAS TARJETAS --- */
+  .card-premium {
     background: #ffffff;
     border: 1px solid #e1e4e8;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    transition: transform 0.2s ease;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    position: relative;
   }
 
-  .tarjeta-analisis:hover {
-    transform: translateY(-5px);
+  .card-premium:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
   }
 
-  /* Bordes de colores específicos */
-  .borde-verde { border-bottom: 6px solid #2ea44f; }
-  .borde-azul { border-bottom: 6px solid #0366d6; }
-  .borde-rojo { border-bottom: 6px solid #d73a49; }
-  .borde-gris { border-bottom: 6px solid #6a737d; }
+  /* --- BORDES DE COLORES --- */
+  .border-green { border-top: 8px solid #2ea44f; }
+  .border-blue { border-top: 8px solid #0366d6; }
+  .border-orange { border-top: 8px solid #f66a0a; }
+  .border-purple { border-top: 8px solid #6f42c1; }
 
-  .titulo-seccion {
+  .card-title {
+    font-size: 1.25em;
     font-weight: bold;
-    color: #24292e;
-    margin-bottom: 15px;
-    display: block;
-    font-size: 1.2em;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 8px;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
 
-  .texto-contenido {
-    color: #444;
-    line-height: 1.6;
-    font-size: 0.95em;
+  .card-text {
+    color: #4a4a4a;
+    line-height: 1.7;
+    font-size: 0.98em;
+  }
+
+  /* --- CITA DESTACADA --- */
+  .quote-box {
+    background: #f6f8fa;
+    border-left: 5px solid #2ea44f;
+    padding: 20px;
+    font-style: italic;
+    margin: 30px 0;
+    border-radius: 0 10px 10px 0;
   }
 </style>
 
 <div markdown="1">
 
-# Obsolescencia Programada
-**Análisis de la Vida Útil de los Productos Tecnológicos**
+# 🕰️ Obsolescencia Programada
+> **"Un producto que no se desgasta es una tragedia para los negocios."**
 
 ---
 
-### Concepto Principal
+## 🔍 1. ¿Qué es exactamente?
 
-<div class="tarjeta-analisis borde-verde">
-  <span class="titulo-seccion">Definición</span>
-  <p class="texto-contenido">
-    La obsolescencia programada consiste en la planificación deliberada del fin de la vida útil de un producto. Durante la fase de diseño, se establece un tiempo determinado tras el cual el artículo dejará de funcionar o perderá su utilidad técnica, forzando al usuario a adquirir uno nuevo.
+<div class="card-premium border-green">
+  <div class="card-title">📖 Definición Técnica</div>
+  <p class="card-text">
+    Es el diseño de un producto con una <strong>vida útil limitada artificialmente</strong>. Los fabricantes calculan el momento exacto en el que el dispositivo debe fallar o volverse incompatible para forzar al consumidor a comprar la siguiente versión. No es un error de ingeniería, es una decisión de negocio.
   </p>
 </div>
 
 
 
-<div class="grid-trabajo">
+---
 
-  <div class="tarjeta-analisis borde-azul">
-    <span class="titulo-seccion">Objetivo Económico</span>
-    <p class="texto-contenido">
-      El propósito fundamental es incentivar el consumo recurrente. Al reducir la durabilidad, las empresas aseguran un flujo de ventas constante, incrementando sus beneficios económicos mediante la renovación forzada de stock por parte de los clientes.
+## 📜 2. Un poco de historia: El Cartel Phoebus
+
+En 1924, los principales fabricantes de bombillas del mundo se reunieron para formar el **Cartel Phoebus**. Su objetivo: reducir la duración de las bombillas de **2.500 horas a solo 1.000**. Aquel fabricante que hiciera bombillas que durasen más, era multado. Este fue el nacimiento oficial de la obsolescencia programada.
+
+---
+
+## 🛠️ 3. Tipos y Funcionamiento
+
+<div class="grid-visual">
+
+  <div class="card-premium border-blue">
+    <div class="card-title">💻 Obsolescencia de Software</div>
+    <p class="card-text">
+      Tu móvil funciona bien, pero las nuevas actualizaciones lo vuelven lento o las aplicaciones dejan de ser compatibles. El hardware está sano, pero el software lo "mata".
     </p>
   </div>
 
-  <div class="tarjeta-analisis borde-rojo">
-    <span class="titulo-seccion">Consecuencias Ambientales</span>
-    <p class="texto-contenido">
-      Esta práctica genera un impacto negativo severo: produce toneladas de residuos electrónicos (e-waste) difíciles de gestionar, consume recursos naturales de forma acelerada y aumenta la huella de carbono debido a la producción ininterrumpida.
+  <div class="card-premium border-orange">
+    <div class="card-title">🔌 Obsolescencia Técnica</div>
+    <p class="card-text">
+      Uso de materiales frágiles en puntos críticos. Por ejemplo, condensadores cerca de fuentes de calor en televisores para que se quemen tras unos años de uso.
     </p>
   </div>
 
-  <div class="tarjeta-analisis borde-gris">
-    <span class="titulo-seccion">Aplicaciones en Tecnología</span>
-    <p class="texto-contenido">
-      Es común en dispositivos móviles con baterías no extraíbles, impresoras con contadores de páginas internos y electrodomésticos donde la reparación resulta más costosa que la compra de un equipo nuevo.
+  <div class="card-premium border-purple">
+    <div class="card-title">🔧 Barreras de Reparación</div>
+    <p class="card-text">
+      Piezas pegadas, tornillos imposibles de abrir y falta de manuales. El objetivo es que reparar sea <strong>más caro</strong> que comprar uno nuevo.
     </p>
   </div>
 
@@ -94,22 +116,30 @@ title: Obsolescencia Programada - Sergio
 
 ---
 
-### Conclusión del Análisis
+## 🌍 4. El Impacto en nuestro Planeta
 
-<div class="tarjeta-analisis borde-verde">
-  <p class="texto-contenido">
-    El fenómeno de la obsolescencia no solo representa un perjuicio económico para el consumidor, sino que constituye uno de los mayores desafíos para la informática ecológica y la sostenibilidad global en el siglo XXI.
-  </p>
-</div>
+Cada vez que desechamos un aparato antes de tiempo, generamos **E-Waste** (basura electrónica). Estos residuos contienen plomo, mercurio y cadmio, que contaminan la tierra y el agua si no se gestionan correctamente.
+
+
+
+| Recurso | Impacto de la Renovación |
+| :--- | :--- |
+| **Minerales** | Extracción intensiva de litio y tierras raras. |
+| **Energía** | Fabricar un móvil consume el 80% de toda la energía que usará en su vida. |
+| **Residuos** | Millones de toneladas de plásticos y metales pesados al año. |
 
 ---
 
-**Autor:** Sergio  
-**Asignatura:** Informática Ambiental
+## ✅ 5. ¿Hay soluciones?
 
-<div style="display: flex; justify-content: space-between; margin-top: 30px;">
-  <a href="index.html" style="text-decoration:none; color:#2ea44f; font-weight:bold;">Volver al Inicio</a>
-  <a href="Sergio_informatica.html" style="text-decoration:none; color:#2ea44f; font-weight:bold;">Siguiente Apartado</a>
+Afortunadamente, existe el movimiento **"Right to Repair"** (Derecho a Reparar), que lucha para que las empresas vendan piezas de repuesto y faciliten manuales. También están surgiendo empresas que fabrican teléfonos modulares, donde puedes cambiar solo la cámara o la batería sin tirar el resto del móvil.
+
+---
+
+
+<div style="display: flex; justify-content: space-between; margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee;">
+  <a href="index.html" style="text-decoration:none; color:#2ea44f; font-weight:bold;">🏠 Volver al Inicio</a>
+  <a href="Sergio_informatica.html" style="text-decoration:none; color:#2ea44f; font-weight:bold;">Informática Ecológica ➜</a>
 </div>
 
 </div>
