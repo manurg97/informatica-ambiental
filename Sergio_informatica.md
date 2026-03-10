@@ -266,17 +266,16 @@
 
 <div style="text-align:center; margin: 25px 0;">
   <img src="información-eco.jpg" 
-       alt="Fabricación ecológica" 
+       alt="Conclusión sobre informática ecológica" 
        style="
          max-width: 100%;
          border-radius: 12px;
          box-shadow: 0 6px 18px rgba(0,0,0,0.15);
        ">
   <p style="font-style: italic; color:#555; margin-top:10px;">
-    <strong>Informática ecológica.</strong>
+    <strong>La sostenibilidad tecnológica.</strong>
   </p>
 </div>
-
 ---
 
 <div style="
