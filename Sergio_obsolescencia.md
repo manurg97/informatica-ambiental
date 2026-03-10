@@ -1,3 +1,9 @@
+---
+layout: default
+title: Residuos Informáticos
+---
+
+
 # Obsolescencia Programada
 
 ## ¿Qué es realmente?
