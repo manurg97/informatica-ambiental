@@ -278,13 +278,22 @@
   border-top: 1px solid #eee;
 ">
 
-  <!-- Botón izquierda (Inicio) -->
+<div style="
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  margin-top: 40px; 
+  padding-top: 20px; 
+  border-top: 1px solid #eee;
+">
+
+  <!-- Izquierda -->
   <a href="index.html" 
      style="text-decoration:none; color:#2ea44f; font-weight:bold; font-size:1.1em;">
      🏠 Volver al Inicio
   </a>
 
-  <!-- Botón derecha (Referencias) -->
+  <!-- Derecha -->
   <a href="referencias.html" 
      style="text-decoration:none; color:#2ea44f; font-weight:bold; font-size:1.1em;">
      Referencias ➔
