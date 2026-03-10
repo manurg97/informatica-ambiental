@@ -80,7 +80,9 @@
 
 <div markdown="1">
 
-# 🕰️ Obsolescencia Programada
+<div style="text-align: center;">
+  <h1>Obsolescencia Programada</h1>
+</div>
 > **"Un producto que no se desgasta es una tragedia para los negocios."**
 
 ---
