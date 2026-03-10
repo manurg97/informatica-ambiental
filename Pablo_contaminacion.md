@@ -9,9 +9,9 @@
 <h3> Navegación rápida</h3>
 
 <ul>
-<li><a href="#contaminación-del-aire">Contaminación del aire</a></li>
-<li><a href="#contaminación-del-agua">Contaminación del agua</a></li>
-<li><a href="#contaminación-del-suelo">Contaminación del suelo</a></li>
+<li><a href="#🌫️-contaminación-del-aire">Contaminación del aire</a></li>
+<li><a href="#💧-contaminación-del-agua">Contaminación del agua</a></li>
+<li><a href="#🌱-contaminación-del-suelo">Contaminación del suelo</a></li>
 <li><a href="#impactos-de-la-contaminación-ambiental">Impactos</a></li>
 <li><a href="#posibles-soluciones">Soluciones</a></li>
 </ul>
@@ -62,9 +62,9 @@ El crecimiento de la población y la industrialización han aumentado significat
 
 ---
 
-# 🌫️ Tipos de contaminación
+#  Tipos de contaminación
 
-## Contaminación del aire
+## 🌫️ Contaminación del aire
 
 ![Gases tóxicos](https://www.emerson.com/resource/image/6496066/landscape_ratio16x9/1920/1080/f30e3bb4eede68f43b1454d3328a0eff/ECDA5996889D72A49B6B629A84E0241D/img-rmt-common-toxic-combustible-gases-toxic-gas-exposure.jpg)
 
@@ -85,7 +85,7 @@ Se produce cuando gases tóxicos y partículas contaminantes se liberan a la atm
 
 ---
 
-##  Contaminación del agua
+## 💧 Contaminación del agua
 
 ![Contaminación del agua](https://agua.org.mx/wp-content/uploads/2017/08/Noticia-contaminación-agua-consecuencias-soluciones.jpg)
 
