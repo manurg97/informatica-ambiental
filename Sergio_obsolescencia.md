@@ -4,11 +4,11 @@ La **obsolescencia programada** es la planificación del final de la vida útil 
 
 ## Objetivo
 
-El objetivo principal de esta práctica es aumentar las ventas, ya que obliga a los consumidores a sustituir los productos con mayor frecuencia. De esta manera, las empresas obtienen más beneficios al incentivar la compra continua de nuevos artículos.
+El objetivo principal de esta práctica es aumentar las ventas, ya que "obliga" a los consumidores a sustituir los productos con mayor frecuencia. De esta manera, las empresas obtienen más beneficios al incentivar la compra continua de nuevos artículos.
 
 ## Consecuencias
 
-La obsolescencia programada también tiene consecuencias negativas, entre las que se incluyen:
+La **obsolescencia programada** también tiene consecuencias negativas, entre las que se incluyen:
 
 - Aumento de residuos.
 - Contaminación ambiental.
