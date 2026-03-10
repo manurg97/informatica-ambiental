@@ -110,7 +110,7 @@ Ocurre cuando residuos sólidos o productos químicos se acumulan en la tierra.
 
 ---
 
-# ⚠️ Impactos de la contaminación ambiental
+#  Impactos de la contaminación ambiental
 
 | Impacto | Descripción |
 |------|------|
@@ -121,7 +121,7 @@ Ocurre cuando residuos sólidos o productos químicos se acumulan en la tierra.
 
 ---
 
-# 💡 Posibles soluciones
+#  Posibles soluciones
 
 Algunas acciones para reducir la contaminación ambiental son:
 
