@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informática Ambiental</title>
+    <title>{{ page.title }} | Informática Ambiental</title>
     <style>
         :root {
             --bg-dark: #0f172a; 
@@ -24,7 +24,7 @@
             min-height: 100vh;
         }
 
-        /* --- BARRA LATERAL IZQUIERDA (NAVEGACIÓN) --- */
+        /* --- BARRA LATERAL IZQUIERDA --- */
         nav {
             width: 260px;
             background-color: var(--sidebar-bg);
@@ -64,13 +64,12 @@
             font-size: 0.95rem;
         }
 
-        /* Colores en el índice según el autor */
         .nav-pablo:hover { color: var(--pablo) !important; background: rgba(56, 189, 248, 0.1); }
         .nav-manuel:hover { color: var(--manuel) !important; background: rgba(74, 222, 128, 0.1); }
         .nav-sergio:hover { color: var(--sergio) !important; background: rgba(192, 132, 252, 0.1); }
         .nav-ref:hover { color: white !important; background: rgba(255, 255, 255, 0.05); }
 
-        /* --- PANEL DERECHO (LEYENDA) --- */
+        /* --- PANEL DERECHO --- */
         aside {
             width: 240px;
             position: fixed;
@@ -95,8 +94,6 @@
         }
 
         .author-name { font-weight: 700; font-size: 0.9rem; margin-bottom: 4px; }
-        .author-role { font-size: 0.75rem; opacity: 0.6; color: white; }
-
         .card-pablo { border-right: 4px solid var(--pablo); color: var(--pablo); }
         .card-manuel { border-right: 4px solid var(--manuel); color: var(--manuel); }
         .card-sergio { border-right: 4px solid var(--sergio); color: var(--sergio); }
@@ -121,11 +118,8 @@
             min-height: 80vh;
         }
 
-        /* Títulos dinámicos según el autor de la página */
-        .title-pablo { color: var(--pablo); border-bottom: 3px solid var(--pablo); padding-bottom: 10px; }
-        .title-manuel { color: var(--manuel); border-bottom: 3px solid var(--manuel); padding-bottom: 10px; }
-        .title-sergio { color: var(--sergio); border-bottom: 3px solid var(--sergio); padding-bottom: 10px; }
-
+        /* Clases para títulos dentro del Markdown */
+        .content-card h1 { color: var(--bg-dark); border-bottom: 3px solid #eee; padding-bottom: 10px; }
         .content-card p { line-height: 1.8; color: #475569; font-size: 1.1rem; }
 
         @media (max-width: 1100px) {
@@ -141,25 +135,25 @@
     <nav>
         <h1>Informática-Ambiental</h1>
         <ul>
-    <li><a href="index.html" class="nav-ref">Inicio</a></li>
-    <li><a href="Pablo_contaminacion.html" class="nav-pablo">Qué es la contaminación ambiental</a></li>
-    <li><a href="Manuel_residuos.html" class="nav-manuel">Residuos informáticos</a></li>
-    <li><a href="Sergio_obsolescencia.html" class="nav-sergio">Obsolescencia programada</a></li>
-    <li><a href="Sergio_informatica.html" class="nav-sergio">Informática Ecológica</a></li>
-    <li><a href="referencias.html" class="nav-ref">Referencias</a></li>
-</ul>
+            <li><a href="./index.html" class="nav-ref">Inicio</a></li>
+            <li><a href="./Pablo_contaminacion.html" class="nav-pablo">Qué es la contaminación</a></li>
+            <li><a href="./Manuel_residuos.html" class="nav-manuel">Residuos informáticos</a></li>
+            <li><a href="./Sergio_obsolescencia.html" class="nav-sergio">Obsolescencia programada</a></li>
+            <li><a href="./Sergio_informatica.html" class="nav-sergio">Informática Ecológica</a></li>
+            <li><a href="./referencias.html" class="nav-ref">Referencias</a></li>
+        </ul>
     </nav>
 
+    <main>
+        <div class="content-card">
+            {{ content }}
+        </div>
+    </main>
+
     <aside>
-        <div class="author-card card-pablo">
-            <span class="author-name">Pablo</span>
-        </div>
-        <div class="author-card card-manuel">
-            <span class="author-name">Manuel</span>
-        </div>
-        <div class="author-card card-sergio">
-            <span class="author-name">Sergio</span>
-        </div>
+        <div class="author-card card-pablo"><span class="author-name">Pablo</span></div>
+        <div class="author-card card-manuel"><span class="author-name">Manuel</span></div>
+        <div class="author-card card-sergio"><span class="author-name">Sergio</span></div>
     </aside>
 
 </body>
