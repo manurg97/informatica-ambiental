@@ -4,231 +4,249 @@ title: Residuos Informáticos
 ---
 
 
+---
+layout: default
+title: Residuos Informáticos - Visión Innovadora
+---
+
 <style>
-  /* --- REFINAMIENTO DE ESTILOS PARA ENCAJAR CON EL NAV --- */
-  .post-container {
-    animation: fadeInUp 0.8s ease-out forwards;
+  /* --- VARIABLES DE COLOR INNOVADORAS --- */
+  :root {
+    --neon-cyan: #00f2ff;
+    --neon-lime: #adff2f;
+    --dark-bg: #0a192f;
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.1);
   }
 
-  /* --- TARJETAS CON EL VERDE DEL MENÚ --- */
-  .grid-residuos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    margin: 30px 0;
+  .main-content-innovador {
+    background-color: var(--dark-bg);
+    color: #e6f1ff;
+    padding: 40px;
+    border-radius: 20px;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+    position: relative;
   }
 
-  .tarjeta-raee {
-    background: #ffffff;
-    border-radius: 12px;
-    padding: 20px;
-    border-bottom: 4px solid #00695c; /* Color a juego con el Nav */
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease;
-  }
-
-  .tarjeta-raee:hover {
-    transform: translateY(-8px);
-    background-color: #e0f2f1;
-  }
-
-  .tarjeta-raee strong {
-    color: #004d40;
-    display: block;
-    font-size: 1.1em;
+  /* --- TÍTULO CON GRADIENTE DINÁMICO --- */
+  .titulo-glow {
+    font-size: 2.8em;
+    font-weight: 800;
+    background: linear-gradient(90deg, var(--neon-cyan), var(--neon-lime));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
   }
 
-  /* --- SECCIÓN DE RIESGOS (TABLA MODERNA) --- */
-  .tabla-contenedor {
-    overflow-x: auto;
-    margin: 25px 0;
-    border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  /* --- TARJETAS DE CRISTAL (GLASSMORPHISM) --- */
+  .contenedor-glass {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
   }
 
-  table {
+  .card-glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    padding: 25px;
+    border-radius: 15px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+  }
+
+  .card-glass:hover {
+    background: rgba(0, 242, 255, 0.05);
+    border-color: var(--neon-cyan);
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(0, 242, 255, 0.1);
+  }
+
+  .card-glass h3 {
+    color: var(--neon-cyan);
+    margin-top: 0;
+    font-size: 1.2em;
+  }
+
+  /* --- SECCIÓN DE TOXICIDAD ESTILO "SCANNER" --- */
+  .scanner-box {
+    border-left: 2px solid var(--neon-lime);
+    padding-left: 20px;
+    margin: 30px 0;
+    background: linear-gradient(90deg, rgba(173, 255, 47, 0.05) 0%, transparent 100%);
+  }
+
+  /* --- TABLA FUTURISTA --- */
+  .tabla-futuro {
     width: 100%;
-    border-collapse: collapse;
-    background: white;
+    border-collapse: separate;
+    border-spacing: 0 10px;
   }
 
-  th {
-    background-color: #00695c;
-    color: white;
+  .tabla-futuro th {
+    color: var(--neon-lime);
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 2px;
     padding: 15px;
     text-align: left;
   }
 
-  td {
-    padding: 12px 15px;
-    border-bottom: 1px solid #e0e0e0;
+  .tabla-futuro td {
+    background: rgba(255, 255, 255, 0.02);
+    padding: 15px;
+    border-top: 1px solid var(--glass-border);
+    border-bottom: 1px solid var(--glass-border);
   }
 
-  tr:hover { background-color: #f1f8e9; }
+  .tabla-futuro td:first-child { border-radius: 10px 0 0 10px; border-left: 1px solid var(--glass-border); color: var(--neon-cyan); font-weight: bold; }
+  .tabla-futuro td:last-child { border-radius: 0 10px 10px 0; border-right: 1px solid var(--glass-border); }
 
-  /* --- CAJA DE IMPACTO (MINERÍA URBANA) --- */
-  .info-box {
-    background: linear-gradient(135deg, #004d40 0%, #00796b 100%);
-    color: white;
-    padding: 30px;
-    border-radius: 15px;
-    margin: 40px 0;
-    position: relative;
-    overflow: hidden;
+  /* --- BLOQUE DE MINERÍA URBANA --- */
+  .mineria-urban-block {
+    background: #000;
+    border-radius: 20px;
+    padding: 40px;
+    border: 1px dashed var(--neon-cyan);
+    text-align: center;
+    margin: 50px 0;
   }
 
-  .info-box h3 { color: #80cbc4; margin-top: 0; }
-
-  .info-box::after {
-    content: "♻️";
-    position: absolute;
-    right: -10px;
-    bottom: -10px;
-    font-size: 8rem;
-    opacity: 0.1;
+  .dato-impacto {
+    font-size: 3em;
+    font-weight: bold;
+    color: var(--neon-lime);
+    display: block;
   }
 
-  /* --- LISTA DE ACCIONES --- */
-  .lista-acciones {
-    list-style: none;
-    padding: 0;
-  }
-
-  .lista-acciones li {
-    background: #fff;
-    margin-bottom: 10px;
-    padding: 15px 20px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  }
-
-  .lista-acciones li::before {
-    content: "✅";
-    margin-right: 15px;
-  }
-
-  /* --- BOTONES DE NAVEGACIÓN --- */
-  .footer-nav {
+  /* --- BOTONES NAVEGACIÓN --- */
+  .nav-footer-innovador {
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
-    padding-top: 20px;
-    border-top: 2px solid #e0e0e0;
+    margin-top: 60px;
   }
 
-  .btn-action {
-    padding: 12px 25px;
-    border-radius: 50px;
+  .btn-cyber {
+    padding: 15px 30px;
+    border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    border: 1px solid var(--neon-cyan);
   }
 
-  .btn-volver { background: #cfd8dc; color: #455a64; }
-  .btn-siguiente { background: #00695c; color: white; }
-  .btn-action:hover { opacity: 0.8; transform: scale(1.05); }
+  .btn-cyber.prev { color: #fff; border-color: #444; }
+  .btn-cyber.next { 
+    background: var(--neon-cyan); 
+    color: var(--dark-bg) !important; 
+    box-shadow: 0 0 15px var(--neon-cyan);
+  }
 
+  .btn-cyber:hover {
+    transform: skewX(-10deg);
+    filter: brightness(1.2);
+  }
 </style>
 
-<div class="post-container">
+<div class="main-content-innovador">
 
   <header class="retraso-1">
-    <h1>Residuos Informáticos: El Lado Oscuro de la Era Digital</h1>
-    <p class="caja-azul" style="background: #e0f2f1; border-left-color: #00695c; color: #004d40;">
-      La revolución tecnológica ha transformado nuestra forma de vivir, trabajar y comunicarnos. Sin embargo, este progreso genera un "precio invisible": la acumulación masiva de <strong>e-waste</strong>.
+    <h1 class="titulo-glow">Hardware Inmortal</h1>
+    <p style="font-size: 1.2em; color: #8892b0;">
+      Más allá de la pantalla, existe una crisis de silicio. El <span style="color: var(--neon-lime);">e-waste</span> no es basura, es un error de diseño global.
     </p>
   </header>
 
-  <section id="definicion" class="retraso-2">
-    <h2>1. ¿Qué son los RAEE?</h2>
-    <p>Los <strong>Residuos de Aparatos Eléctricos y Electrónicos</strong> (RAEE) son todos aquellos dispositivos que funcionan con baterías o corriente eléctrica y que han alcanzado el final de su vida útil.</p>
+  <section class="retraso-2">
+    <div class="scanner-box">
+      <h2>01 // CLASIFICACIÓN DE RESIDUOS</h2>
+    </div>
     
-    <div class="grid-residuos">
-      <div class="tarjeta-raee">
-        <strong>Escritorio</strong>
-        CPUs, monitores antiguos, teclados y ratones.
+    <div class="contenedor-glass">
+      <div class="card-glass">
+        <h3>NÚCLEOS</h3>
+        <p>CPUs, servidores y placas base. El corazón del problema químico.</p>
       </div>
-      <div class="tarjeta-raee">
-        <strong>Movilidad</strong>
-        Smartphones, tablets y ordenadores portátiles.
+      <div class="card-glass">
+        <h3>ÓPTICOS</h3>
+        <p>Monitores, paneles OLED y sensores. Contienen gases raros y fósforo.</p>
       </div>
-      <div class="tarjeta-raee">
-        <strong>Infraestructura</strong>
-        Routers, modems, servidores y cableado.
+      <div class="card-glass">
+        <h3>ENERGÍA</h3>
+        <p>Baterías de Litio y Cobalto. Bombas de tiempo químicas si no se tratan.</p>
       </div>
-      <div class="tarjeta-raee">
-        <strong>Memorias</strong>
-        Discos duros, pendrives y unidades SSD.
+      <div class="card-glass">
+        <h3>NODOS</h3>
+        <p>Periféricos, routers y cableado. El mayor volumen de plástico y cobre.</p>
       </div>
     </div>
   </section>
 
-  <section id="peligros" class="retraso-3">
-    <h2>2. El Peligro Químico</h2>
-    <p>Un ordenador no es solo plástico; es un ecosistema de sustancias que, fuera de control, resultan letales para el medio ambiente.</p>
+  <section class="retraso-3">
+    <div class="scanner-box">
+      <h2>02 // ANÁLISIS DE TOXICIDAD</h2>
+    </div>
+
+    <table class="tabla-futuro">
+      <thead>
+        <tr>
+          <th>Elemento</th>
+          <th>Origen</th>
+          <th>Impacto Bio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>MERCURIO</td>
+          <td>Pantallas Planas</td>
+          <td>Neurotóxico persistente.</td>
+        </tr>
+        <tr>
+          <td>CADMIO</td>
+          <td>Semiconductores</td>
+          <td>Fallo renal agudo.</td>
+        </tr>
+        <tr>
+          <td>PLOMO</td>
+          <td>Micro-soldaduras</td>
+          <td>Deterioro cognitivo.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="mineria-urban-block">
+    <span class="dato-impacto">+800%</span>
+    <h3 style="color: white;">Más eficiente que una mina real</h3>
+    <p>Extraer oro de placas de circuito desechadas es 8 veces menos contaminante que la minería de roca tradicional.</p>
     
-    <div class="tabla-contenedor">
-      <table>
-        <thead>
-          <tr>
-            <th>Elemento</th>
-            <th>Ubicación</th>
-            <th>Riesgo para la Salud</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Plomo</strong></td>
-            <td>Soldaduras y monitores.</td>
-            <td>Daños al sistema nervioso central.</td>
-          </tr>
-          <tr>
-            <td><strong>Mercurio</strong></td>
-            <td>Pantallas LCD.</td>
-            <td>Afecta al cerebro y sistema renal.</td>
-          </tr>
-          <tr>
-            <td><strong>Cadmio</strong></td>
-            <td>Chips y baterías.</td>
-            <td>Altamente cancerígeno.</td>
-          </tr>
-          <tr>
-            <td><strong>Bario</strong></td>
-            <td>Carcasas frontales.</td>
-            <td>Debilidad muscular.</td>
-          </tr>
-        </tbody>
-      </table>
+  </section>
+
+  <section>
+    <div class="scanner-box">
+      <h2>03 // PROTOCOLO DE MITIGACIÓN</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+      <div class="card-glass">
+        <strong style="color: var(--neon-lime);">SOFT-RESCUE</strong>
+        <p>Alarga la vida útil usando Software Libre y sistemas ligeros para evitar el descarte prematuro.</p>
+      </div>
+      <div class="card-glass">
+        <strong style="color: var(--neon-lime);">HARD-RECYCLE</strong>
+        <p>Entrega de equipos en celdas RAEE certificadas para recuperación de tierras raras.</p>
+      </div>
     </div>
   </section>
 
-  <section id="mineria" class="info-box">
-    <h3>3. La Minería Urbana: Una Gran Oportunidad</h3>
-    <p>¿Sabías que hay más oro en una tonelada de teléfonos móviles que en una tonelada de mineral extraído directamente de una mina?</p>
-    <ul>
-      <li><strong>Recuperación de Tierras Raras:</strong> Esenciales para las baterías modernas.</li>
-      <li><strong>Ahorro Energético:</strong> Reciclar aluminio gasta un 95% menos energía que fabricarlo de cero.</li>
-      <li><strong>Economía Circular:</strong> Menos minería tradicional significa salvar bosques vírgenes.</li>
-    </ul>
-  </section>
-
-  <section id="soluciones">
-    <h2>4. ¿Cómo podemos actuar?</h2>
-    <p>Como futuros informáticos, nuestra responsabilidad es liderar el cambio hacia una gestión ética:</p>
-    <ul class="lista-acciones">
-      <li><strong>Reducir:</strong> No caigas en el consumismo de hardware cada año.</li>
-      <li><strong>Reutilizar:</strong> Instala sistemas operativos ligeros (como Linux) para revivir PCs antiguos.</li>
-      <li><strong>Reciclar:</strong> Usa exclusivamente los "Puntos Limpios" autorizados.</li>
-      <li><strong>Reparar:</strong> Apoya el derecho a la reparación antes de comprar un equipo nuevo.</li>
-    </ul>
-  </section>
-
-  <footer class="footer-nav">
-    <a href="contaminacion.html" class="btn-action btn-volver">← Anterior: Contaminación</a>
-    <a href="obsolescencia.html" class="btn-action btn-siguiente">Siguiente: Obsolescencia →</a>
+  <footer class="nav-footer-innovador">
+    <a href="contaminacion.html" class="btn-cyber prev">Atrás</a>
+    <a href="obsolescencia.html" class="btn-cyber next">Siguiente fase</a>
   </footer>
 
 </div>
