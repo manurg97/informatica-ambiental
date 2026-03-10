@@ -61,12 +61,12 @@
       <td><a href="https://es.wikipedia.org/wiki/Obsolescencia_programada">Visitar</a></td>
     </tr>
    
+
 <div style="
   width: 100%;
   text-align: center;
-  margin-top: 60px;
-  padding: 25px 0;
-  border-top: 1px solid #eee;
+  margin-top: 55px;   /* espacio entre la tabla y el botón */
+  padding-bottom: 20px;
 ">
 
   <a href="index.html" 
@@ -75,11 +75,6 @@
        color:#2ea44f; 
        font-weight:bold; 
        font-size:1.2em;
-     ">
-     🏠 Volver al Inicio
-  </a>
-
-</div>
      ">
      🏠 Volver al Inicio
   </a>
