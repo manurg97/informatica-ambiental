@@ -102,5 +102,51 @@ La contaminación ambiental es uno de los mayores desafíos del mundo actual. Re
 Todos podemos contribuir a proteger el planeta adoptando comportamientos responsables.
 
 ---
+<hr>
+
+<div style="display:flex; gap:20px; margin-top:40px;">
+
+<!-- Barra lateral -->
+<div style="width:25%; background:#f2f2f2; padding:15px; border-radius:10px;">
+
+<h3>🌍 Navegación rápida</h3>
+
+<ul>
+<li><a href="#contaminación-del-aire">Contaminación del aire</a></li>
+<li><a href="#contaminación-del-agua">Contaminación del agua</a></li>
+<li><a href="#contaminación-del-suelo">Contaminación del suelo</a></li>
+<li><a href="#impactos-de-la-contaminación-ambiental">Impactos</a></li>
+<li><a href="#posibles-soluciones">Soluciones</a></li>
+</ul>
+
+<hr>
+
+<h4>🔎 Más información</h4>
+
+<ul>
+<li><a href="https://www.nationalgeographic.com/environment">Medio ambiente</a></li>
+<li><a href="https://www.unep.org">Programa de la ONU para el medio ambiente</a></li>
+</ul>
+
+</div>
+
+<!-- Contenido -->
+<div style="width:75%;">
+
+<h3>📌 Cómo usar esta página</h3>
+
+<p>
+Usa el menú de la izquierda para navegar rápidamente entre las secciones del documento.
+Este menú funciona dentro de la misma página y permite acceder directamente a los apartados
+sobre contaminación del aire, agua y suelo.
+</p>
+
+<p>
+Este sistema hace que la página sea más fácil de navegar y más interactiva dentro de GitHub Pages.
+</p>
+
+</div>
+
+</div>
 
 🔙 [⬅ Volver al índice](index.html)
