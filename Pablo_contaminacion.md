@@ -30,7 +30,6 @@
 <!-- Contenido -->
 <div style="width:75%;">
 
-<h3>📌 Cómo usar esta página</h3>
 </div>
 
 </div>
