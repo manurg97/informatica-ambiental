@@ -1,5 +1,5 @@
 ---
-# 🌍 Qué es la contaminación ambiental
+#  Qué es la contaminación ambiental
 
 La **contaminación ambiental** es la presencia de sustancias o elementos dañinos en el entorno que afectan negativamente a la naturaleza y a los seres vivos.
 
@@ -7,7 +7,6 @@ En la actualidad, el desarrollo tecnológico también tiene impacto en el medio 
 
 ---
 
-## 🖼️ Imagen sobre contaminación
 ![Central nuclear](https://content.nationalgeographic.com.es/medio/2023/09/15/central-nuclear-dukovany-republica-checa_5c5750af_230915184639_1280x853.jpg)
 
 <p align="center">
