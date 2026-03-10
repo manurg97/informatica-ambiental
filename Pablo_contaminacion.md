@@ -85,7 +85,7 @@ Se produce cuando gases tóxicos y partículas contaminantes se liberan a la atm
 
 ---
 
-## 💧 Contaminación del agua
+##  Contaminación del agua
 
 ![Contaminación del agua](https://agua.org.mx/wp-content/uploads/2017/08/Noticia-contaminación-agua-consecuencias-soluciones.jpg)
 
