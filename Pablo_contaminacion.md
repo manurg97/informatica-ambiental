@@ -1,8 +1,4 @@
 ---
-layout: default
-title: Qué es la contaminacion
----
-
 # 🌍 Qué es la contaminación ambiental
 
 La **contaminación ambiental** es la presencia de sustancias o elementos dañinos en el entorno que afectan negativamente a la naturaleza y a los seres vivos.
