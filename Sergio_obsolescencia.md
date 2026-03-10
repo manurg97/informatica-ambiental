@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Residuos Informáticos
+title: Obsolescencia Programada
 ---
 
 
@@ -15,7 +15,7 @@ No toda la obsolescencia es igual. Podemos clasificarla en:
 
 * **Funcional:** El producto falla físicamente (un chip que deja de funcionar).
 * **Tecnológica:** El software deja de ser compatible o se vuelve lento.
-* **Psicológica (Percibida):** El diseño se vuelve "viejo" ante los ojos del consumidor (ej. nuevos modelos de iPhone cada año).
+* **Psicológica:** El diseño se vuelve "viejo" ante los ojos del consumidor (ej. nuevos modelos de iPhone cada año).
 
 ---
 
