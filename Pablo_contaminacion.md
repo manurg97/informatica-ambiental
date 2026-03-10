@@ -140,4 +140,22 @@ La contaminación ambiental es uno de los mayores desafíos del mundo actual. Re
 Todos podemos contribuir a proteger el planeta adoptando comportamientos responsables.
 
 ---
+## 🗂️ Índice estático (no interactivo)
+
+- 🌍 Navegación rápida
+- 🔎 Más información
+- ❓ ¿Qué es la contaminación ambiental?
+  - 📚 Explicación ampliada
+  - ☁️ Tipo de contaminación aérea
+    - Contaminación del aire
+      - Causas principales
+      - Consecuencias
+  - 💧 Tipo de contaminación hídrica
+    - Contaminación del agua
+      - Causas
+  - 🌱 Tipo de contaminación terrestre
+    - Contaminación del suelo
+- ⚠️ Impactos de la contaminación ambiental
+- 💡 Posibles soluciones
+- 📝 Conclusión
 🔙 [⬅ Volver al índice](index.html)
