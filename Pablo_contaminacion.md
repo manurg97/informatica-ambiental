@@ -31,17 +31,6 @@
 <div style="width:75%;">
 
 <h3>📌 Cómo usar esta página</h3>
-
-<p>
-Usa el menú de la izquierda para navegar rápidamente entre las secciones del documento.
-Este menú funciona dentro de la misma página y permite acceder directamente a los apartados
-sobre contaminación del aire, agua y suelo.
-</p>
-
-<p>
-Este sistema hace que la página sea más fácil de navegar y más interactiva dentro de GitHub Pages.
-</p>
-
 </div>
 
 </div>
