@@ -1,78 +1,36 @@
 ## Referencias
-- https://www.ibm.com/es-es/think/topics/green-computing
-- https://es.wikipedia.org/wiki/Obsolescencia_programada
-- https://www.greenpeace.org  
-- https://www.un.org  
-- https://www.ecotic.es  
-- https://www.chatgpt.com
 
 <style>
-  .tabla-ref {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 1em;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  .ref-box {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 14px;
+    border: 3px solid transparent;
+    background-image: linear-gradient(#fff, #fff), 
+                      linear-gradient(90deg, #ff7f50, #ff1493);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
   }
 
-  .tabla-ref thead tr {
-    background: #007bff;
-    color: white;
-  }
-
-  .tabla-ref th, .tabla-ref td {
-    padding: 14px 18px;
-    border-bottom: 1px solid #e9ecef;
-  }
-
-  .tabla-ref tbody tr:nth-child(even) {
-    background: #f8f9fa;
-  }
-
-  .tabla-ref a {
-    color: #007bff;
+  .ref-box a {
+    color: #ff1493;
     font-weight: bold;
     text-decoration: none;
   }
 
-  .tabla-ref a:hover {
+  .ref-box a:hover {
     text-decoration: underline;
   }
 </style>
 
-<table class="tabla-ref">
-  <thead>
-    <tr>
-      <th>Fuente</th>
-      <th>Enlace</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>IBM – Green Computing</td>
-      <td><a href="https://www.ibm.com/es-es/think/topics/green-computing">Visitar</a></td>
-    </tr>
-    <tr>
-      <td>Wikipedia – Obsolescencia Programada</td>
-      <td><a href="https://es.wikipedia.org/wiki/Obsolescencia_programada">Visitar</a></td>
-    </tr>
-    <tr>
-      <td>Greenpeace</td>
-      <td><a href="https://www.greenpeace.org">Visitar</a></td>
-    </tr>
-    <tr>
-      <td>Naciones Unidas</td>
-      <td><a href="https://www.un.org">Visitar</a></td>
-    </tr>
-    <tr>
-      <td>ECOTIC</td>
-      <td><a href="https://www.ecotic.es">Visitar</a></td>
-    </tr>
-    <tr>
-      <td>ChatGPT</td>
-      <td><a href="https://www.chatgpt.com">Visitar</a></td>
-    </tr>
-  </tbody>
-</table>
+<div class="ref-box">
+  <h2 style="margin-top:0;">Referencias</h2>
+
+  <p><a href="https://www.ibm.com/es-es/think/topics/green-computing">IBM – Green Computing</a></p>
+  <p><a href="https://es.wikipedia.org/wiki/Obsolescencia_programada">Wikipedia – Obsolescencia Programada</a></p>
+  <p><a href="https://www.greenpeace.org">Greenpeace</a></p>
+  <p><a href="https://www.un.org">Naciones Unidas</a></p>
+  <p><a href="https://www.ecotic.es">ECOTIC</a></p>
+  <p><a href="https://www.chatgpt.com">ChatGPT</a></p>
+</div>
