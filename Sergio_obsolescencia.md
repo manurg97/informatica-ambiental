@@ -1,23 +1,60 @@
-# **Obsolescencia Programada**
+# 🌍 Obsolescencia Programada: El Ciclo de lo Efímero
 
-La **obsolescencia programada** es la planificación del final de la vida útil de un producto. Esto significa que, durante su diseño, los fabricantes establecen un tiempo aproximado tras el cual el producto dejará de funcionar o se volverá inservible. En algunos casos, esto ocurre por la falta de repuestos o por componentes diseñados para durar un tiempo limitado.
+<p align="center">
+  <img src="https://img.shields.io/badge/Tema-Informática%20Ambiental-green?style=for-the-badge" alt="Badge de curso">
+  <img src="https://img.shields.io/badge/Estado-En%20Progreso-yellow?style=for-the-badge" alt="Badge de estado">
+</p>
 
-## Objetivo
+---
 
-El objetivo principal de esta práctica es aumentar las ventas, ya que **"obliga"** a los consumidores a sustituir los productos con mayor frecuencia. De esta manera, las empresas obtienen más beneficios al incentivar la compra continua de nuevos artículos.
+## 🔍 ¿Qué es realmente?
+La **obsolescencia programada** es la planificación o programación deliberada del fin de la vida útil de un producto. Durante la fase de diseño, los fabricantes calculan un tiempo de vida óptimo para que el producto falle o se vuelva inútil, forzando al usuario a una nueva compra.
 
-## Consecuencias
 
-La **obsolescencia programada** también tiene consecuencias negativas, entre las que se incluyen:
+### 💡 Tipos de Obsolescencia
+No toda la obsolescencia es igual. Podemos clasificarla en:
 
-- Aumento de residuos.
-- Contaminación ambiental.
-- Gasto innecesario para los consumidores.
+* **Funcional:** El producto falla físicamente (un chip que deja de funcionar).
+* **Tecnológica:** El software deja de ser compatible o se vuelve lento.
+* **Psicológica (Percibida):** El diseño se vuelve "viejo" ante los ojos del consumidor (ej. nuevos modelos de iPhone cada año).
 
-## Aplicaciones
+---
 
-Este fenómeno se aplica a muchos productos de uso cotidiano, como:
+## 🎯 El Objetivo del Modelo Lineal
+El motor de esta práctica es el **crecimiento económico perpetuo**. Las empresas buscan:
+1.  **Aumentar el flujo de ventas:** Ciclos de sustitución más cortos.
+2.  **Fidelización forzada:** Al controlar los repuestos y el soporte técnico.
 
-- Dispositivos electrónicos (teléfonos, tablets, etc.).
-- Electrodomésticos (lavadoras, refrigeradores, etc.).
-- Impresoras y otros dispositivos de oficina.
+> "Un producto que no se desgasta es una tragedia para los negocios."
+
+---
+
+## ⚠️ Consecuencias Globales
+Esta práctica tiene un impacto directo en la salud de nuestro planeta:
+
+| Impacto | Descripción |
+| :--- | :--- |
+| **Residuos E-waste** | Toneladas de basura electrónica que terminan en vertederos ilegales. |
+| **Contaminación** | Emisión de CO2 y químicos tóxicos durante la fabricación de reemplazos. |
+| **Agotamiento** | Uso intensivo de minerales raros y recursos naturales no renovables. |
+
+
+---
+
+## 📱 Aplicaciones Comunes
+Este fenómeno no es exclusivo de un solo sector, pero es crítico en:
+
+* **Dispositivos Móviles:** Baterías no extraíbles y fin de actualizaciones.
+* **Impresoras:** Chips contadores que bloquean la impresión tras un número de páginas.
+* **Electrodomésticos:** Uso de piezas de plástico en lugar de metal en zonas de alta fricción.
+
+---
+
+## 🛠️ ¿Cómo combatirla?
+Existen movimientos globales para frenar esta tendencia:
+* **Derecho a Reparar (Right to Repair):** Leyes que obligan a facilitar manuales y piezas.
+* **Economía Circular:** Diseñar productos que puedan ser reciclados o actualizados.
+* **Consumo Responsable:** Optar por marcas con sellos de durabilidad.
+
+---
+*Documento creado para el repositorio de Informática Ambiental - 2026*
