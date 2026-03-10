@@ -1,9 +1,3 @@
-
----
-layout: default
-title: Obsolescencia Programada - Sergio
----
-
 <style>
   /* --- CONTENEDOR DE TARJETAS --- */
   .grid-visual {
@@ -110,7 +104,7 @@ En 1924, los principales fabricantes de bombillas del mundo formaron el **Cartel
 <div class="tarjeta-sergio" style="text-align: center; border: none; box-shadow: none;">
   <img src="obsolescencia.jpg" class="img-cartoon" alt="Documental sobre obsolescencia programada">
   <p style="font-style: italic; color: #666; font-size: 0.9em; margin-top: 10px;">
-    Cartel Phoebus.
+    <strong>Cartel Phoebus.</strong>
   </p>
 </div>
 
@@ -139,7 +133,7 @@ En 1924, los principales fabricantes de bombillas del mundo formaron el **Cartel
 
 <div class="tarjeta-sergio" style="text-align: center; border: none; box-shadow: none;">
   <img src="4.webp" class="img-cartoon" alt="Ilustración del Derecho a Reparar frente al Consumo Forzado">
-  <p style="font-style: italic; color: #666; font-size: 0.9em; margin-top: 10px;">Consumo vs Derecho a Reparar.</p>
+  <p style="font-style: italic; color: #666; font-size: 0.9em; margin-top: 10px;"><strong>Consumo más barato que arreglar.</strong></p>
 </div>
 
 ---
@@ -149,7 +143,7 @@ En 1924, los principales fabricantes de bombillas del mundo formaron el **Cartel
 <div class="tarjeta-sergio" style="text-align: center; border: none; box-shadow: none;">
   <img src="consecuencias-1.png" class="img-cartoon" alt="Consecuencias de la obsolescencia programada">
   <p style="font-style: italic; color: #666; font-size: 0.9em; margin-top: 10px;">
-    Consecuencias de la obsolescencia programada: producción, consumo, gastos y residuos.
+    <strong>Consecuencias de la obsolescencia programada: producción, consumo, gastos y residuos.</strong>
   </p>
 </div>
 
@@ -186,6 +180,13 @@ Cada vez que renovamos un dispositivo prematuramente, el medio ambiente sufre la
 ## ✅ 5. ¿Hay soluciones?
 
 Existen movimientos como el **"Right to Repair"** (Derecho a Reparar) y empresas que diseñan hardware modular para combatir esta tendencia. La informática ecológica es la clave para un futuro sostenible.
+
+<div class="tarjeta-sergio" style="text-align: center; border: none; box-shadow: none;">
+  <img src="derecho_a_reparar.jpg" class="img-cartoon" alt="Reparación de un smartphone">
+  <p style="font-style: italic; color: #666; font-size: 0.9em; margin-top: 10px;">
+    <strong>Derecho a reparar.</strong>
+  </p>
+</div>
 
 ---
 
