@@ -20,7 +20,6 @@ title: Obsolescencia Programada - Sergio
     padding: 25px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.05);
     transition: all 0.3s ease;
-    position: relative;
   }
 
   .card-premium:hover {
@@ -28,11 +27,41 @@ title: Obsolescencia Programada - Sergio
     box-shadow: 0 15px 30px rgba(0,0,0,0.12);
   }
 
-  /* --- BORDES DE COLORES --- */
   .border-green { border-top: 8px solid #2ea44f; }
   .border-blue { border-top: 8px solid #0366d6; }
   .border-orange { border-top: 8px solid #f66a0a; }
   .border-purple { border-top: 8px solid #6f42c1; }
+
+  /* --- ESTILO DE LA TABLA --- */
+  .tabla-bonita {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.95em;
+    border-radius: 10px;
+    overflow: hidden; /* Para que las esquinas salgan redondeadas */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  }
+
+  .tabla-bonita thead tr {
+    background-color: #2ea44f;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .tabla-bonita th, .tabla-bonita td {
+    padding: 15px 20px;
+    border-bottom: 1px solid #edf2f7;
+  }
+
+  .tabla-bonita tbody tr:nth-of-type(even) {
+    background-color: #f8f9fa;
+  }
+
+  .tabla-bonita tbody tr:last-of-type {
+    border-bottom: 3px solid #2ea44f;
+  }
 
   .card-title {
     font-size: 1.25em;
@@ -42,22 +71,6 @@ title: Obsolescencia Programada - Sergio
     display: flex;
     align-items: center;
     gap: 10px;
-  }
-
-  .card-text {
-    color: #4a4a4a;
-    line-height: 1.7;
-    font-size: 0.98em;
-  }
-
-  /* --- CITA DESTACADA --- */
-  .quote-box {
-    background: #f6f8fa;
-    border-left: 5px solid #2ea44f;
-    padding: 20px;
-    font-style: italic;
-    margin: 30px 0;
-    border-radius: 0 10px 10px 0;
   }
 </style>
 
@@ -83,7 +96,7 @@ title: Obsolescencia Programada - Sergio
 
 ## 📜 2. Un poco de historia: El Cartel Phoebus
 
-En 1924, los principales fabricantes de bombillas del mundo se reunieron para formar el **Cartel Phoebus**. Su objetivo: reducir la duración de las bombillas de **2.500 horas a solo 1.000**. Aquel fabricante que hiciera bombillas que durasen más, era multado. Este fue el nacimiento oficial de la obsolescencia programada.
+En 1924, los principales fabricantes de bombillas del mundo formaron el **Cartel Phoebus**. Su objetivo: reducir la duración de las bombillas de **2.500 horas a solo 1.000**. Este fue el nacimiento oficial de la obsolescencia programada para asegurar ventas recurrentes.
 
 ---
 
@@ -93,23 +106,17 @@ En 1924, los principales fabricantes de bombillas del mundo se reunieron para fo
 
   <div class="card-premium border-blue">
     <div class="card-title">💻 Obsolescencia de Software</div>
-    <p class="card-text">
-      Tu móvil funciona bien, pero las nuevas actualizaciones lo vuelven lento o las aplicaciones dejan de ser compatibles. El hardware está sano, pero el software lo "mata".
-    </p>
+    <p>Actualizaciones que vuelven lentos los dispositivos o apps que dejan de ser compatibles con hardware que aún funciona perfectamente.</p>
   </div>
 
   <div class="card-premium border-orange">
     <div class="card-title">🔌 Obsolescencia Técnica</div>
-    <p class="card-text">
-      Uso de materiales frágiles en puntos críticos. Por ejemplo, condensadores cerca de fuentes de calor en televisores para que se quemen tras unos años de uso.
-    </p>
+    <p>Uso de materiales frágiles o componentes (como condensadores) diseñados para fallar tras un número determinado de ciclos de uso.</p>
   </div>
 
   <div class="card-premium border-purple">
     <div class="card-title">🔧 Barreras de Reparación</div>
-    <p class="card-text">
-      Piezas pegadas, tornillos imposibles de abrir y falta de manuales. El objetivo es que reparar sea <strong>más caro</strong> que comprar uno nuevo.
-    </p>
+    <p>Piezas pegadas y falta de repuestos oficiales. El objetivo es que reparar sea <strong>más caro</strong> que comprar un producto nuevo.</p>
   </div>
 
 </div>
@@ -118,21 +125,38 @@ En 1924, los principales fabricantes de bombillas del mundo se reunieron para fo
 
 ## 🌍 4. El Impacto en nuestro Planeta
 
-Cada vez que desechamos un aparato antes de tiempo, generamos **E-Waste** (basura electrónica). Estos residuos contienen plomo, mercurio y cadmio, que contaminan la tierra y el agua si no se gestionan correctamente.
+Cada vez que renovamos un dispositivo prematuramente, el medio ambiente sufre las consecuencias. Aquí tienes los datos clave:
+
+<table class="tabla-bonita">
+  <thead>
+    <tr>
+      <th>💎 Recurso</th>
+      <th>🔥 Impacto de la Renovación</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Minerales Raros</strong></td>
+      <td>Extracción intensiva de litio, coltán y tierras raras en zonas críticas.</td>
+    </tr>
+    <tr>
+      <td><strong>Energía</strong></td>
+      <td>Fabricar un móvil consume el 80% de toda la energía que usará en su vida.</td>
+    </tr>
+    <tr>
+      <td><strong>Residuos (E-Waste)</strong></td>
+      <td>Millones de toneladas de metales pesados contaminan suelos y aguas anualmente.</td>
+    </tr>
+  </tbody>
+</table>
 
 
-
-| Recurso | Impacto de la Renovación |
-| :--- | :--- |
-| **Minerales** | Extracción intensiva de litio y tierras raras. |
-| **Energía** | Fabricar un móvil consume el 80% de toda la energía que usará en su vida. |
-| **Residuos** | Millones de toneladas de plásticos y metales pesados al año. |
 
 ---
 
 ## ✅ 5. ¿Hay soluciones?
 
-Afortunadamente, existe el movimiento **"Right to Repair"** (Derecho a Reparar), que lucha para que las empresas vendan piezas de repuesto y faciliten manuales. También están surgiendo empresas que fabrican teléfonos modulares, donde puedes cambiar solo la cámara o la batería sin tirar el resto del móvil.
+Existen movimientos como el **"Right to Repair"** (Derecho a Reparar) y empresas que diseñan hardware modular para combatir esta tendencia. La informática ecológica es la clave para un futuro sostenible.
 
 ---
 
