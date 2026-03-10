@@ -5,47 +5,47 @@ title: Qué es la contaminación ambiental
 
 # 🌍 Qué es la contaminación ambiental
 
-La **contaminación ambiental** es la presencia de sustancias o elementos dañinos en el entorno natural que afectan negativamente a los ecosistemas, a los seres vivos y a la calidad de vida de las personas.
+La **contaminación ambiental** es la presencia de sustancias o elementos dañinos en el entorno que afectan negativamente a la naturaleza y a los seres vivos.
 
-Generalmente es causada por actividades humanas como la industria, el transporte, la agricultura intensiva y el uso excesivo de recursos naturales.
+En la actualidad, el desarrollo tecnológico también tiene impacto en el medio ambiente. La fabricación de dispositivos electrónicos requiere recursos naturales y energía, lo que contribuye al aumento de la contaminación si no se gestiona correctamente.
 
 ---
 
-## 🖼️ Imagen representativa
+## 🖼️ Imagen sobre contaminación
 
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Factory_pollution.jpg" width="600">
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Factory_pollution.jpg" width="600">
 </p>
 
 ---
 
 # 📚 Explicación ampliada
 
-La contaminación ambiental ocurre cuando **sustancias físicas, químicas o biológicas** se introducen en el medio ambiente y provocan alteraciones que afectan al equilibrio natural.
+La contaminación ambiental ocurre cuando **sustancias físicas, químicas o biológicas** alteran el equilibrio natural del medio ambiente.
 
-Estas alteraciones pueden producir:
+Esto puede afectar:
 
-- Daños en los ecosistemas
-- Problemas de salud en humanos
-- Desaparición de especies
-- Cambio climático
-- Deterioro de los recursos naturales
+- El aire
+- El agua
+- El suelo
+- Los ecosistemas
+- La salud humana
 
-El crecimiento de la población y el desarrollo tecnológico han incrementado significativamente los niveles de contaminación en todo el mundo.
+El crecimiento de la población y la industrialización han aumentado significativamente los niveles de contaminación en muchas partes del mundo.
 
 ---
 
 # 🌫️ Tipos de contaminación
 
-## 1️⃣ Contaminación del aire
+## Contaminación del aire
 
 <p align="center">
 <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Beijing_smog_2013.jpg" width="500">
 </p>
 
-Se produce cuando gases tóxicos, humo o partículas contaminantes se liberan a la atmósfera.
+Se produce cuando gases tóxicos y partículas contaminantes se liberan a la atmósfera.
 
-### Principales causas
+### Causas principales
 
 - Emisiones de vehículos
 - Industrias
@@ -66,20 +66,14 @@ Se produce cuando gases tóxicos, humo o partículas contaminantes se liberan a 
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Water_pollution.jpg" width="500">
 </p>
 
-Ocurre cuando sustancias químicas, residuos o microorganismos contaminan ríos, lagos, mares o aguas subterráneas.
+Se produce cuando residuos químicos o basura contaminan ríos, lagos y océanos.
 
-### Causas principales
+### Causas
 
 - Vertidos industriales
-- Basura plástica
 - Derrames de petróleo
+- Basura plástica
 - Fertilizantes agrícolas
-
-### Impacto
-
-- Muerte de especies marinas
-- Agua no potable
-- Alteración de ecosistemas acuáticos
 
 ---
 
@@ -89,14 +83,7 @@ Ocurre cuando sustancias químicas, residuos o microorganismos contaminan ríos,
 <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Land_pollution.jpg" width="500">
 </p>
 
-Se produce cuando residuos tóxicos, químicos o basura se acumulan en la superficie terrestre.
-
-### Causas
-
-- Basura urbana
-- Productos químicos agrícolas
-- Vertederos ilegales
-- Actividad minera
+Ocurre cuando residuos sólidos o productos químicos se acumulan en la tierra.
 
 ---
 
@@ -104,60 +91,32 @@ Se produce cuando residuos tóxicos, químicos o basura se acumulan en la superf
 
 | Impacto | Descripción |
 |------|------|
-| Salud humana | Enfermedades respiratorias, cáncer, alergias |
+| Salud humana | Enfermedades respiratorias y cardiovasculares |
 | Ecosistemas | Destrucción de hábitats naturales |
-| Cambio climático | Aumento de temperatura global |
-| Biodiversidad | Extinción de especies |
-
----
-
-# 🌎 Datos importantes
-
-> Según la Organización Mundial de la Salud (OMS), millones de personas mueren cada año debido a la contaminación del aire.
-
-Además:
-
-- Más del **80% de la población urbana** respira aire contaminado.
-- Cada año se producen **millones de toneladas de residuos plásticos**.
+| Biodiversidad | Desaparición de especies |
+| Clima | Aumento de la temperatura global |
 
 ---
 
 # 💡 Posibles soluciones
 
-Para reducir la contaminación ambiental se pueden aplicar diversas medidas:
+Algunas acciones para reducir la contaminación ambiental son:
 
-- Uso de **energías renovables**
-- Reducción del uso de plásticos
-- Reciclaje
-- Transporte sostenible
-- Educación ambiental
-
----
-
-# 🚀 Tecnología y medio ambiente
-
-En la actualidad, el desarrollo tecnológico también tiene impacto en el medio ambiente.
-
-La fabricación de dispositivos electrónicos requiere:
-
-- Minerales
-- Energía
-- Procesos industriales
-
-Si estos procesos no se gestionan correctamente pueden generar **residuos electrónicos altamente contaminantes**.
+- Usar energías renovables
+- Reducir el uso de plásticos
+- Reciclar
+- Usar transporte público o bicicleta
+- Proteger los recursos naturales
 
 ---
 
-# 📊 Esquema visual del problema
+# 📎 Conclusión
 
-```mermaid
-graph TD
-A[Actividad humana] --> B[Emisiones contaminantes]
-B --> C[Contaminación del aire]
-B --> D[Contaminación del agua]
-B --> E[Contaminación del suelo]
-C --> F[Problemas de salud]
-D --> F
-E --> F
+La contaminación ambiental es uno de los mayores desafíos del mundo actual. Reducirla requiere **educación ambiental, cambios en los hábitos de consumo y políticas sostenibles**.
 
+Todos podemos contribuir a proteger el planeta adoptando comportamientos responsables.
+
+---
+
+🔙 [Volver al índice](README.md)
 [⬅ Volver al índice](index.html)
