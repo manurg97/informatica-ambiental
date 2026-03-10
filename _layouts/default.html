@@ -6,44 +6,46 @@
     <title>{{ page.title }} | Informática-Ambiental</title>
     <style>
         :root {
-            --bg-color: #f8f9fa;
-            --sidebar-color: #1a1a2e;
-            --accent-pablo: #00d2ff; /* Azul para Pablo */
-            --accent-sergio: #a29bfe; /* Morado para Sergio */
-            --accent-manuel: #55efc4; /* Verde para Manuel */
-            --text-light: #ffffff;
-            --text-dark: #2d3436;
+            --bg-body: #0f172a; /* Azul muy oscuro tipo terminal */
+            --bg-card: #ffffff;
+            --sidebar-color: #1e293b;
+            --pablo-color: #38bdf8;   /* Azul cielo */
+            --manuel-color: #4ade80;  /* Verde neón */
+            --sergio-color: #c084fc;  /* Morado brillante */
+            --text-nav: #94a3b8;
         }
 
         body {
-            font-family: 'Segoe UI', Roboto, sans-serif;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
             margin: 0;
             display: flex;
-            background-color: var(--bg-color);
-            color: var(--text-dark);
+            background-color: var(--bg-body);
+            color: #334155;
+            min-height: 100vh;
         }
 
-        /* --- ÍNDICE IZQUIERDA --- */
+        /* --- SIDEBAR IZQUIERDA --- */
         nav {
-            width: 280px;
-            height: 100vh;
+            width: 320px;
             background-color: var(--sidebar-color);
-            color: var(--text-light);
+            color: white;
             position: fixed;
-            padding: 30px 20px;
+            height: 100vh;
+            padding: 40px 25px;
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
+            border-right: 1px solid rgba(255,255,255,0.1);
         }
 
         nav h1 {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
+            color: #f8fafc;
             text-transform: uppercase;
-            letter-spacing: 2px;
-            border-bottom: 2px solid #34495e;
-            padding-bottom: 15px;
-            margin-bottom: 30px;
-            color: #fff;
+            letter-spacing: 1.5px;
+            margin-bottom: 40px;
+            border-left: 4px solid var(--pablo-color);
+            padding-left: 15px;
         }
 
         nav ul {
@@ -53,97 +55,118 @@
         }
 
         nav ul li {
-            margin-bottom: 12px;
+            margin-bottom: 8px;
         }
 
         nav ul li a {
-            color: #bdc3c7;
+            color: var(--text-nav);
             text-decoration: none;
-            font-size: 1.1rem;
             display: block;
-            padding: 10px;
+            padding: 12px 15px;
             border-radius: 8px;
-            transition: all 0.3s ease; /* Transición suave */
+            font-weight: 500;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
 
-        /* --- EFECTO HOVER REACCIÓN A LA DERECHA --- */
+        /* --- EFECTO REACCIÓN A LA DERECHA --- */
         nav ul li a:hover {
-            background-color: rgba(255, 255, 255, 0.1);
+            background-color: rgba(255, 255, 255, 0.05);
             color: #fff;
-            transform: translateX(15px); /* Se mueve a la derecha */
-            box-shadow: -5px 0px 0px var(--accent-pablo); /* Default highlight */
+            transform: translateX(20px); /* Empuje a la derecha */
         }
 
-        /* Colores específicos en el hover según el autor */
-        .link-pablo:hover { box-shadow: -5px 0px 0px var(--accent-pablo) !important; }
-        .link-sergio:hover { box-shadow: -5px 0px 0px var(--accent-sergio) !important; }
-        .link-manuel:hover { box-shadow: -5px 0px 0px var(--accent-manuel) !important; }
+        /* Colores de hover por autor */
+        .pablo:hover { box-shadow: -4px 0 0 var(--pablo-color); }
+        .manuel:hover { box-shadow: -4px 0 0 var(--manuel-color); }
+        .sergio:hover { box-shadow: -4px 0 0 var(--sergio-color); }
 
-        /* --- LEYENDA --- */
-        .legend {
+        /* --- LEYENDA DE COLORES --- */
+        .leyenda {
             margin-top: auto;
-            padding: 15px;
-            background: rgba(0,0,0,0.2);
-            border-radius: 10px;
+            background: rgba(15, 23, 42, 0.5);
+            padding: 20px;
+            border-radius: 12px;
             font-size: 0.85rem;
         }
 
-        .legend div {
-            display: flex;
-            align-items: center;
-            margin-bottom: 5px;
+        .leyenda h3 {
+            margin: 0 0 10px 0;
+            font-size: 0.75rem;
+            color: #64748b;
+            text-transform: uppercase;
         }
 
-        .dot {
+        .autor-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 6px;
+        }
+
+        .circle {
             width: 10px;
             height: 10px;
             border-radius: 50%;
             margin-right: 10px;
         }
 
-        /* --- CONTENIDO DERECHA --- */
+        /* --- CONTENIDO PRINCIPAL --- */
         main {
-            margin-left: 280px; /* Espacio para la barra lateral */
-            padding: 50px;
+            margin-left: 320px;
             width: 100%;
-            max-width: 900px;
+            padding: 60px;
+            display: flex;
+            justify-content: center;
         }
 
-        .content-box {
-            background: white;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        .content-wrapper {
+            background: var(--bg-card);
+            width: 100%;
+            max-width: 850px;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
         }
 
-        hr { border: 0; border-top: 1px solid #eee; margin: 30px 0; }
+        /* Estilo Markdown básico */
+        h1, h2 { color: #1e293b; }
+        p { line-height: 1.7; font-size: 1.1rem; }
     </style>
 </head>
 <body>
 
     <nav>
         <h1>Informática-Ambiental</h1>
+        
         <ul>
             <li><a href="index.html">🏠 Inicio</a></li>
-            <li><a href="Pablo_contaminacion.html" class="link-pablo">🌍 Contaminación</a></li>
-            <li><a href="Sergio_obsolescencia.html" class="link-sergio">⏳ Obsolescencia</a></li>
-            <li><a href="Sergio_informatica.html" class="link-sergio">🍃 Info. Ecológica</a></li>
-            <li><a href="Manuel_residuos.html" class="link-manuel">♻️ Residuos IT</a></li>
+            <li><a href="Pablo_contaminacion.html" class="pablo">🌍 Qué es la contaminación</a></li>
+            <li><a href="Manuel_residuos.html" class="manuel">♻️ Residuos informáticos</a></li>
+            <li><a href="Sergio_obsolescencia.html" class="sergio">⏳ Obsolescencia programada</a></li>
+            <li><a href="Sergio_informatica.html" class="sergio">🍃 Informática ecológica</a></li>
             <li><a href="referencias.html">📚 Referencias</a></li>
         </ul>
 
-        <div class="legend">
-            <strong>Autores:</strong>
-            <div><span class="dot" style="background:var(--accent-pablo)"></span> Pablo</div>
-            <div><span class="dot" style="background:var(--accent-sergio)"></span> Sergio</div>
-            <div><span class="dot" style="background:var(--accent-manuel)"></span> Manuel</div>
+        <div class="leyenda">
+            <h3>Responsables</h3>
+            <div class="autor-item">
+                <div class="circle" style="background: var(--pablo-color);"></div>
+                <span>Pablo: Contaminación</span>
+            </div>
+            <div class="autor-item">
+                <div class="circle" style="background: var(--sergio-color);"></div>
+                <span>Sergio: Info & Obsolescencia</span>
+            </div>
+            <div class="autor-item">
+                <div class="circle" style="background: var(--manuel-color);"></div>
+                <span>Manuel: Residuos</span>
+            </div>
         </div>
     </nav>
 
     <main>
-        <div class="content-box">
+        <article class="content-wrapper">
             {{ content }}
-        </div>
+        </article>
     </main>
 
 </body>
