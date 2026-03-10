@@ -30,9 +30,7 @@ El crecimiento de la población y la industrialización han aumentado significat
 
 ## Contaminación del aire
 
-<p align="center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Beijing_smog_2013.jpg" width="500">
-</p>
+![Gases tóxicos](https://www.emerson.com/resource/image/6496066/landscape_ratio16x9/1920/1080/f30e3bb4eede68f43b1454d3328a0eff/ECDA5996889D72A49B6B629A84E0241D/img-rmt-common-toxic-combustible-gases-toxic-gas-exposure.jpg)
 
 Se produce cuando gases tóxicos y partículas contaminantes se liberan a la atmósfera.
 
@@ -53,9 +51,7 @@ Se produce cuando gases tóxicos y partículas contaminantes se liberan a la atm
 
 ## 💧 Contaminación del agua
 
-<p align="center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Water_pollution.jpg" width="500">
-</p>
+![Contaminación del agua](https://agua.org.mx/wp-content/uploads/2017/08/Noticia-contaminación-agua-consecuencias-soluciones.jpg)
 
 Se produce cuando residuos químicos o basura contaminan ríos, lagos y océanos.
 
