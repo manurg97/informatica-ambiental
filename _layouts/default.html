@@ -1,54 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>{{ page.title }}</title>
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-.sidebar {
-    width: 250px;
-    background-color: #f2f2f2;
-    position: fixed;
-    height: 100%;
-    overflow-y: auto;
-    padding: 20px;
-    box-sizing: border-box;
-}
-.content {
-    margin-left: 270px;
-    padding: 20px;
-}
-a {
-    text-decoration: none;
-    color: #006400;
-    display: block;
-    margin: 8px 0;
-}
-a:hover {
-    color: #2E8B57;
-}
-h1 {
-    color: #2E8B57;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | Informática-Ambiental</title>
+    <style>
+        :root {
+            --bg-color: #f8f9fa;
+            --sidebar-color: #1a1a2e;
+            --accent-pablo: #00d2ff; /* Azul para Pablo */
+            --accent-sergio: #a29bfe; /* Morado para Sergio */
+            --accent-manuel: #55efc4; /* Verde para Manuel */
+            --text-light: #ffffff;
+            --text-dark: #2d3436;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            display: flex;
+            background-color: var(--bg-color);
+            color: var(--text-dark);
+        }
+
+        /* --- ÍNDICE IZQUIERDA --- */
+        nav {
+            width: 280px;
+            height: 100vh;
+            background-color: var(--sidebar-color);
+            color: var(--text-light);
+            position: fixed;
+            padding: 30px 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav h1 {
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #34495e;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-bottom: 12px;
+        }
+
+        nav ul li a {
+            color: #bdc3c7;
+            text-decoration: none;
+            font-size: 1.1rem;
+            display: block;
+            padding: 10px;
+            border-radius: 8px;
+            transition: all 0.3s ease; /* Transición suave */
+        }
+
+        /* --- EFECTO HOVER REACCIÓN A LA DERECHA --- */
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            transform: translateX(15px); /* Se mueve a la derecha */
+            box-shadow: -5px 0px 0px var(--accent-pablo); /* Default highlight */
+        }
+
+        /* Colores específicos en el hover según el autor */
+        .link-pablo:hover { box-shadow: -5px 0px 0px var(--accent-pablo) !important; }
+        .link-sergio:hover { box-shadow: -5px 0px 0px var(--accent-sergio) !important; }
+        .link-manuel:hover { box-shadow: -5px 0px 0px var(--accent-manuel) !important; }
+
+        /* --- LEYENDA --- */
+        .legend {
+            margin-top: auto;
+            padding: 15px;
+            background: rgba(0,0,0,0.2);
+            border-radius: 10px;
+            font-size: 0.85rem;
+        }
+
+        .legend div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        /* --- CONTENIDO DERECHA --- */
+        main {
+            margin-left: 280px; /* Espacio para la barra lateral */
+            padding: 50px;
+            width: 100%;
+            max-width: 900px;
+        }
+
+        .content-box {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        hr { border: 0; border-top: 1px solid #eee; margin: 30px 0; }
+    </style>
 </head>
 <body>
 
-<div class="sidebar">
-    <h2>Índice del Proyecto</h2>
-    <a href="contaminacion.html" target="mainframe">Qué es la contaminación ambiental</a>
-    <a href="residuos.html" target="mainframe">Residuos informáticos</a>
-    <a href="obsolescencia.html" target="mainframe">Obsolescencia programada</a>
-    <a href="informatica.html" target="mainframe">Informática ecológica</a>
-    <a href="referencias.html" target="mainframe">Referencias</a>
-</div>
+    <nav>
+        <h1>Informatica-Ambiental</h1>
+        <ul>
+            <li><a href="index.html">🏠 Inicio</a></li>
+            <li><a href="Pablo_contaminacion.html" class="link-pablo">🌍 Contaminación</a></li>
+            <li><a href="Sergio_obsolescencia.html" class="link-sergio">⏳ Obsolescencia</a></li>
+            <li><a href="Sergio_informatica.html" class="link-sergio">🍃 Info. Ecológica</a></li>
+            <li><a href="Manuel_residuos.html" class="link-manuel">♻️ Residuos IT</a></li>
+            <li><a href="referencias.html">📚 Referencias</a></li>
+        </ul>
 
-<div class="content">
-    <iframe src="contaminacion.html" name="mainframe" style="width:100%; height:80vh; border:none;"></iframe>
-</div>
+        <div class="legend">
+            <strong>Autores:</strong>
+            <div><span class="dot" style="background:var(--accent-pablo)"></span> Pablo</div>
+            <div><span class="dot" style="background:var(--accent-sergio)"></span> Sergio</div>
+            <div><span class="dot" style="background:var(--accent-manuel)"></span> Manuel</div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="content-box">
+            {{ content }}
+        </div>
+    </main>
 
 </body>
 </html>
