@@ -85,7 +85,7 @@ title: Inicio - Informática Ambiental
 
   <div class="hero-section">
     <h1 style="color: white; margin: 0; font-size: 2.8em;">🌍 Informática y Medio Ambiente</h1>
-    <p style="font-size: 1.2em; opacity: 0.9; margin-top: 15px;">Explorando el impacto tecnológico en nuestro ecosistema</p>
+    <p style="color: white;font-size: 1.2em; opacity: 0.9; margin-top: 15px;">Explorando el impacto tecnológico en nuestro ecosistema</p>
   </div>
 
   <div class="grid-indice">
