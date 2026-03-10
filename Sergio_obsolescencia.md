@@ -1,12 +1,5 @@
 # Obsolescencia Programada
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Tema-Informática%20Ambiental-green?style=for-the-badge" alt="Badge de curso">
-  <img src="https://img.shields.io/badge/Estado-En%20Progreso-yellow?style=for-the-badge" alt="Badge de estado">
-</p>
-
----
-
 ## ¿Qué es realmente?
 La **obsolescencia programada** es la planificación o programación deliberada del fin de la vida útil de un producto. Durante la fase de diseño, los fabricantes calculan un tiempo de vida óptimo para que el producto falle o se vuelva inútil, forzando al usuario a una nueva compra.
 
