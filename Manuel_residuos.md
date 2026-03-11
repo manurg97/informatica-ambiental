@@ -169,11 +169,17 @@ A diferencia de la minería tradicional, la **minería urbana** se enfoca en rec
   <div class="card-premium border-earth">
     <div class="card-title">Cobre y Aluminio</div>
     <p>Presentes en cables, disipadores y chasis. El reciclaje de aluminio ahorra hasta un <strong>95% de la energía</strong> necesaria para producir aluminio virgen.</p>
+    <div class="tarjeta-manuel" style="text-align: center; border: none; box-shadow: none;">
+  <img src="residuos 4.webp" class="img-cartoon" alt="Disipador">
+</div>
   </div>
 
   <div class="card-premium border-mint">
     <div class="card-title">Litio y Cobalto</div>
     <p>Fundamentales para las <strong>baterías de alto rendimiento</strong>. Su recuperación evita la minería a cielo abierto en ecosistemas sensibles y reduce la dependencia de zonas de conflicto geopolítico.</p>
+     <div class="tarjeta-manuel" style="text-align: center; border: none; box-shadow: none;">
+  <img src="residuos 5.jpg" class="img-cartoon" alt="litio y cobalto">
+</div>
   </div>
 
 </div>
