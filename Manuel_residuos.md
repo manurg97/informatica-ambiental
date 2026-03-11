@@ -3,6 +3,12 @@ layout: default
 title: Residuos Informáticos
 ---
 <style>
+  /* --- imagenes ---*/
+  img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Elimina un pequeño espacio extra que el navegador pone debajo */
+}
   /* --- CONTENEDOR DE TARJETAS --- */
   .grid-visual {
     display: grid;
@@ -157,6 +163,11 @@ A diferencia de la minería tradicional, la **minería urbana** se enfoca en rec
     <p>Presentes en cables, disipadores y chasis. El reciclaje de aluminio ahorra hasta un <strong>95% de la energía</strong> necesaria para producir aluminio virgen.</p>
   </div>
 
+  <div class="card-premium border-forest">
+    <div class="card-title">Litio y Cobalto</div>
+    <p>Fundamentales para las <strong>baterías de alto rendimiento</strong>. Su recuperación evita la minería a cielo abierto en ecosistemas sensibles y reduce la dependencia de zonas de conflicto geopolítico.</p>
+  </div>
+
 </div>
 
 ---
@@ -224,12 +235,6 @@ Para combatir la crisis de los residuos informáticos, se están implementando p
 
 ---
 
-<div style="display: flex; justify-content: space-between; margin-top: 40px; padding-top: 20px; border-top: 1px solid #e1e4e8;">
-  <a href="obsolescencia.html" style="text-decoration:none; color:#2d6a4f; font-weight:bold;">⬅️ Obsolescencia Programada</a>
-  <a href="ecologica.html" style="text-decoration:none; color:#2d6a4f; font-weight:bold;">Informática Ecológica ➜</a>
-</div>
----
-
 ## Conclusión: El Futuro de nuestra Huella Digital
 
 <div class="card-premium border-forest" style="background-color: #f1f8e9;">
@@ -247,5 +252,10 @@ Para combatir la crisis de los residuos informáticos, se están implementando p
   <p style="margin-top: 15px; font-weight: bold; text-align: center; color: #2d6a4f;">
     "La verdadera innovación no es solo crear hardware más potente, sino crear tecnología que pueda coexistir en armonía con los límites biológicos de nuestro planeta."
   </p>
+</div>
+---
+<div style="display: flex; justify-content: space-between; margin-top: 40px; padding-top: 20px; border-top: 1px solid #e1e4e8;">
+  <a href="obsolescencia.html" style="text-decoration:none; color:#2d6a4f; font-weight:bold;">⬅️ Obsolescencia Programada</a>
+  <a href="ecologica.html" style="text-decoration:none; color:#2d6a4f; font-weight:bold;">Informática Ecológica ➜</a>
 </div>
 </div>
