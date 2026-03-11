@@ -11,7 +11,7 @@ title: Residuos Informáticos
     margin: 30px 0;
   }
 
-  /* --- ESTILO DE LAS TARJETAS (Variante Residuos) --- */
+  /* --- ESTILO DE LAS TARJETAS (Variante Verde Ecológico) --- */
   .card-premium {
     background: #ffffff;
     border: 1px solid #e1e4e8;
@@ -26,11 +26,11 @@ title: Residuos Informáticos
     box-shadow: 0 15px 30px rgba(0,0,0,0.12);
   }
 
-  /* Colores temáticos para Residuos: Tonos más oscuros y de alerta */
-  .border-red { border-top: 8px solid #d73a49; }
-  .border-yellow { border-top: 8px solid #ffd33d; }
-  .border-teal { border-top: 8px solid #2b7489; }
-  .border-gray { border-top: 8px solid #586069; }
+  /* Colores temáticos: Verdes y Naturales */
+  .border-forest { border-top: 8px solid #1b4332; }
+  .border-mint { border-top: 8px solid #52b788; }
+  .border-lime { border-top: 8px solid #b7e4c7; }
+  .border-earth { border-top: 8px solid #95d5b2; }
 
   /* --- ESTILO DE LA TABLA --- */
   .tabla-bonita {
@@ -44,7 +44,7 @@ title: Residuos Informáticos
   }
 
   .tabla-bonita thead tr {
-    background-color: #d73a49; /* Rojo para alertar sobre residuos */
+    background-color: #2d6a4f; /* Verde bosque profundo */
     color: #ffffff;
     text-align: left;
     font-weight: bold;
@@ -56,11 +56,11 @@ title: Residuos Informáticos
   }
 
   .tabla-bonita tbody tr:nth-of-type(even) {
-    background-color: #fff5f5;
+    background-color: #f7fffb;
   }
 
   .tabla-bonita tbody tr:last-of-type {
-    border-bottom: 3px solid #d73a49;
+    border-bottom: 3px solid #40916c;
   }
 
   .card-title {
@@ -82,11 +82,24 @@ title: Residuos Informáticos
   }
 
   .highlight-box {
-    background-color: #f6f8fa;
-    border-left: 5px solid #d73a49;
-    padding: 15px;
-    margin: 20px 0;
+    background-color: #f1f8e9;
+    border-left: 5px solid #2d6a4f;
+    padding: 20px;
+    margin: 25px 0;
     font-style: italic;
+    color: #1b4332;
+    line-height: 1.6;
+  }
+
+  .info-tag {
+    display: inline-block;
+    background: #d8f3dc;
+    color: #1b4332;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: bold;
+    margin-bottom: 10px;
   }
 </style>
 
@@ -94,116 +107,126 @@ title: Residuos Informáticos
 
 <div style="
   text-align: center;
-  padding: 20px;
-  border-radius: 10px;
-  background: linear-gradient(90deg, #d73a49, #586069);
+  padding: 30px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #2d6a4f, #95d5b2);
   color: white;
   margin: 20px auto;
+  box-shadow: 0 4px 15px rgba(45, 106, 79, 0.3);
 ">
-  <h1 style="margin: 0; font-size: 2.2em;">Residuos Informáticos (e-Waste)</h1>
+  <h1 style="margin: 0; font-size: 2.5em; text-transform: uppercase; letter-spacing: 1px;">Residuos Informáticos (e-Waste)</h1>
+  <p style="margin-top: 10px; opacity: 0.9;">El desafío ambiental de la era digital</p>
 </div>
 
 <div class="highlight-box">
-  "La basura tecnológica es la corriente de residuos sólidos que más rápido crece en el mundo, impulsada por un consumo voraz y ciclos de vida cada vez más cortos."
+  <strong>¿Sabías que...?</strong> Se estima que para el año 2030, el mundo generará más de 74 millones de toneladas métricas de residuos electrónicos anuales. Esto equivale al peso de aproximadamente 350 cruceros de gran tamaño.
 </div>
 
 ---
 
-## 1. El Problema Invisible
+## 1. El Ciclo de Vida del Hardware
 
-<div class="card-premium border-red">
-  <div class="card-title">¿Qué son los RAEE?</div>
+<div class="card-premium border-forest">
+  <div class="info-tag">Definición Ampliada</div>
+  <div class="card-title">¿Qué son realmente los RAEE?</div>
   <p class="card-text">
-    Los <strong>Residuos de Aparatos Eléctricos y Electrónicos (RAEE)</strong> comprenden desde smartphones y portátiles hasta servidores y periféricos. A diferencia de la basura común, estos contienen una mezcla peligrosa de sustancias tóxicas y metales preciosos que requieren un tratamiento especializado.
+    Los <strong>Residuos de Aparatos Eléctricos y Electrónicos (RAEE)</strong> no son basura convencional. Son una mezcla compleja de materiales de alto valor y sustancias altamente peligrosas. Su gestión comienza desde el momento en que un dispositivo se vuelve inútil, ya sea por fallo técnico o por obsolescencia, y termina en plantas de tratamiento donde se intenta recuperar su valor residual.
   </p>
 </div>
 
-
-
 ---
 
-## 2. Anatomía de un Desecho Tecnológico
+## 2. Minería Urbana: El Tesoro en la Basura
 
-Un solo ordenador puede contener más de 60 elementos de la tabla periódica. El problema radica en que muchos de ellos son altamente contaminantes si se liberan en el medio ambiente.
+A diferencia de la minería tradicional, la **minería urbana** se enfoca en recuperar materiales de dispositivos desechados. Es mucho más eficiente: se obtiene más oro de una tonelada de smartphones que de una tonelada de mineral extraído directamente de la tierra.
 
 <div class="grid-visual">
 
-  <div class="card-premium border-yellow">
-    <div class="card-title">Metales Pesados</div>
-    <p>Plomo en los tubos de rayos catódicos, cadmio en baterías recargables y mercurio en interruptores y pantallas LCD.</p>
+  <div class="card-premium border-mint">
+    <div class="card-title">Metales Preciosos</div>
+    <p>Un smartphone promedio contiene trazas de <strong>oro, plata y paladio</strong> en sus circuitos impresos. Su recuperación reduce la necesidad de explotaciones mineras destructivas.</p>
   </div>
 
-  <div class="card-premium border-teal">
-    <div class="card-title">Materiales Valiosos</div>
-    <p>Oro, plata, cobre y platino. La minería urbana permite recuperar estos metales, evitando nuevas excavaciones mineras.</p>
+  <div class="card-premium border-lime">
+    <div class="card-title">Tierras Raras</div>
+    <p>Elementos como el neodimio (en imanes de discos duros) y el lantano son vitales pero escasos. El reciclaje es la única forma sostenible de mantener su suministro.</p>
   </div>
 
-  <div class="card-premium border-gray">
-    <div class="card-title">Químicos Persistentes</div>
-    <p>Retardantes de llama bromados en plásticos y carcasas, que pueden filtrarse al suelo y contaminar mantos acuíferos.</p>
+  <div class="card-premium border-earth">
+    <div class="card-title">Cobre y Aluminio</div>
+    <p>Presentes en cables, disipadores y chasis. El reciclaje de aluminio ahorra hasta un <strong>95% de la energía</strong> necesaria para producir aluminio virgen.</p>
   </div>
 
 </div>
 
 ---
 
-## 3. Impacto Global y Salud
+## 3. Impacto Químico y Toxicidad
 
-Cuando los residuos informáticos no se gestionan correctamente, suelen acabar en vertederos de países en desarrollo (como Agbogbloshie en Ghana), donde se queman al aire libre para extraer el cobre.
+El peligro surge cuando estos residuos terminan en vertederos ilegales o son manipulados sin protección. La lluvia filtra los metales hacia los acuíferos en un proceso llamado **lixiviación**.
 
 <table class="tabla-bonita">
   <thead>
     <tr>
-      <th>Elemento</th>
-      <th>Efecto en la Salud / Ambiente</th>
+      <th>Componente</th>
+      <th>Ubicación Común</th>
+      <th>Impacto Ambiental y Salud</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><strong>Plomo</strong></td>
-      <td>Daños en el sistema nervioso central y circulatorio.</td>
+      <td><strong>Cadmio</strong></td>
+      <td>Baterías viejas y resistencias.</td>
+      <td>Afecta gravemente a los riñones y la estructura ósea.</td>
     </tr>
     <tr>
       <td><strong>Mercurio</strong></td>
-      <td>Bioacumulación en peces; daños cerebrales en humanos.</td>
+      <td>Monitores planos y lámparas.</td>
+      <td>Neurotóxico persistente que se acumula en la cadena alimentaria.</td>
     </tr>
     <tr>
-      <td><strong>PVC (Plásticos)</strong></td>
-      <td>Al quemarse, libera dioxinas que son altamente cancerígenas.</td>
+      <td><strong>Bario</strong></td>
+      <td>Tubos de imagen (CRT).</td>
+      <td>Provoca debilidad muscular y daños cardíacos.</td>
+    </tr>
+    <tr>
+      <td><strong>Plomo</strong></td>
+      <td>Soldaduras y cristales.</td>
+      <td>Contamina el suelo por siglos; afecta el desarrollo infantil.</td>
     </tr>
   </tbody>
 </table>
 
-
-
 ---
 
-## 4. La Regla de las R en la Informática
+## 4. La Cara Oculta: La Huella Hídrica y Energética
 
-Para mitigar este desastre ambiental, la gestión de residuos debe seguir un orden jerárquico:
-
-1.  **Reducir:** Alargar la vida útil mediante limpiezas de software y ampliaciones de hardware (más RAM, discos SSD).
-2.  **Reutilizar:** Donar equipos que aún funcionan a ONGs, escuelas o centros comunitarios.
-3.  **Reciclar:** Llevar los dispositivos a "Puntos Limpios" autorizados para asegurar que el 90% de sus componentes vuelvan a la cadena productiva.
-
----
-
-## 5. Hacia una Economía Circular
-
-El objetivo final es pasar de una economía lineal (extraer, fabricar, tirar) a una **economía circular**, donde el residuo informático de hoy sea la materia prima del dispositivo de mañana.
+Producir tecnología no solo genera basura al final; consume recursos masivos al principio:
+* **Agua:** Fabricar un solo microchip requiere miles de litros de agua ultra pura.
+* **Energía:** La fase de producción de un portátil representa casi el **70-80%** de su huella de carbono total, mucho más de lo que consumirá encendido durante años.
 
 <div class="tarjeta-sergio" style="text-align: center; border: none; box-shadow: none;">
-  <img src="https://via.placeholder.com/600x300?text=Economia+Circular+IT" class="img-cartoon" alt="Diagrama de economía circular en tecnología">
+  <img src="https://images.unsplash.com/photo-1550009158-9ebf69173e03?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="img-cartoon" alt="Placa de circuito verde">
   <p style="font-style: italic; color: #666; font-size: 0.9em; margin-top: 10px;">
-    <strong>Cerrando el ciclo: de residuo a recurso.</strong>
+    <strong>Hardware Consciente: El reto es diseñar para el desmontaje.</strong>
   </p>
 </div>
 
 ---
 
-<div style="display: flex; justify-content: space-between; margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee;">
-  <a href="obsolescencia.html" style="text-decoration:none; color:#d73a49; font-weight:bold;">⬅️ Obsolescencia Programada</a>
-  <a href="ecologica.html" style="text-decoration:none; color:#d73a49; font-weight:bold;">Informática Ecológica ➜</a>
+## 5. Estrategias de Mitigación Profesional
+
+Para combatir la crisis de los residuos informáticos, se están implementando políticas globales:
+
+1.  **Responsabilidad Ampliada del Productor (RAP):** Obliga a las marcas a financiar la recogida y reciclaje de sus propios productos al final de su vida útil.
+2.  **Ecodiseño:** Fabricar dispositivos sin pegamento, usando tornillos estándar para que cualquier usuario pueda extraer la batería o el disco duro.
+3.  **Certificaciones Verdes:** Sellos como *EPEAT* o *TCO* que garantizan que el producto ha sido fabricado con criterios de baja toxicidad.
+
+---
+
+<div style="display: flex; justify-content: space-between; margin-top: 40px; padding-top: 20px; border-top: 1px solid #e1e4e8;">
+  <a href="obsolescencia.html" style="text-decoration:none; color:#2d6a4f; font-weight:bold;">⬅️ Obsolescencia Programada</a>
+  <a href="ecologica.html" style="text-decoration:none; color:#2d6a4f; font-weight:bold;">Informática Ecológica ➜</a>
 </div>
 
 </div>
