@@ -266,7 +266,7 @@ Para combatir la crisis de los residuos informáticos, se están implementando p
 </div>
 ---
 <div style="display: flex; justify-content: space-between; margin-top: 40px; padding-top: 20px; border-top: 1px solid #e1e4e8;">
-  <a href="obsolescencia.html" style="text-decoration:none; color:#2d6a4f; font-weight:bold;">⬅️ Obsolescencia Programada</a>
-  <a href="ecologica.html" style="text-decoration:none; color:#2d6a4f; font-weight:bold;">Informática Ecológica ➜</a>
+  <a href="index.html" style="text-decoration:none; color:#2ea44f; font-weight:bold;">🏠 Volver al Inicio</a>
+  <a href="Sergio_obsolescencia.html" style="text-decoration:none; color:#2d6a4f; font-weight:bold;"> Obsolescencia Programada ➜</a>
 </div>
 </div>
