@@ -130,7 +130,7 @@ title: Residuos Informáticos
 
 ---
 
-## 1. El Ciclo de Vida del Hardware
+## El Ciclo de Vida del Hardware
 
 <div class="card-premium border-forest">
   <div class="info-tag">Definición Ampliada</div>
@@ -138,11 +138,14 @@ title: Residuos Informáticos
   <p class="card-text">
     Los <strong>Residuos de Aparatos Eléctricos y Electrónicos (RAEE)</strong> no son basura convencional. Son una mezcla compleja de materiales de alto valor y sustancias altamente peligrosas. Su gestión comienza desde el momento en que un dispositivo se vuelve inútil, ya sea por fallo técnico o por obsolescencia, y termina en plantas de tratamiento donde se intenta recuperar su valor residual.
   </p>
+  <div class="tarjeta-sergio" style="text-align: center; border: none; box-shadow: none;">
+  <img src="residuos 1.webp" class="img-cartoon" alt="Ilustración hardware basura">
+</div>
 </div>
 
 ---
 
-## 2. Minería Urbana: El Tesoro en la Basura
+## Minería Urbana: El Tesoro en la Basura
 
 A diferencia de la minería tradicional, la **minería urbana** se enfoca en recuperar materiales de dispositivos desechados. Es mucho más eficiente: se obtiene más oro de una tonelada de smartphones que de una tonelada de mineral extraído directamente de la tierra.
 
@@ -163,7 +166,7 @@ A diferencia de la minería tradicional, la **minería urbana** se enfoca en rec
     <p>Presentes en cables, disipadores y chasis. El reciclaje de aluminio ahorra hasta un <strong>95% de la energía</strong> necesaria para producir aluminio virgen.</p>
   </div>
 
-  <div class="card-premium border-forest">
+  <div class="card-premium border-mint">
     <div class="card-title">Litio y Cobalto</div>
     <p>Fundamentales para las <strong>baterías de alto rendimiento</strong>. Su recuperación evita la minería a cielo abierto en ecosistemas sensibles y reduce la dependencia de zonas de conflicto geopolítico.</p>
   </div>
@@ -172,7 +175,7 @@ A diferencia de la minería tradicional, la **minería urbana** se enfoca en rec
 
 ---
 
-## 3. Impacto Químico y Toxicidad
+## Impacto Químico y Toxicidad
 
 El peligro surge cuando estos residuos terminan en vertederos ilegales o son manipulados sin protección. La lluvia filtra los metales hacia los acuíferos en un proceso llamado **lixiviación**.
 
@@ -210,7 +213,7 @@ El peligro surge cuando estos residuos terminan en vertederos ilegales o son man
 
 ---
 
-## 4. La Cara Oculta: La Huella Hídrica y Energética
+## La Cara Oculta: La Huella Hídrica y Energética
 
 Producir tecnología no solo genera basura al final; consume recursos masivos al principio:
 * **Agua:** Fabricar un solo microchip requiere miles de litros de agua ultra pura.
@@ -225,7 +228,7 @@ Producir tecnología no solo genera basura al final; consume recursos masivos al
 
 ---
 
-## 5. Estrategias de Mitigación Profesional
+## Estrategias de Mitigación Profesional
 
 Para combatir la crisis de los residuos informáticos, se están implementando políticas globales:
 
