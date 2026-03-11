@@ -230,7 +230,7 @@ Producir tecnología no solo genera basura al final; consume recursos masivos al
 * **Energía:** La fase de producción de un portátil representa casi el **70-80%** de su huella de carbono total, mucho más de lo que consumirá encendido durante años.
 
 <div class="tarjeta-manuel" style="text-align: center; border: none; box-shadow: none;">
-  <img src="residuos 7.jpg" class="img-cartoon" alt="informatica ambiental">
+  <img src="contaminacion.jpg" class="img-cartoon" alt="informatica ambiental">
 </div>
 
 ---
