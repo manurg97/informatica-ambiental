@@ -133,7 +133,6 @@ title: Residuos Informáticos
 ## El Ciclo de Vida del Hardware
 
 <div class="card-premium border-forest">
-  <div class="info-tag">Definición Ampliada</div>
   <div class="card-title">¿Qué son realmente los RAEE?</div>
   <p class="card-text">
     Los <strong>Residuos de Aparatos Eléctricos y Electrónicos (RAEE)</strong> no son basura convencional. Son una mezcla compleja de materiales de alto valor y sustancias altamente peligrosas. Su gestión comienza desde el momento en que un dispositivo se vuelve inútil, ya sea por fallo técnico o por obsolescencia, y termina en plantas de tratamiento donde se intenta recuperar su valor residual.
@@ -230,11 +229,8 @@ Producir tecnología no solo genera basura al final; consume recursos masivos al
 * **Agua:** Fabricar un solo microchip requiere miles de litros de agua ultra pura.
 * **Energía:** La fase de producción de un portátil representa casi el **70-80%** de su huella de carbono total, mucho más de lo que consumirá encendido durante años.
 
-<div class="tarjeta-sergio" style="text-align: center; border: none; box-shadow: none;">
-  <img src="https://images.unsplash.com/photo-1550009158-9ebf69173e03?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="img-cartoon" alt="Placa de circuito verde">
-  <p style="font-style: italic; color: #666; font-size: 0.9em; margin-top: 10px;">
-    <strong>Hardware Consciente: El reto es diseñar para el desmontaje.</strong>
-  </p>
+<div class="tarjeta-manuel" style="text-align: center; border: none; box-shadow: none;">
+  <img src="residuos 7.jpg" class="img-cartoon" alt="informatica ambiental">
 </div>
 
 ---
