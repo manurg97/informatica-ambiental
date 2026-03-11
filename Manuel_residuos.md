@@ -124,9 +124,7 @@ title: Residuos Informáticos
   <p style="margin-top: 10px; opacity: 0.9;">El desafío ambiental de la era digital</p>
 </div>
 
-<div class="highlight-box">
-  <strong>¿Sabías que...?</strong> Se estima que para el año 2030, el mundo generará más de 74 millones de toneladas métricas de residuos electrónicos anuales. Esto equivale al peso de aproximadamente 350 cruceros de gran tamaño.
-</div>
+
 
 ---
 
@@ -140,6 +138,9 @@ title: Residuos Informáticos
 </div>
  <div class="tarjeta-manuel" style="text-align: center; border: none; box-shadow: none;">
   <img src="residuos 1.webp" class="img-cartoon" alt="Ilustración hardware basura">
+</div>
+<div class="highlight-box">
+  <strong>¿Sabías que...?</strong> Se estima que para el año 2030, el mundo generará más de 74 millones de toneladas métricas de residuos electrónicos anuales. Esto equivale al peso de aproximadamente 350 cruceros de gran tamaño.
 </div>
 ---
 
