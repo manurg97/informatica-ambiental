@@ -33,7 +33,7 @@ title: COntaminacion Ambiental
   }
 
   /* Colores temáticos: Verdes y Naturales */
-  .border-forest { border-top: 8px solid #1b4332; }
+  .border-forest { border-top: 8px solid #38bdf8; }
   .border-mint { border-top: 8px solid #52b788; }
   .border-lime { border-top: 8px solid #b7e4c7; }
   .border-earth { border-top: 8px solid #95d5b2; }
