@@ -88,7 +88,7 @@ title: COntaminacion Ambiental
   }
 
   .highlight-box {
-    background-color: #f1f8e9;
+    background-color: #38bdf8;
     border-left: 5px solid #2d6a4f;
     padding: 20px;
     margin: 25px 0;
@@ -250,5 +250,5 @@ Para reducir la contaminación ambiental se pueden aplicar varias acciones:
 ---
 
 <div style="display: flex; justify-content: space-between; margin-top: 40px; padding-top: 20px; border-top: 1px solid #38bdf8;">
-  <a href="index.html" style="text-decoration:none; color:#2ea44f; font-weight:bold;">🏠 Volver al Inicio</a>
+  <a href="index.html" style="text-decoration:none; color:#7dd3fc; font-weight:bold;">🏠 Volver al Inicio</a>
 </div>
