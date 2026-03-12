@@ -229,7 +229,7 @@ Para reducir la contaminación ambiental se pueden aplicar varias acciones:
 
 ## Conclusión
 
-<div class="card-premium border-forest" style="background-color: #f1f8e9;">
+<div class="card-premium border-forest" style="background-color: ##7dd3fc;">
   <div class="card-title">Cuidar el planeta es responsabilidad de todos</div>
 
   <p class="card-text">
@@ -242,7 +242,7 @@ Para reducir la contaminación ambiental se pueden aplicar varias acciones:
     reducir el consumo innecesario y proteger los recursos naturales.
   </p>
 
-  <p style="margin-top: 15px; font-weight: bold; text-align: center; color: #2d6a4f;">
+  <p style="margin-top: 15px; font-weight: bold; text-align: center; color: #ffffff;">
     "Proteger el medio ambiente no es solo una opción, es una necesidad para el futuro de nuestro planeta."
   </p>
 </div>
