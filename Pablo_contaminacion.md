@@ -50,7 +50,7 @@ title: COntaminacion Ambiental
   }
 
   .tabla-bonita thead tr {
-    background-color: #2d6a4f; /* Verde bosque profundo */
+    background-color: #38bdf8; /* Verde bosque profundo */
     color: #ffffff;
     text-align: left;
     font-weight: bold;
@@ -62,17 +62,17 @@ title: COntaminacion Ambiental
   }
 
   .tabla-bonita tbody tr:nth-of-type(even) {
-    background-color: #f7fffb;
+    background-color: #38bdf8;
   }
 
   .tabla-bonita tbody tr:last-of-type {
-    border-bottom: 3px solid #40916c;
+    border-bottom: 3px solid #38bdf8;
   }
 
   .card-title {
     font-size: 1.25em;
     font-weight: bold;
-    color: #1a1a1a;
+    color: #38bdf8;
     margin-bottom: 12px;
     display: flex;
     align-items: center;
