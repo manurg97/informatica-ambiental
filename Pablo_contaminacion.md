@@ -108,6 +108,7 @@ title: Contaminacion Ambiental
 ## ¿Qué es la contaminación ambiental?
 
 La **contaminación ambiental** es la presencia de sustancias o elementos dañinos en el entorno que afectan negativamente a la naturaleza y a los seres vivos.
+Este fenómeno no solo se limita a la acumulación de desechos visibles; también incluye formas invisibles de alteración como la contaminación acústica, lumínica y térmica. Cada una de estas variantes rompe el ciclo natural de autorregulación de la Tierra. El problema radica en que el ritmo al que los seres humanos generamos estos residuos supera con creces la capacidad del planeta para procesarlos o eliminarlos, lo que genera un efecto acumulativo con consecuencias a largo plazo para las futuras generaciones.
 
 <img src="tipo-de-contaminacion-del-aire-scaled.jpeg" class="img-cartoon" alt="Contaminación">
 
@@ -201,7 +202,8 @@ La contaminación ambiental ocurre cuando sustancias **físicas, químicas o bio
 
 <div class="card-premium" style="background-color: #90dbf4; border-top: 8px solid #38bdf8;">
   <div class="card-title">Cuidar el planeta es responsabilidad de todos</div>
-  <p>La contaminación ambiental es uno de los mayores desafíos del mundo actual. Reducirla requiere educación ambiental y cambios en los hábitos de consumo.</p>
+  <p>La contaminación ambiental es uno de los mayores desafíos del mundo actual. Reducirla requiere educación ambiental y cambios en los hábitos de consumo.
+  Más allá de las grandes normativas gubernamentales, la clave reside en la transición hacia una economía circular, donde el concepto de "desperdicio" desaparezca y cada recurso sea aprovechado al máximo. Adoptar una mentalidad de respeto hacia nuestro entorno inmediato es el primer paso para revertir el daño causado. La tecnología, si se usa de forma ética y responsable, puede ser nuestra mejor aliada para limpiar los océanos y purificar el aire que compartimos.</p>
   <p style="margin-top: 15px; font-weight: bold; text-align: center; color: #ffffff; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">
     "Proteger el medio ambiente no es solo una opción, es una necesidad para el futuro."
   </p>
