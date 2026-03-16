@@ -24,4 +24,4 @@ Cada integrante del grupo ha trabajado en una pregunta específica:
 
 - **Manuel:** ¿Qué son los residuos informáticos?  
 - **Pablo:** ¿Qué es la contaminación ambiental y cuáles son sus campos?  
-- **Sergio:** ¿Qué es la informática ecológica?
+- **Sergio:** ¿Qué es la informática ecológica? y ¿Qué es la obsolescencia programada?
