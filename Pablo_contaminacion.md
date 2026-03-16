@@ -213,7 +213,7 @@ La contaminación ambiental ocurre cuando sustancias **físicas, químicas o bio
 
 <div style="display: flex; justify-content: space-between; margin-top: 40px; padding-top: 20px; border-top: 1px solid #38bdf8;">
   <a href="index.html" style="text-decoration:none; color:#38bdf8; font-weight:bold;">🏠 Volver al Inicio</a>
-  <a href="Manuel_residuos.html" style="text-decoration:none; color:#2d6a4f; font-weight:bold;"> Residuos informáticos ➜</a>
+  <a href="Manuel_residuos.html" style="text-decoration:none; color:#38bdf8; font-weight:bold;"> Residuos informáticos ➜</a>
 </div>
 
 </div>
