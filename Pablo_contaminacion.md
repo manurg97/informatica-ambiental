@@ -1,5 +1,4 @@
-
-# <div align="center" style="background: linear-gradient(135deg, #38bdf8, #38bdf8); color: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(45, 106, 79, 0.3); text-transform: uppercase; letter-spacing: 1px;">Contaminación Ambiental</div>
+# <p align="center"><img src="https://i.ibb.co/3Wqj2Dk/contaminacion-ambiental-header.png" alt="CONTAMINACIÓN AMBIENTAL"></p>
 
 ---
 
