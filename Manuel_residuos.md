@@ -12,7 +12,7 @@
   <img src="residuos 1.webp" alt="Ilustración hardware basura" width="600px">
 </p>
 
-> [!IMPORTANT]
+
 > **¿Sabías que...?** Se estima que para el año 2030, el mundo generará más de **74 millones de toneladas métricas** de residuos electrónicos anuales. Esto equivale al peso de 350 cruceros de gran tamaño.
 
 ---
