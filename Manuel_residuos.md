@@ -23,20 +23,27 @@ La **minería urbana** consiste en recuperar materiales de dispositivos desechad
 
 ### 💎 Metales Preciosos
 Un smartphone contiene **oro, plata y paladio**. Su recuperación reduce la necesidad de explotaciones mineras destructivas.
+<p align="center">
 <img src="residuos 2.jpg" alt="metales preciosos" width="400px">
+</p>
 
 ### 🌍 Tierras Raras
-Elementos como el **neodimio** (en imanes) y el lantano son vitales pero escasos. El reciclaje es la única forma sostenible de suministro.
+Elementos como el **neodimio**(en imanes) y el lantano son vitales pero escasos. El reciclaje es la única forma sostenible de suministro.
+<p align="center">
 <img src="residuos 3.jpeg" alt="tierras raras" width="400px">
+</p>
 
 ### ⚙️ Cobre y Aluminio
 Presentes en cables y disipadores. El reciclaje de aluminio ahorra hasta un **95% de la energía** comparado con la producción de material virgen.
+<p align="center">
 <img src="residuos 4.webp" alt="Disipador" width="400px">
+</p>
 
 ### 🔋 Litio y Cobalto
 Fundamentales para **baterías**. Su recuperación evita la minería en ecosistemas sensibles y reduce dependencias geopolíticas.
+<p align="center">
 <img src="residuos 5.jpg" alt="litio y cobalto" width="400px">
-
+</p>
 ---
 
 ## Impacto Químico y Toxicidad
