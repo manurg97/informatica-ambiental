@@ -1,94 +1,81 @@
 # Informática Ecológica
+### Sostenibilidad y eficiencia en la era digital
 
 ---
 
 ## 1. ¿Qué es la informática ecológica?
 
-> **Definición General**
-> 
-> La informática ecológica consiste en diseñar, fabricar, utilizar y desechar dispositivos tecnológicos de forma que se reduzca su impacto ambiental. Su objetivo es disminuir el consumo energético, reducir emisiones, usar materiales sostenibles y minimizar los residuos electrónicos.
+> ### Definición General
+> La informática ecológica (Green IT) consiste en diseñar, fabricar, utilizar y desechar dispositivos tecnológicos de forma que se reduzca su impacto ambiental. Su objetivo principal es disminuir el consumo energético, reducir las emisiones de CO2, usar materiales sostenibles y minimizar los residuos electrónicos en todo el ciclo de vida del producto.
 
-<p align="center">
-  <img src="informatica-eco.jpeg" alt="Informática ecológica">
-  <br>
-  <em><strong>La informática ecológica busca reducir el impacto ambiental de la tecnología.</strong></em>
-</p>
+<div style="text-align: center;">
 
-> **Importancia Actual**
-> 
-> El sector TIC genera entre el 1,8 % y el 3,9 % de las emisiones globales de gases de efecto invernadero. Por ello, adoptar prácticas ecológicas es fundamental para combatir el cambio climático.
+![Informática ecológica](informatica-eco.jpeg){: .eco-img style="max-width: 600px; width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);"}
+
+</div>
+
+> **Dato Clave:** El sector de las TIC es responsable de entre el **1,8% y el 3,9%** de las emisiones globales. Adoptar estas prácticas es fundamental contra el cambio climático.
 
 ---
 
 ## 2. Qué pueden hacer los fabricantes
 
-**Medidas principales**
-Los fabricantes pueden reducir el impacto ambiental desde el diseño hasta la fabricación:
+La industria tecnológica tiene la mayor responsabilidad al inicio de la cadena. El diseño inteligente ahorra recursos antes de que el producto llegue al usuario.
 
-| Área | Acciones ecológicas |
-| :--- | :--- |
-| Diseño eficiente | Reducir el consumo energético y el calor generado por los dispositivos. |
-| Arquitecturas avanzadas | Uso de CPU + GPU para mejorar la eficiencia, como el superordenador AiMOS. |
-| Materiales sostenibles | Evitar sustancias tóxicas y reducir residuos en la fabricación. |
-| Durabilidad | Aumentar la vida útil y evitar la obsolescencia programada. |
-| Reutilización y reciclaje | Facilitar la reparación y el reciclaje de componentes. |
+### Diseño y Materiales
+Crear procesadores más eficientes y sustituir plásticos derivados del petróleo por polímeros biodegradables y eliminar químicos tóxicos como el plomo.
 
-<p align="center">
-  <img src="tecno-eco.webp" alt="Fabricación ecológica">
-  <br>
-  <em><strong>Procesos de fabricación más sostenibles.</strong></em>
-</p>
+<div style="text-align: center;">
+
+![Fabricación sostenible](tecno-eco.webp){: .eco-img style="max-width: 400px; width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);"}
+
+</div>
+
+### Durabilidad y Reparación
+Luchar contra la **obsolescencia programada** creando equipos que se puedan abrir, limpiar y actualizar fácilmente sin necesidad de tirar el dispositivo completo.
 
 ---
 
 ## 3. Qué pueden hacer las organizaciones
 
-**Acciones recomendadas**
-Las empresas y gobiernos pueden reducir enormemente el impacto ambiental de la tecnología.
+Las empresas y centros de datos son los mayores consumidores de energía. Su optimización es vital para la economía y el planeta.
 
-| Área | Acción sostenible |
-| :--- | :--- |
-| Centros de datos | Implementar pasillos fríos y calientes para optimizar la refrigeración. |
-| Automatización | Usar sistemas que regulen temperatura y ventilación. |
-| Gestión energética | Apagar equipos cuando no se usan y programar tareas. |
-| Ahorro económico | La eficiencia energética reduce costes a largo plazo. |
+| Estrategia | Acción Sostenible | Impacto |
+| :--- | :--- | :--- |
+| **Centros de Datos** | Pasillos fríos/calientes para refrigeración. | Ahorro del 40% en aire acondicionado. |
+| **Automatización** | Sensores de luz y ventilación inteligente. | Reducción de gasto energético innecesario. |
+| **Gestión IT** | Apagado programado de servidores y PCs. | Extensión de la vida útil del hardware. |
 
 ---
 
 ## 4. Qué podemos hacer nosotros
 
-**Acciones individuales**
-Los usuarios también podemos contribuir con pequeños gestos diarios.
+Como usuarios finales, nuestros hábitos determinan la huella de carbono de nuestros dispositivos.
 
-| Acción | Beneficio |
-| :--- | :--- |
-| Usar hibernación o reposo | Reduce el consumo energético diario. |
-| Ajustar brillo y energía | Disminuye el gasto eléctrico. |
-| Apagar dispositivos | Ahorro significativo a largo plazo. |
-| Reutilizar cartuchos | Menos residuos generados. |
-| Comprar reacondicionados | Reduce la demanda de nuevos dispositivos. |
-| Reciclar correctamente | Evita contaminación y mejora la seguridad. |
+<div style="text-align: center;">
 
-<p align="center">
-  <img src="reciclaje-cartuchos.webp" alt="Acciones individuales ecológicas">
-  <br>
-  <em><strong>Reciclaje y reutilización de cartuchos.</strong></em>
-</p>
+![Reciclaje y ahorro](reciclaje-cartuchos.webp){: .eco-img style="max-width: 400px; width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);"}
+
+</div>
+
+### Consumo Responsable y Ahorro
+* **Hibernación:** Configúrala en lugar de salvapantallas; el ahorro es real.
+* **Brillo:** Bajar ligeramente el brillo de la pantalla reduce el gasto energético diario.
+* **Reciclaje:** Llevar tóner y baterías a puntos limpios evita contaminaciones químicas.
+* **Reacondicionados:** Comprar equipos usados evita la fabricación de uno nuevo.
 
 ---
 
-## 5. Conclusión
+## 5. Conclusión: Hacia una Tecnología Consciente
 
-> La informática ecológica es esencial para reducir el impacto ambiental del sector tecnológico. Fabricantes, organizaciones y usuarios debemos colaborar para disminuir emisiones, ahorrar energía y fomentar la reutilización y el reciclaje.
+### El compromiso de todos
+La informática ecológica es un **imperativo ético**. Fabricantes, organizaciones y usuarios debemos colaborar para disminuir emisiones, ahorrar energía y fomentar el reciclaje.
 
-<p align="center">
-  <img src="info_eco.jpg" alt="Conclusión sobre informática ecológica">
-  <br>
-  <em><strong>La sostenibilidad tecnológica.</strong></em>
-</p>
+> *"La verdadera innovación no es solo crear hardware más potente, sino crear tecnología que pueda coexistir en armonía con los límites de nuestro planeta."*
 
 ---
 
-<p align="center">
-  <a href="index.html">🏠 Volver al Inicio</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="referencias.html">Referencias ➔</a>
-</p>
+<div style="text-align: center; margin-top: 40px; border-top: 1px solid #ddd; padding-top: 20px;">
+  <a href="index.html" style="text-decoration:none; color:#28a745; font-weight:bold; font-size:1.1em;">🏠 Volver al Inicio</a> | 
+  <a href="referencias.html" style="text-decoration:none; color:#007bff; font-weight:bold; font-size:1.1em;">Referencias ➔</a>
+</div>
