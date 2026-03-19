@@ -1,4 +1,4 @@
-# <div align="center"><table><tr><td bgcolor="#38bdf8" align="center" style="border-radius: 15px; padding: 30px;"><h1 style="color: white; margin: 0;">CONTAMINACIÓN AMBIENTAL</h1></td></tr></table></div>
+# Contaminacion Ambiental
 ---
 
 ## ¿Qué es la contaminación ambiental?
