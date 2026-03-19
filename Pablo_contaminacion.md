@@ -1,5 +1,4 @@
-# <p align="center"><img src="https://i.ibb.co/3Wqj2Dk/contaminacion-ambiental-header.png" alt="CONTAMINACIÓN AMBIENTAL"></p>
-
+# <div align="center"><table><tr><td bgcolor="#38bdf8" align="center" style="border-radius: 15px; padding: 30px;"><h1 style="color: white; margin: 0;">CONTAMINACIÓN AMBIENTAL</h1></td></tr></table></div>
 ---
 
 ## ¿Qué es la contaminación ambiental?
