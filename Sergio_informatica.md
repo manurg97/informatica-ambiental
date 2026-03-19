@@ -9,6 +9,7 @@
 > La informática ecológica consiste en diseñar, fabricar, utilizar y desechar dispositivos tecnológicos de forma que se reduzca su impacto ambiental. Su objetivo es disminuir el consumo energético, reducir emisiones, usar materiales sostenibles y minimizar los residuos electrónicos.
 
 ![Informática ecológica](informatica-eco.jpeg)
+
 *La informática ecológica busca reducir el impacto ambiental de la tecnología.*
 
 > [!NOTE]
@@ -19,7 +20,7 @@
 
 ## 2. Qué pueden hacer los fabricantes
 
-Los fabricantes pueden reducir el impacto ambiental desde el diseño hasta la fabricación mediante las siguientes medidas:
+Los fabricantes pueden reducir el impacto ambiental desde el diseño hasta la fabricación:
 
 | Área | Acciones ecológicas |
 | :--- | :--- |
@@ -30,53 +31,49 @@ Los fabricantes pueden reducir el impacto ambiental desde el diseño hasta la fa
 | **Reutilización y reciclaje** | Facilitar la reparación y el reciclaje de componentes. |
 
 ![Fabricación ecológica](tecno-eco.webp)
+
 *Procesos de fabricación más sostenibles.*
 
 ---
 
 ## 3. Qué pueden hacer las organizaciones
 
-Las empresas y gobiernos pueden reducir enormemente el impacto ambiental de la tecnología con gestión inteligente.
+Las empresas y gobiernos pueden reducir el impacto ambiental mediante la optimización de sus recursos tecnológicos.
 
 | Área | Acción sostenible |
 | :--- | :--- |
 | **Centros de datos** | Implementar pasillos fríos y calientes para optimizar la refrigeración. |
-| **Automatización** | Usar sistemas que regulen temperatura y ventilación. |
-| **Gestión energética** | Apagar equipos cuando no se usan y programar tareas. |
-| **Ahorro económico** | La eficiencia energética reduce costes a largo plazo. |
+| **Automatización** | Usar sistemas que regulen temperatura y ventilación de forma inteligente. |
+| **Gestión energética** | Apagar equipos cuando no se usan y programar tareas en horas de bajo consumo. |
 
 ---
 
 ## 4. Qué podemos hacer nosotros
 
-Los usuarios también podemos contribuir con pequeños gestos diarios.
+Como usuarios individuales, podemos contribuir con pequeños gestos diarios:
 
 | Acción | Beneficio |
 | :--- | :--- |
-| **Usar hibernación o reposo** | Reduce el consumo energético diario. |
-| **Ajustar brillo y energía** | Disminuye el gasto eléctrico. |
-| **Apagar dispositivos** | Ahorro significativo a largo plazo. |
-| **Reutilizar cartuchos** | Menos residuos generados. |
-| **Comprar reacondicionados** | Reduce la demanda de nuevos dispositivos. |
-| **Reciclar correctamente** | Evita contaminación y mejora la seguridad. |
+| **Usar hibernación** | Reduce el consumo energético mucho más que un protector de pantalla. |
+| **Ajustar brillo** | Disminuye el gasto eléctrico de la batería o monitor. |
+| **Reciclar cartuchos** | Evita que químicos tóxicos terminen en vertederos. |
+| **Comprar reacondicionados** | Evita la huella de carbono de fabricar un producto nuevo desde cero. |
 
 ![Acciones individuales](reciclaje-cartuchos.webp)
-*Reciclaje y reutilización de cartuchos.*
+
+*Reciclaje y reutilización de componentes.*
 
 ---
 
 ## 5. Conclusión
 
-> [!WARNING]
-> La informática ecológica es esencial para el futuro. Fabricantes, organizaciones y usuarios debemos colaborar para disminuir emisiones, ahorrar energía y fomentar la economía circular.
+> [!CAUTION]
+> **Resumen Final**
+> La informática ecológica es esencial para reducir el impacto ambiental del sector tecnológico. Fabricantes, organizaciones y usuarios debemos colaborar para disminuir emisiones y fomentar el reciclaje.
 
-![Conclusión](info_eco.jpg)
-*Hacia una sostenibilidad tecnológica.*
+![Sostenibilidad](info_eco.jpg)
 
 ---
 
-<p align="center">
-  <a href="index.html">🏠 Volver al Inicio</a> | 
-  <a href="referencias.html">Referencias ➔</a>
-</p>
+[🏠 Volver al Inicio](index.html) | [Referencias ➔](referencias.html)
  
