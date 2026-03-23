@@ -1,4 +1,5 @@
-# Contaminacion Ambiental
+# <div align="center" style="background: linear-gradient(135deg, #38bdf8, #38bdf8); color: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(45, 106, 79, 0.3); text-transform: uppercase; letter-spacing: 1px;">Contaminación Ambiental</div>
+
 ---
 
 ## ¿Qué es la contaminación ambiental?
@@ -102,3 +103,5 @@ La contaminación ambiental ocurre cuando sustancias **físicas, químicas o bio
   <a href="index.html" style="text-decoration:none; color:#38bdf8; font-weight:bold;">🏠 Volver al Inicio</a>
   <a href="Manuel_residuos.html" style="text-decoration:none; color:#38bdf8; font-weight:bold; float: right;"> Residuos informáticos ➜</a>
 </div>
+
+
