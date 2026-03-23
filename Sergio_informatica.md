@@ -112,8 +112,7 @@
   </p>
 </div>
 
-<div style="text-align:center; margin: 25px 0;">
-  <img src="informatica-eco.jpg" 
+<div style="text-align:center; margin: 25px 0;"> 
   <img src="informatica-eco.jpeg" 
        alt="Informática ecológica" 
        style="
