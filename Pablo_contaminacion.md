@@ -112,14 +112,109 @@ Este fenómeno no solo se limita a la acumulación de desechos visibles; tambié
 
 <img src="tipo-de-contaminacion-del-aire-scaled.jpeg" class="img-cartoon" alt="Contaminación">
 
-@@ -201,7 +202,8 @@
+--- 
+
+## Explicación ampliada
+
+La contaminación ambiental ocurre cuando sustancias **físicas, químicas o biológicas** alteran el equilibrio natural del medio ambiente.
+
+<div class="fila-contaminacion">
+  <img src="seg.jpg" alt="Aire">
+  <div class="contenido-texto">
+    <div class="card-title">Contaminación del Aire</div>
+    <p>Se produce cuando gases tóxicos y partículas contaminantes se liberan a la atmósfera, afectando la calidad del aire que respiramos.</p>
+    <ul>
+      <li>Emisiones de vehículos e industrias</li>
+      <li>Quema de combustibles fósiles</li>
+      <li>Incendios forestales</li>
+    </ul>
+  </div>
+</div>
+
+<div class="fila-contaminacion">
+  <img src="contaminacion-del-agua-interior2.avif" alt="Agua">
+  <div class="contenido-texto">
+    <div class="card-title">Contaminación del Agua</div>
+    <p>Ocurre cuando residuos químicos o basura contaminan ríos, lagos y océanos, afectando tanto a la fauna como a los seres humanos.</p>
+    <ul>
+      <li>Vertidos industriales y plásticos</li>
+      <li>Derrames de petróleo</li>
+      <li>Fertilizantes agrícolas</li>
+    </ul>
+  </div>
+</div>
+
+<div class="fila-contaminacion">
+  <img src="basura.jpg" alt="Suelo">
+  <div class="contenido-texto">
+    <div class="card-title">Contaminación del Suelo</div>
+    <p>Sucede cuando residuos sólidos o productos químicos se acumulan en la tierra, dañando los ecosistemas y la producción agrícola.</p>
+    <ul>
+      <li>Uso de pesticidas y químicos</li>
+      <li>Acumulación de basura sólida</li>
+    </ul>
+  </div>
+</div>
+
+---
+
+## Impactos de la Contaminación Ambiental
+
+<table class="tabla-bonita">
+  <thead>
+    <tr>
+      <th>Impacto</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Salud humana</strong></td>
+      <td>Puede provocar enfermedades respiratorias y cardiovasculares.</td>
+    </tr>
+    <tr>
+      <td><strong>Ecosistemas</strong></td>
+      <td>Destrucción de hábitats naturales y alteración de los equilibrios.</td>
+    </tr>
+    <tr>
+      <td><strong>Biodiversidad</strong></td>
+      <td>Desaparición de especies animales y vegetales.</td>
+    </tr>
+    <tr>
+      <td><strong>Clima</strong></td>
+      <td>Aumento de la temperatura global y cambios climáticos.</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+## Posibles soluciones
+
+1. **Usar energías renovables** como solar o eólica.  
+2. **Reducir el uso de plásticos** y fomentar materiales reutilizables.  
+3. **Reciclar correctamente** los residuos.  
+4. **Utilizar transporte público, bicicleta o caminar.**
+
+---
+
+## Conclusión
 
 <div class="card-premium" style="background-color: #90dbf4; border-top: 8px solid #38bdf8;">
   <div class="card-title">Cuidar el planeta es responsabilidad de todos</div>
-  <p>La contaminación ambiental es uno de los mayores desafíos del mundo actual. Reducirla requiere educación ambiental y cambios en los hábitos de consumo.</p>
   <p>La contaminación ambiental es uno de los mayores desafíos del mundo actual. Reducirla requiere educación ambiental y cambios en los hábitos de consumo.
   Más allá de las grandes normativas gubernamentales, la clave reside en la transición hacia una economía circular, donde el concepto de "desperdicio" desaparezca y cada recurso sea aprovechado al máximo. Adoptar una mentalidad de respeto hacia nuestro entorno inmediato es el primer paso para revertir el daño causado. La tecnología, si se usa de forma ética y responsable, puede ser nuestra mejor aliada para limpiar los océanos y purificar el aire que compartimos.</p>
   <p style="margin-top: 15px; font-weight: bold; text-align: center; color: #ffffff; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">
     "Proteger el medio ambiente no es solo una opción, es una necesidad para el futuro."
   </p>
+</div>
 
+---
+
+<div style="display: flex; justify-content: space-between; margin-top: 40px; padding-top: 20px; border-top: 1px solid #38bdf8;">
+  <a href="index.html" style="text-decoration:none; color:#38bdf8; font-weight:bold;">🏠 Volver al Inicio</a>
+  <a href="Manuel_residuos.html" style="text-decoration:none; color:#2d6a4f; font-weight:bold;"> Residuos informáticos ➜</a>
+  <a href="Manuel_residuos.html" style="text-decoration:none; color:#38bdf8; font-weight:bold;"> Residuos informáticos ➜</a>
+</div>
+
+</div>
