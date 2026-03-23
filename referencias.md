@@ -61,7 +61,7 @@
       <td><a href="https://es.wikipedia.org/wiki/Obsolescencia_programada">Visitar</a></td>
     </tr>
     <tr>
-      <td> WWF – Contaminacion </td>
+      <td> Green Peace España – Contaminacion </td>
       <td><a href="https://es.greenpeace.org/es/trabajamos-en/consumismo/contaminacion/">Visitar</a></td>
     </tr>
   </tbody>
