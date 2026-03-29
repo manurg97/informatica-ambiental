@@ -7,20 +7,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
-            --bg-dark: #0a0f1d;
             --sidebar-bg: #0f172a;
-            --card-bg: #1e293b;
             --blue: #3b82f6;
             --green-accent: #2ea44f;
             --purple-accent: #6f42c1;
-            --text-main: #f1f5f9;
-            --text-dim: #94a3b8;
-            --border: #1e293b;
+            --text-dark: #1a1a1a;
+            --text-dim: #666;
+            --border: #e1e4e8;
         }
 
         body {
-            background-color: var(--bg-dark);
-            color: var(--text-main);
+            background-color: #ffffff; /* FONDO BLANCO */
+            color: var(--text-dark);
             font-family: 'Inter', 'Segoe UI', sans-serif;
             margin: 0;
             display: flex;
@@ -31,31 +29,29 @@
         nav {
             width: 280px;
             background: var(--sidebar-bg);
-            border-right: 1px solid var(--border);
+            color: white;
             padding: 1.5rem 0.8rem;
             position: sticky;
             top: 0;
             height: 100vh;
             box-sizing: border-box;
             flex-shrink: 0;
-            overflow-y: auto;
+            z-index: 100;
         }
 
         nav h2 { 
             font-size: 1.1rem; 
-            color: white; 
             margin-bottom: 2rem; 
             padding-left: 10px; 
-            font-weight: 800;
             text-transform: uppercase;
+            font-weight: 800;
             letter-spacing: 1px;
-            line-height: 1.4;
         }
 
         nav a {
             display: flex;
             align-items: center;
-            color: var(--text-dim);
+            color: #94a3b8;
             text-decoration: none;
             padding: 12px 15px;
             border-radius: 8px;
@@ -65,104 +61,95 @@
         }
 
         nav a.active { background: var(--blue); color: white; font-weight: 600; }
-        nav a:hover:not(.active) { background: rgba(255, 255, 255, 0.05); color: white; }
+        nav a:hover:not(.active) { background: rgba(255, 255, 255, 0.1); color: white; }
 
         /* --- CONTENIDO --- */
-        main { flex: 1; padding: 3rem 2rem; max-width: 1100px; margin: 0 auto; }
+        main { flex: 1; padding: 3rem; max-width: 1000px; margin: 0 auto; }
 
         .header-banner {
             text-align: center;
-            padding: 3rem;
-            border-radius: 20px;
+            padding: 2.5rem;
+            border-radius: 15px;
             background: linear-gradient(90deg, var(--green-accent), var(--purple-accent));
             color: white;
-            margin-bottom: 3rem;
+            margin-bottom: 2.5rem;
         }
 
-        .header-banner h1 { margin: 0; font-size: 2.5rem; font-weight: 800; }
+        .header-banner h1 { margin: 0; font-size: 2.2rem; }
 
         blockquote {
             font-style: italic;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             color: var(--text-dim);
-            border-left: 4px solid var(--green-accent);
+            border-left: 5px solid var(--green-accent);
             padding-left: 20px;
             margin: 2rem 0;
         }
 
-        h2 { color: white; border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-top: 3rem; }
+        h2 { color: var(--text-dark); border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 3rem; }
 
-        /* --- TARJETAS PREMIUM --- */
-        .info-card {
-            background: var(--card-bg);
+        /* --- TARJETAS --- */
+        .card-premium {
+            background: #ffffff;
+            border: 1px solid var(--border);
             border-radius: 15px;
             padding: 25px;
             margin: 20px 0;
-            border: 1px solid rgba(255,255,255,0.05);
-            transition: transform 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
         }
-        .info-card:hover { transform: translateY(-5px); }
 
-        .border-green { border-top: 6px solid var(--green-accent); }
-        .border-blue { border-top: 6px solid #0366d6; }
-        .border-orange { border-top: 6px solid #f66a0a; }
-        .border-purple { border-top: 6px solid var(--purple-accent); }
+        .border-green { border-top: 8px solid var(--green-accent); }
+        .border-blue { border-top: 8px solid #0366d6; }
+        .border-orange { border-top: 8px solid #f66a0a; }
+        .border-purple { border-top: 8px solid var(--purple-accent); }
 
-        .card-title { font-size: 1.3rem; font-weight: bold; margin-bottom: 15px; display: block; color: white; }
+        .card-title { font-size: 1.25rem; font-weight: bold; margin-bottom: 12px; display: block; }
 
         .grid-visual {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin: 30px 0;
+            gap: 25px;
         }
 
-        /* --- IMÁGENES --- */
-        .img-container { text-align: center; margin: 40px 0; }
         .img-cartoon {
             max-width: 100%;
-            height: auto;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin: 20px auto;
+            display: block;
         }
-        .img-caption { font-style: italic; color: var(--text-dim); margin-top: 15px; font-size: 0.9rem; }
 
-        /* --- TABLA --- */
         .tabla-bonita {
             width: 100%;
             border-collapse: collapse;
-            margin: 30px 0;
-            background: var(--card-bg);
-            border-radius: 12px;
+            margin: 25px 0;
+            border-radius: 10px;
             overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
         }
         .tabla-bonita thead { background: var(--green-accent); color: white; }
-        .tabla-bonita th, .tabla-bonita td { padding: 18px; text-align: left; border-bottom: 1px solid var(--border); }
-        .tabla-bonita tbody tr:hover { background: rgba(255,255,255,0.03); }
+        .tabla-bonita th, .tabla-bonita td { padding: 15px; text-align: left; border-bottom: 1px solid #eee; }
 
-        /* --- NAVEGACIÓN INFERIOR --- */
-        .bottom-nav {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 50px;
-            padding-top: 30px;
-            border-top: 1px solid var(--border);
+        .bottom-nav { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 50px; 
+            padding-top: 20px; 
+            border-top: 1px solid #eee; 
         }
-        .nav-link { color: var(--green-accent); text-decoration: none; font-weight: bold; transition: 0.2s; }
-        .nav-link:hover { opacity: 0.7; }
-
+        .nav-link { color: var(--green-accent); text-decoration: none; font-weight: bold; }
     </style>
 </head>
 <body>
 
     <nav>
-        <h2>INFORMÁTICA-<br>AMBIENTAL</h2>
+        <h2>INFORMÁTICA AMBIENTAL</h2>
         <a href="index.html">Inicio</a>
-        <a href="#">Qué es la contaminación</a>
-        <a href="#">Residuos informáticos</a>
-        <a href="obsolescencia.html" class="active">Obsolescencia programada</a>
+        <a href="contaminacion.html">Qué es la contaminación</a>
+        <a href="residuos.html">Residuos informáticos</a>
+        <a href="Sergio_obsolescencia.html" class="active">Obsolescencia programada</a>
         <a href="Sergio_informatica.html">Informática Ecológica</a>
-        <a href="#">Referencias</a>
+        <a href="referencias.html">Referencias</a>
     </nav>
 
     <main>
@@ -173,45 +160,35 @@
         <blockquote>"Un producto que no se desgasta es una tragedia para los negocios."</blockquote>
 
         <h2>1. ¿Qué es exactamente?</h2>
-        <div class="info-card border-green">
+        <div class="card-premium border-green">
             <span class="card-title">Definición Técnica</span>
-            <p>Es el diseño de un producto con una <strong>vida útil limitada artificialmente</strong>. Los fabricantes calculan el momento exacto en el que el dispositivo debe fallar o volverse incompatible para forzar al consumidor a comprar la siguiente versión. No es un error de ingeniería, es una decisión de negocio.</p>
+            <p>Es el diseño de un producto con una <strong>vida útil limitada artificialmente</strong>. Los fabricantes calculan el momento exacto en el que el dispositivo debe fallar o volverse incompatible para forzar al consumidor a comprar la siguiente versión.</p>
         </div>
 
         <h2>2. Un poco de historia: El Cartel Phoebus</h2>
-        <p>En 1924, los principales fabricantes de bombillas del mundo formaron el <strong>Cartel Phoebus</strong>. Su objetivo: reducir la duración de las bombillas de <strong>2.500 horas a solo 1.000</strong>. Este fue el nacimiento oficial de la obsolescencia programada para asegurar ventas recurrentes.</p>
-
-        <div class="img-container">
-            <img src="obsolescencia.jpg" class="img-cartoon" alt="Cartel Phoebus">
-            <p class="img-caption"><strong>Cartel Phoebus.</strong></p>
-        </div>
+        <p>En 1924, los principales fabricantes de bombillas redujeron su duración de <strong>2.500 horas a solo 1.000</strong> para asegurar ventas recurrentes.</p>
+        <img src="obsolescencia.jpg" class="img-cartoon" alt="Cartel Phoebus">
 
         <h2>3. Tipos y Funcionamiento</h2>
         <div class="grid-visual">
-            <div class="info-card border-blue">
-                <span class="card-title">Obsolescencia de Software</span>
-                <p>Actualizaciones que vuelven lentos los dispositivos o apps que dejan de ser compatibles con hardware que aún funciona perfectamente.</p>
+            <div class="card-premium border-blue">
+                <span class="card-title">Software</span>
+                <p>Actualizaciones que vuelven lentos los dispositivos o apps que dejan de ser compatibles.</p>
             </div>
-            <div class="info-card border-orange">
-                <span class="card-title">Obsolescencia Técnica</span>
-                <p>Uso de materiales frágiles o componentes diseñados para fallar tras un número determinado de ciclos de uso.</p>
+            <div class="card-premium border-orange">
+                <span class="card-title">Técnica</span>
+                <p>Materiales frágiles diseñados para fallar tras un número determinado de ciclos.</p>
             </div>
-            <div class="info-card border-purple">
-                <span class="card-title">Barreras de Reparación</span>
-                <p>Piezas pegadas y falta de repuestos. El objetivo es que reparar sea <strong>más caro</strong> que comprar un producto nuevo.</p>
+            <div class="card-premium border-purple">
+                <span class="card-title">Reparación</span>
+                <p>El objetivo es que reparar sea <strong>más caro</strong> que comprar un producto nuevo.</p>
             </div>
         </div>
 
-        <div class="img-container">
-            <img src="4.webp" class="img-cartoon" alt="Derecho a Reparar">
-            <p class="img-caption"><strong>Consumo más barato que arreglar.</strong></p>
-        </div>
+        <img src="4.webp" class="img-cartoon" alt="Consumo forzado">
 
         <h2>4. El Impacto en nuestro Planeta</h2>
-        <div class="img-container">
-            <img src="consecuencias-1.png" class="img-cartoon" alt="Consecuencias ambientales">
-            <p class="img-caption"><strong>Consecuencias: producción, consumo, gastos y residuos.</strong></p>
-        </div>
+        <img src="consecuencias-1.png" class="img-cartoon" alt="Impacto ambiental">
 
         <table class="tabla-bonita">
             <thead>
@@ -223,26 +200,22 @@
             <tbody>
                 <tr>
                     <td><strong>Minerales Raros</strong></td>
-                    <td>Extracción intensiva de litio, coltán y tierras raras en zonas críticas.</td>
+                    <td>Extracción intensiva de litio y coltán.</td>
                 </tr>
                 <tr>
                     <td><strong>Energía</strong></td>
-                    <td>Fabricar un móvil consume el 80% de toda la energía que usará en su vida.</td>
+                    <td>Fabricar un móvil consume el 80% de toda la energía de su vida útil.</td>
                 </tr>
                 <tr>
                     <td><strong>Residuos</strong></td>
-                    <td>Millones de toneladas de metales pesados contaminan suelos y aguas anualmente.</td>
+                    <td>Metales pesados contaminan suelos y aguas.</td>
                 </tr>
             </tbody>
         </table>
 
         <h2>5. ¿Hay soluciones?</h2>
-        <p>Existen movimientos como el <strong>"Right to Repair"</strong> (Derecho a Reparar) y empresas que diseñan hardware modular para combatir esta tendencia.</p>
-
-        <div class="img-container">
-            <img src="derecho_a_reparar.jpg" class="img-cartoon" alt="Reparación smartphone">
-            <p class="img-caption"><strong>Derecho a reparar.</strong></p>
-        </div>
+        <p>Existen movimientos como el <strong>"Right to Repair"</strong> (Derecho a Reparar) y la informática ecológica.</p>
+        <img src="derecho_a_reparar.jpg" class="img-cartoon" alt="Reparación">
 
         <div class="bottom-nav">
             <a href="index.html" class="nav-link">🏠 Volver al Inicio</a>
