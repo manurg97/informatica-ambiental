@@ -1,208 +1,254 @@
-<style>
-  /* --- CONTENEDOR DE TARJETAS --- */
-  .grid-visual {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 25px;
-    margin: 30px 0;
-  }
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obsolescencia Programada - Informática Ambiental</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-dark: #0a0f1d;
+            --sidebar-bg: #0f172a;
+            --card-bg: #1e293b;
+            --blue: #3b82f6;
+            --green-accent: #2ea44f;
+            --purple-accent: #6f42c1;
+            --text-main: #f1f5f9;
+            --text-dim: #94a3b8;
+            --border: #1e293b;
+        }
 
-  /* --- ESTILO DE LAS TARJETAS --- */
-  .card-premium {
-    background: #ffffff;
-    border: 1px solid #e1e4e8;
-    border-radius: 15px;
-    padding: 25px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-    transition: all 0.3s ease;
-  }
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            margin: 0;
+            display: flex;
+            min-height: 100vh;
+        }
 
-  .card-premium:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
-  }
+        /* --- MENÚ LATERAL --- */
+        nav {
+            width: 280px;
+            background: var(--sidebar-bg);
+            border-right: 1px solid var(--border);
+            padding: 1.5rem 0.8rem;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            box-sizing: border-box;
+            flex-shrink: 0;
+            overflow-y: auto;
+        }
 
-  .border-green { border-top: 8px solid #2ea44f; }
-  .border-blue { border-top: 8px solid #0366d6; }
-  .border-orange { border-top: 8px solid #f66a0a; }
-  .border-purple { border-top: 8px solid #6f42c1; }
+        nav h2 { 
+            font-size: 1.1rem; 
+            color: white; 
+            margin-bottom: 2rem; 
+            padding-left: 10px; 
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            line-height: 1.4;
+        }
 
-  /* --- ESTILO DE LA TABLA --- */
-  .tabla-bonita {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 0.95em;
-    border-radius: 10px;
-    overflow: hidden; 
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-  }
+        nav a {
+            display: flex;
+            align-items: center;
+            color: var(--text-dim);
+            text-decoration: none;
+            padding: 12px 15px;
+            border-radius: 8px;
+            margin-bottom: 6px;
+            transition: 0.2s;
+            font-size: 0.95rem;
+        }
 
-  .tabla-bonita thead tr {
-    background-color: #2ea44f;
-    color: #ffffff;
-    text-align: left;
-    font-weight: bold;
-  }
+        nav a.active { background: var(--blue); color: white; font-weight: 600; }
+        nav a:hover:not(.active) { background: rgba(255, 255, 255, 0.05); color: white; }
 
-  .tabla-bonita th, .tabla-bonita td {
-    padding: 15px 20px;
-    border-bottom: 1px solid #edf2f7;
-  }
+        /* --- CONTENIDO --- */
+        main { flex: 1; padding: 3rem 2rem; max-width: 1100px; margin: 0 auto; }
 
-  .tabla-bonita tbody tr:nth-of-type(even) {
-    background-color: #f8f9fa;
-  }
+        .header-banner {
+            text-align: center;
+            padding: 3rem;
+            border-radius: 20px;
+            background: linear-gradient(90deg, var(--green-accent), var(--purple-accent));
+            color: white;
+            margin-bottom: 3rem;
+        }
 
-  .tabla-bonita tbody tr:last-of-type {
-    border-bottom: 3px solid #2ea44f;
-  }
+        .header-banner h1 { margin: 0; font-size: 2.5rem; font-weight: 800; }
 
-  .card-title {
-    font-size: 1.25em;
-    font-weight: bold;
-    color: #1a1a1a;
-    margin-bottom: 12px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
+        blockquote {
+            font-style: italic;
+            font-size: 1.2rem;
+            color: var(--text-dim);
+            border-left: 4px solid var(--green-accent);
+            padding-left: 20px;
+            margin: 2rem 0;
+        }
 
-  /* --- ESTILO DE LA IMAGEN DE LA CARICATURA --- */
-  .img-cartoon {
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-    margin: 30px auto;
-    display: block;
-  }
-</style>
+        h2 { color: white; border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-top: 3rem; }
 
-<div markdown="1">
+        /* --- TARJETAS PREMIUM --- */
+        .info-card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px 0;
+            border: 1px solid rgba(255,255,255,0.05);
+            transition: transform 0.3s ease;
+        }
+        .info-card:hover { transform: translateY(-5px); }
 
-<div style="
-  text-align: center;
-  padding: 20px;
-  border-radius: 10px;
-  background: linear-gradient(90deg, #2ea44f, #6f42c1);
-  color: white;
-  margin: 20px auto;
-">
-  <h1 style="margin: 0; font-size: 2.2em;">Obsolescencia Programada</h1>
-</div>
-> **"Un producto que no se desgasta es una tragedia para los negocios."**
+        .border-green { border-top: 6px solid var(--green-accent); }
+        .border-blue { border-top: 6px solid #0366d6; }
+        .border-orange { border-top: 6px solid #f66a0a; }
+        .border-purple { border-top: 6px solid var(--purple-accent); }
 
----
+        .card-title { font-size: 1.3rem; font-weight: bold; margin-bottom: 15px; display: block; color: white; }
 
-## 1. ¿Qué es exactamente?
+        .grid-visual {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
 
-<div class="card-premium border-green">
-  <div class="card-title">Definición Técnica</div>
-  <p class="card-text">
-    Es el diseño de un producto con una <strong>vida útil limitada artificialmente</strong>. Los fabricantes calculan el momento exacto en el que el dispositivo debe fallar o volverse incompatible para forzar al consumidor a comprar la siguiente versión. No es un error de ingeniería, es una decisión de negocio.
-  </p>
-</div>
+        /* --- IMÁGENES --- */
+        .img-container { text-align: center; margin: 40px 0; }
+        .img-cartoon {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        .img-caption { font-style: italic; color: var(--text-dim); margin-top: 15px; font-size: 0.9rem; }
 
+        /* --- TABLA --- */
+        .tabla-bonita {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .tabla-bonita thead { background: var(--green-accent); color: white; }
+        .tabla-bonita th, .tabla-bonita td { padding: 18px; text-align: left; border-bottom: 1px solid var(--border); }
+        .tabla-bonita tbody tr:hover { background: rgba(255,255,255,0.03); }
 
----
+        /* --- NAVEGACIÓN INFERIOR --- */
+        .bottom-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border);
+        }
+        .nav-link { color: var(--green-accent); text-decoration: none; font-weight: bold; transition: 0.2s; }
+        .nav-link:hover { opacity: 0.7; }
 
-## 2. Un poco de historia: El Cartel Phoebus
+    </style>
+</head>
+<body>
 
-En 1924, los principales fabricantes de bombillas del mundo formaron el **Cartel Phoebus**. Su objetivo: reducir la duración de las bombillas de **2.500 horas a solo 1.000**. Este fue el nacimiento oficial de la obsolescencia programada para asegurar ventas recurrentes.
+    <nav>
+        <h2>INFORMÁTICA-<br>AMBIENTAL</h2>
+        <a href="index.html">Inicio</a>
+        <a href="#">Qué es la contaminación</a>
+        <a href="#">Residuos informáticos</a>
+        <a href="obsolescencia.html" class="active">Obsolescencia programada</a>
+        <a href="Sergio_informatica.html">Informática Ecológica</a>
+        <a href="#">Referencias</a>
+    </nav>
 
-<div class="tarjeta-sergio" style="text-align: center; border: none; box-shadow: none;">
-  <img src="obsolescencia.jpg" class="img-cartoon" alt="Documental sobre obsolescencia programada">
-  <p style="font-style: italic; color: #666; font-size: 0.9em; margin-top: 10px;">
-    <strong>Cartel Phoebus.</strong>
-  </p>
-</div>
+    <main>
+        <div class="header-banner">
+            <h1>Obsolescencia Programada</h1>
+        </div>
 
----
+        <blockquote>"Un producto que no se desgasta es una tragedia para los negocios."</blockquote>
 
-## 3. Tipos y Funcionamiento
+        <h2>1. ¿Qué es exactamente?</h2>
+        <div class="info-card border-green">
+            <span class="card-title">Definición Técnica</span>
+            <p>Es el diseño de un producto con una <strong>vida útil limitada artificialmente</strong>. Los fabricantes calculan el momento exacto en el que el dispositivo debe fallar o volverse incompatible para forzar al consumidor a comprar la siguiente versión. No es un error de ingeniería, es una decisión de negocio.</p>
+        </div>
 
-<div class="grid-visual">
+        <h2>2. Un poco de historia: El Cartel Phoebus</h2>
+        <p>En 1924, los principales fabricantes de bombillas del mundo formaron el <strong>Cartel Phoebus</strong>. Su objetivo: reducir la duración de las bombillas de <strong>2.500 horas a solo 1.000</strong>. Este fue el nacimiento oficial de la obsolescencia programada para asegurar ventas recurrentes.</p>
 
-  <div class="card-premium border-blue">
-    <div class="card-title">Obsolescencia de Software</div>
-    <p>Actualizaciones que vuelven lentos los dispositivos o apps que dejan de ser compatibles con hardware que aún funciona perfectamente.</p>
-  </div>
+        <div class="img-container">
+            <img src="obsolescencia.jpg" class="img-cartoon" alt="Cartel Phoebus">
+            <p class="img-caption"><strong>Cartel Phoebus.</strong></p>
+        </div>
 
-  <div class="card-premium border-orange">
-    <div class="card-title">Obsolescencia Técnica</div>
-    <p>Uso de materiales frágiles o componentes (como condensadores) diseñados para fallar tras un número determinado de ciclos de uso.</p>
-  </div>
+        <h2>3. Tipos y Funcionamiento</h2>
+        <div class="grid-visual">
+            <div class="info-card border-blue">
+                <span class="card-title">Obsolescencia de Software</span>
+                <p>Actualizaciones que vuelven lentos los dispositivos o apps que dejan de ser compatibles con hardware que aún funciona perfectamente.</p>
+            </div>
+            <div class="info-card border-orange">
+                <span class="card-title">Obsolescencia Técnica</span>
+                <p>Uso de materiales frágiles o componentes diseñados para fallar tras un número determinado de ciclos de uso.</p>
+            </div>
+            <div class="info-card border-purple">
+                <span class="card-title">Barreras de Reparación</span>
+                <p>Piezas pegadas y falta de repuestos. El objetivo es que reparar sea <strong>más caro</strong> que comprar un producto nuevo.</p>
+            </div>
+        </div>
 
-  <div class="card-premium border-purple">
-    <div class="card-title">Barreras de Reparación</div>
-    <p>Piezas pegadas y falta de repuestos oficiales. El objetivo es que reparar sea <strong>más caro</strong> que comprar un producto nuevo.</p>
-  </div>
+        <div class="img-container">
+            <img src="4.webp" class="img-cartoon" alt="Derecho a Reparar">
+            <p class="img-caption"><strong>Consumo más barato que arreglar.</strong></p>
+        </div>
 
-</div>
+        <h2>4. El Impacto en nuestro Planeta</h2>
+        <div class="img-container">
+            <img src="consecuencias-1.png" class="img-cartoon" alt="Consecuencias ambientales">
+            <p class="img-caption"><strong>Consecuencias: producción, consumo, gastos y residuos.</strong></p>
+        </div>
 
-<div class="tarjeta-sergio" style="text-align: center; border: none; box-shadow: none;">
-  <img src="4.webp" class="img-cartoon" alt="Ilustración del Derecho a Reparar frente al Consumo Forzado">
-  <p style="font-style: italic; color: #666; font-size: 0.9em; margin-top: 10px;"><strong>Consumo más barato que arreglar.</strong></p>
-</div>
+        <table class="tabla-bonita">
+            <thead>
+                <tr>
+                    <th>Recurso</th>
+                    <th>Impacto de la Renovación</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Minerales Raros</strong></td>
+                    <td>Extracción intensiva de litio, coltán y tierras raras en zonas críticas.</td>
+                </tr>
+                <tr>
+                    <td><strong>Energía</strong></td>
+                    <td>Fabricar un móvil consume el 80% de toda la energía que usará en su vida.</td>
+                </tr>
+                <tr>
+                    <td><strong>Residuos</strong></td>
+                    <td>Millones de toneladas de metales pesados contaminan suelos y aguas anualmente.</td>
+                </tr>
+            </tbody>
+        </table>
 
----
+        <h2>5. ¿Hay soluciones?</h2>
+        <p>Existen movimientos como el <strong>"Right to Repair"</strong> (Derecho a Reparar) y empresas que diseñan hardware modular para combatir esta tendencia.</p>
 
-## 4. El Impacto en nuestro Planeta
+        <div class="img-container">
+            <img src="derecho_a_reparar.jpg" class="img-cartoon" alt="Reparación smartphone">
+            <p class="img-caption"><strong>Derecho a reparar.</strong></p>
+        </div>
 
-<div class="tarjeta-sergio" style="text-align: center; border: none; box-shadow: none;">
-  <img src="consecuencias-1.png" class="img-cartoon" alt="Consecuencias de la obsolescencia programada">
-  <p style="font-style: italic; color: #666; font-size: 0.9em; margin-top: 10px;">
-    <strong>Consecuencias de la obsolescencia programada: producción, consumo, gastos y residuos.</strong>
-  </p>
-</div>
+        <div class="bottom-nav">
+            <a href="index.html" class="nav-link">🏠 Volver al Inicio</a>
+            <a href="Sergio_informatica.html" class="nav-link">Informática Ecológica ➜</a>
+        </div>
+    </main>
 
-
-
-Cada vez que renovamos un dispositivo prematuramente, el medio ambiente sufre las consecuencias:
-
-<table class="tabla-bonita">
-  <thead>
-    <tr>
-      <th> Recurso</th>
-      <th> Impacto de la Renovación</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Minerales Raros</strong></td>
-      <td>Extracción intensiva de litio, coltán y tierras raras en zonas críticas.</td>
-    </tr>
-    <tr>
-      <td><strong>Energía</strong></td>
-      <td>Fabricar un móvil consume el 80% de toda la energía que usará en su vida.</td>
-    </tr>
-    <tr>
-      <td><strong>Residuos</strong></td>
-      <td>Millones de toneladas de metales pesados contaminan suelos y aguas anualmente.</td>
-    </tr>
-  </tbody>
-</table>
-
-
----
-
-## 5. ¿Hay soluciones?
-
-Existen movimientos como el **"Right to Repair"** (Derecho a Reparar) y empresas que diseñan hardware modular para combatir esta tendencia. La informática ecológica es la clave para un futuro sostenible.
-
-<div class="tarjeta-sergio" style="text-align: center; border: none; box-shadow: none;">
-  <img src="derecho_a_reparar.jpg" class="img-cartoon" alt="Reparación de un smartphone">
-  <p style="font-style: italic; color: #666; font-size: 0.9em; margin-top: 10px;">
-    <strong>Derecho a reparar.</strong>
-  </p>
-</div>
-
----
-
-
-<div style="display: flex; justify-content: space-between; margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee;">
-  <a href="index.html" style="text-decoration:none; color:#2ea44f; font-weight:bold;">🏠 Volver al Inicio</a>
-  <a href="Sergio_informatica.html" style="text-decoration:none; color:#2ea44f; font-weight:bold;">Informática Ecológica ➜</a>
-</div>
-
-</div>
+</body>
+</html>
