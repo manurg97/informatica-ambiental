@@ -165,16 +165,25 @@
             display: block;
         }
 
-        /* --- IMÁGENES --- */
+        /* --- IMÁGENES GRANDES (CORREGIDO) --- */
         .img-cartoon {
             max-width: 100%;
             height: auto;
-            max-height: 350px;   /* ← evita que sobresalga */
-            object-fit: cover;   /* ← recorta sin deformar */
+            max-height: 350px;
+            object-fit: cover;
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
             margin: 20px auto;
             display: block;
+        }
+
+        /* --- IMÁGENES DE LAS TARJETAS (CORREGIDO) --- */
+        .fila-contaminacion img {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
         }
 
         /* --- GRID DE TARJETAS --- */
