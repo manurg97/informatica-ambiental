@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} | Informática Ambiental</title>
+
     <style>
         :root {
-            --bg-dark: #0f172a; 
+            --bg-dark: #0f172a;
             --sidebar-bg: #1e293b;
             --card-bg: #ffffff;
             --pablo: #38bdf8;
@@ -118,9 +119,64 @@
             min-height: 80vh;
         }
 
-        /* Clases para títulos dentro del Markdown */
         .content-card h1 { color: var(--bg-dark); border-bottom: 3px solid #eee; padding-bottom: 10px; }
         .content-card p { line-height: 1.8; color: #475569; font-size: 1.1rem; }
+
+        /* --- TARJETAS DE COLORES DE SERGIO (RESTAURADAS) --- */
+        .card-premium {
+            background: #ffffff;
+            border: 1px solid #e1e4e8;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px 0;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+
+        .border-green { border-top: 8px solid #2ea44f; }
+        .border-blue { border-top: 8px solid #0366d6; }
+        .border-orange { border-top: 8px solid #f66a0a; }
+        .border-purple { border-top: 8px solid #6f42c1; }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .img-cartoon {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin: 20px auto;
+            display: block;
+        }
+
+        .grid-visual {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .tabla-bonita {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .tabla-bonita thead { background: #2ea44f; color: white; }
+        .tabla-bonita th, .tabla-bonita td { padding: 15px; text-align: left; border-bottom: 1px solid #eee; }
+
+        .bottom-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .nav-link { color: #2ea44f; text-decoration: none; font-weight: bold; }
 
         @media (max-width: 1100px) {
             body { flex-direction: column; }
@@ -130,6 +186,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <nav>
