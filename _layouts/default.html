@@ -122,6 +122,21 @@
         .content-card h1 { color: var(--bg-dark); border-bottom: 3px solid #eee; padding-bottom: 10px; }
         .content-card p { line-height: 1.8; color: #475569; font-size: 1.1rem; }
 
+        /* --- BANNER DEGRADADO DE SERGIO --- */
+        .header-banner {
+            text-align: center;
+            padding: 2.5rem;
+            border-radius: 15px;
+            background: linear-gradient(90deg, #2ea44f, #6f42c1);
+            color: white;
+            margin-bottom: 2.5rem;
+        }
+
+        .header-banner h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
         /* --- TARJETAS DE COLORES DE SERGIO (RESTAURADAS) --- */
         .card-premium {
             background: #ffffff;
@@ -130,8 +145,16 @@
             padding: 25px;
             margin: 20px 0;
             box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
         }
 
+        /* --- EFECTO HOVER (FLOTAR) --- */
+        .card-premium:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+        }
+
+        /* --- BORDES DE COLORES --- */
         .border-green { border-top: 8px solid #2ea44f; }
         .border-blue { border-top: 8px solid #0366d6; }
         .border-orange { border-top: 8px solid #f66a0a; }
@@ -144,6 +167,7 @@
             display: block;
         }
 
+        /* --- IMÁGENES --- */
         .img-cartoon {
             max-width: 100%;
             border-radius: 10px;
@@ -152,12 +176,14 @@
             display: block;
         }
 
+        /* --- GRID DE TARJETAS --- */
         .grid-visual {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 25px;
         }
 
+        /* --- TABLAS --- */
         .tabla-bonita {
             width: 100%;
             border-collapse: collapse;
@@ -166,9 +192,20 @@
             overflow: hidden;
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
         }
-        .tabla-bonita thead { background: #2ea44f; color: white; }
-        .tabla-bonita th, .tabla-bonita td { padding: 15px; text-align: left; border-bottom: 1px solid #eee; }
 
+        .tabla-bonita thead {
+            background: #2ea44f;
+            color: white;
+        }
+
+        .tabla-bonita th,
+        .tabla-bonita td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        /* --- NAVEGACIÓN INFERIOR --- */
         .bottom-nav {
             display: flex;
             justify-content: space-between;
@@ -176,7 +213,12 @@
             padding-top: 20px;
             border-top: 1px solid #eee;
         }
-        .nav-link { color: #2ea44f; text-decoration: none; font-weight: bold; }
+
+        .nav-link {
+            color: #2ea44f;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
         @media (max-width: 1100px) {
             body { flex-direction: column; }
