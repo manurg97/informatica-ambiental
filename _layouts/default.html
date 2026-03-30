@@ -148,13 +148,11 @@
             transition: all 0.3s ease;
         }
 
-        /* --- EFECTO HOVER (FLOTAR) --- */
         .card-premium:hover {
             transform: translateY(-8px);
             box-shadow: 0 15px 30px rgba(0,0,0,0.12);
         }
 
-        /* --- BORDES DE COLORES --- */
         .border-green { border-top: 8px solid #2ea44f; }
         .border-blue { border-top: 8px solid #0366d6; }
         .border-orange { border-top: 8px solid #f66a0a; }
@@ -170,6 +168,9 @@
         /* --- IMÁGENES --- */
         .img-cartoon {
             max-width: 100%;
+            height: auto;
+            max-height: 350px;   /* ← evita que sobresalga */
+            object-fit: cover;   /* ← recorta sin deformar */
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
             margin: 20px auto;
