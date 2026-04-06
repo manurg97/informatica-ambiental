@@ -4,127 +4,188 @@ title: Contaminacion Ambiental
 ---
 
 <style>
-  /* Estilo de tarjetas tipo "card" con borde azul y sombra */
-  .fila-contaminacion {
-    display: flex;
-    flex-direction: column;
-    background: white;
-    border-radius: 15px;
-    margin: 30px auto;
-    padding: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    border-top: 5px solid #38bdf8; /* Azul para todos los bloques */
-    max-width: 600px;
+  /* --- ESTILOS GENERALES (MANTENIDOS) --- */
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
   }
 
-  .fila-contaminacion img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-top: 15px;
-    order: 2;
-  }
-
-  .contenido-texto {
-    order: 1;
-  }
-
-  .card-title {
-    font-weight: bold;
-    font-size: 1.3em;
-    margin-bottom: 10px;
+  h2 {
     color: #0369a1;
+    margin-top: 30px;
+    margin-bottom: 15px;
   }
 
+  p {
+    margin-bottom: 15px;
+  }
+
+  /* Imagen principal */
   .img-cartoon {
     display: block;
     margin: 20px auto;
     border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     max-width: 85%;
+    height: auto;
   }
 
-  p {
-    line-height: 1.6;
+  /* --- NUEVO DISEÑO DE TARJETAS TIPO "FOTO" EN CUADRÍCULA --- */
+
+  /* Contenedor principal de los tres tipos (la cuadrícula) */
+  .contenedor-tipos-grid {
+    display: grid;
+    /* Crea 3 columnas iguales y automáticas */
+    grid-template-columns: repeat(3, 1fr);
+    /* Espacio entre las tarjetas */
+    gap: 20px;
+    margin: 30px 0;
+  }
+
+  /* Estilo individual de cada TARJETA */
+  .fila-contaminacion {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Borde superior AZUL (como pediste) */
+    border-top: 5px solid #38bdf8;
+    /* Diseño flex interno para ordenar texto arriba y foto abajo */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Empuja la imagen al fondo */
+    height: 100%; /* Para que todas midan lo mismo */
+  }
+
+  /* Título de la tarjeta (como "Metales Preciosos" en la foto) */
+  .fila-contaminacion .card-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #0369a1;
+  }
+
+  /* Contenedor de texto (como el párrafo en la foto) */
+  .fila-contaminacion .contenido-texto {
+    font-size: 0.95em;
     margin-bottom: 15px;
+  }
+
+  /* Estilo de la IMAGEN (abajo, como en la foto) */
+  .fila-contaminacion img {
+    width: 100%;
+    height: 150px; /* Tamaño chico y fijo para la cuadrícula */
+    object-fit: cover; /* Recorta la imagen para que llene el espacio sin deformarse */
+    border-radius: 10px;
+    margin-top: auto; /* Se asegura de ir al fondo del contenedor */
+  }
+
+  /* Estilo de la lista (opcional, si decides usarlas dentro) */
+  .fila-contaminacion ul {
+    font-size: 0.9em;
+    padding-left: 20px;
+  }
+
+  /* --- ESTILOS DE CONCLUSIÓN (MANTENIDOS) --- */
+  .card-premium {
+    background-color: #e0f2fe;
+    border-top: 8px solid #38bdf8;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-top: 30px;
+  }
+
+  /* Responsividad básica para móviles (para que no se amontonen las 3 en chico) */
+  @media (max-width: 768px) {
+    .contenedor-tipos-grid {
+      grid-template-columns: 1fr; /* Una columna en móvil */
+    }
   }
 </style>
 
 <div>
 
-<div style="
-  text-align: center;
-  padding: 30px;
-  border-radius: 15px;
-  background: #38bdf8;
-  color: white;
-  margin: 20px auto;
-  box-shadow: 0 4px 15px rgba(45, 106, 79, 0.3);
-">
-  <h1 style="margin: 0; font-size: 2.5em; text-transform: uppercase; letter-spacing: 1px;">
-    Contaminación Ambiental
-  </h1>
-</div>
-
-<h2>¿Qué es la contaminación ambiental?</h2>
-
-<p>
-La <strong>importancia de mitigar la contaminación ambiental</strong> radica en que la salud de nuestro entorno es el pilar fundamental que sostiene la vida humana, la economía y el bienestar social. No se trata simplemente de preservar paisajes, sino de garantizar la pureza del aire que respiramos y el agua que consumimos, elementos que hoy se ven comprometidos por una gestión ineficiente de residuos. Al proteger los ecosistemas, aseguramos la seguridad alimentaria, prevenimos crisis sanitarias globales y construimos una base sólida para un desarrollo que no hipoteque los recursos de las futuras generaciones, convirtiendo la sostenibilidad en el único camino viable para la supervivencia de nuestra civilización.
-</p>
-
-<img src="tipo-de-contaminacion-del-aire-scaled.jpeg" class="img-cartoon" alt="Contaminación">
-
-<h2>Explicación ampliada</h2>
-
-<div class="fila-contaminacion">
-  <div class="contenido-texto">
-    <div class="card-title">Contaminación del Aire</div>
-    <p>Se produce cuando gases tóxicos y partículas contaminantes se liberan a la atmósfera, afectando la calidad del aire que respiramos.</p>
-    <ul>
-      <li>Emisiones de vehículos e industrias</li>
-      <li>Quema de combustibles fósiles</li>
-    </ul>
+  <div style="
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+    background: #38bdf8;
+    color: white;
+    margin: 20px auto;
+    box-shadow: 0 4px 15px rgba(45, 106, 79, 0.3);
+  ">
+    <h1 style="margin: 0; font-size: 2.5em; text-transform: uppercase; letter-spacing: 1px;">
+      Contaminación Ambiental
+    </h1>
   </div>
-  <img src="seg.jpg" alt="Aire">
-</div>
 
-<div class="fila-contaminacion">
-  <div class="contenido-texto">
-    <div class="card-title">Contaminación del Agua</div>
-    <p>Ocurre cuando residuos químicos o basura contaminan ríos, lagos y océanos, afectando tanto a la fauna como a los seres humanos.</p>
-  </div>
-  <img src="contaminacion-del-agua-interior2.avif" alt="Agua">
-</div>
+  <h2>¿Qué es la contaminación ambiental?</h2>
 
-<div class="fila-contaminacion">
-  <div class="contenido-texto">
-    <div class="card-title">Contaminación del Suelo</div>
-    <p>Sucede cuando residuos sólidos o productos químicos se acumulan en la tierra, dañando los ecosistemas y la producción agrícola.</p>
-  </div>
-  <img src="basura.jpg" alt="Suelo">
-</div>
-
-<h2>Conclusión</h2>
-
-<div class="card-premium" style="background-color: #e0f2fe; border-top: 8px solid #38bdf8; padding: 25px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-  <div class="card-title" style="text-align: center;">Cuidar el planeta es responsabilidad de todos</div>
-  
-  <p>La <strong>contaminación ambiental</strong> no es solo un concepto estadístico o un problema lejano; es uno de los mayores desafíos que enfrenta la humanidad en el siglo XXI. Su avance representa una amenaza directa a la estabilidad de los sistemas que sostienen la vida. Reducir su impacto requiere mucho más que simples acuerdos internacionales; exige una <strong>transformación profunda</strong> en nuestra educación ambiental y un cambio radical en los hábitos de consumo que hemos normalizado durante décadas.</p>
-
-  <p>Más allá de las grandes normativas gubernamentales o los protocolos climáticos, la verdadera clave reside en la transición urgente hacia una <strong>economía circular</strong>. Este modelo busca que el concepto de "desperdicio" desaparezca por completo, transformando cada residuo en un nuevo recurso aprovechable al máximo. Debemos entender que los recursos de la Tierra son finitos y que nuestro ritmo actual de extracción y desecho es insostenible a largo plazo.</p>
-
-  <p>Adoptar una mentalidad de <strong>respeto y ética</strong> hacia nuestro entorno inmediato es el primer paso crítico para revertir el daño causado. La tecnología, si se implementa de forma responsable, puede ser nuestra mejor aliada: desde sistemas avanzados para limpiar los microplásticos de los océanos hasta innovaciones en la purificación del aire urbano. Sin embargo, la tecnología por sí sola no es la solución si no va acompañada de una conciencia colectiva que valore la biodiversidad por encima del beneficio inmediato.</p>
-
-  <p>En última instancia, el éxito de la lucha contra la contaminación dependerá de nuestra capacidad para actuar hoy. Cada pequeña acción contribuye a un efecto dominó positivo. No estamos simplemente "salvando el planeta", estamos asegurando la viabilidad de la civilización humana y protegiendo el legado natural para las generaciones que aún no han nacido.</p>
-
-  <p style="margin-top: 15px; font-weight: bold; text-align: center; color: #0369a1;">
-    "Proteger el medio ambiente no es solo una opción, es una necesidad para el futuro."
+  <p>
+    La <strong>importancia de mitigar la contaminación ambiental</strong> radica en que la salud de nuestro entorno es el pilar fundamental que sostiene la vida humana, la economía y el bienestar social. No se trata simplemente de preservar paisajes, sino de garantizar la pureza del aire que respiramos y el agua que consumimos, elementos que hoy se ven comprometidos por una gestión ineficiente de residuos. Al proteger los ecosistemas, aseguramos la seguridad alimentaria, prevenimos crisis sanitarias globales y construimos una base sólida para un desarrollo que no hipoteque los recursos de las futuras generaciones, convirtiendo la sostenibilidad en el único camino viable para la supervivencia de nuestra civilización.
   </p>
-</div>
 
-<div style="display: flex; justify-content: space-between; margin-top: 40px; padding-top: 20px; border-top: 1px solid #38bdf8;">
-  <a href="index.html" style="text-decoration:none; color:#38bdf8; font-weight:bold;">🏠 Volver al Inicio</a>
-  <a href="Manuel_residuos.html" style="text-decoration:none; color:#38bdf8; font-weight:bold;"> Residuos informáticos ➜</a>
-</div>
+  <img src="tipo-de-contaminacion-del-aire-scaled.jpeg" class="img-cartoon" alt="Contaminación global">
+
+  <h2>Explicación ampliada: Los tres pilares</h2>
+
+  <div class="contenedor-tipos-grid">
+
+    <div class="fila-contaminacion">
+      <div class="card-title">Contaminación del Aire</div>
+      <div class="contenido-texto">
+        <p>Se produce cuando gases tóxicos y partículas contaminantes se liberan a la atmósfera, afectando la calidad del aire que respiramos.</p>
+        <ul>
+          <li>Emisiones de vehículos e industrias</li>
+          <li>Quema de combustibles fósiles</li>
+        </ul>
+      </div>
+      <img src="seg.jpg" alt="Contaminación del aire urbana">
+    </div>
+
+    <div class="fila-contaminacion">
+      <div class="card-title">Contaminación del Agua</div>
+      <div class="contenido-texto">
+        <p>Ocurre cuando residuos químicos o basura contaminan ríos, lagos y océanos, afectando tanto a la fauna como a los seres humanos.</p>
+        <p>Los vertidos industriales y plásticos son los principales causantes.</p>
+      </div>
+      <img src="contaminacion-del-agua-interior2.avif" alt="Contaminación del agua industrial">
+    </div>
+
+    <div class="fila-contaminacion">
+      <div class="card-title">Contaminación del Suelo</div>
+      <div class="contenido-texto">
+        <p>Sucede cuando residuos sólidos o productos químicos se acumulan en la tierra, dañando los ecosistemas y la producción agrícola.</p>
+      </div>
+      <img src="basura.jpg" alt="Contaminación del suelo por basura">
+    </div>
+
+  </div> <h2>Conclusión</h2>
+
+  <div class="card-premium">
+    <div class="card-title" style="text-align: center; color: #0369a1; font-size: 1.4em; margin-bottom: 20px;">
+      Cuidar el planeta es responsabilidad de todos
+    </div>
+    
+    <p>La <strong>contaminación ambiental</strong> no es solo un concepto estadístico o un problema lejano; es uno de los mayores desafíos que enfrenta la humanidad en el siglo XXI. Su avance representa una amenaza directa a la estabilidad de los sistemas que sostienen la vida. Reducir su impacto requiere mucho más que simples acuerdos internacionales; exige una <strong>transformación profunda</strong> en nuestra educación ambiental y un cambio radical en los hábitos de consumo que hemos normalizado durante décadas.</p>
+
+    <p>Más allá de las grandes normativas gubernamentales o los protocolos climáticos, la verdadera clave reside en la transición urgente hacia una <strong>economía circular</strong>. Este modelo busca que el concepto de "desperdicio" desaparezca por completo, transformando cada residuo en un nuevo recurso aprovechable al máximo. Debemos entender que los recursos de la Tierra son finitos y que nuestro ritmo actual de extracción y desecho es insostenible a largo plazo.</p>
+
+    <p>Adoptar una mentalidad de <strong>respeto y ética</strong> hacia nuestro entorno inmediato es el primer paso crítico para revertir el daño causado. La tecnología, si se implementa de forma responsable, puede ser nuestra mejor aliada: desde sistemas avanzados para limpiar los microplásticos de los océanos hasta innovaciones en la purificación del aire urbano. Sin embargo, la tecnología por sí sola no es la solución si no va acompañada de una conciencia colectiva que valore la biodiversidad por encima del beneficio inmediato.</p>
+
+    <p>En última instancia, el éxito de la lucha contra la contaminación dependerá de nuestra capacidad para actuar hoy. Cada pequeña acción contribuye a un efecto dominó positivo. No estamos simplemente "salvando el planeta", estamos asegurando la viabilidad de la civilización humana y protegiendo el legado natural para las generaciones que aún no han nacido.</p>
+
+    <p style="margin-top: 20px; font-weight: bold; text-align: center; color: #0369a1; font-size: 1.1em;">
+      "Proteger el medio ambiente no es solo una opción, es una necesidad para el futuro."
+    </p>
+  </div>
+
+  <div style="display: flex; justify-content: space-between; margin-top: 40px; padding-top: 20px; border-top: 1px solid #38bdf8;">
+    <a href="index.html" style="text-decoration:none; color:#38bdf8; font-weight:bold;">🏠 Volver al Inicio</a>
+    <a href="Manuel_residuos.html" style="text-decoration:none; color:#38bdf8; font-weight:bold;"> Residuos informáticos ➜</a>
+  </div>
 
 </div>
