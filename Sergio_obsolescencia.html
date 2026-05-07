@@ -1,122 +1,169 @@
----
-layout: default
-title: Obsolescencia Programada
----
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obsolescencia Programada | Informática Ambiental</title>
+    <link rel="stylesheet" href="style_ambiental.css">
+    
+    <style>
+        /* Colores temáticos para las tarjetas de Sergio */
+        .border-green { border-top: 8px solid #2d6a4f; }
+        .border-blue { border-top: 8px solid #38bdf8; }
+        .border-orange { border-top: 8px solid #fb923c; }
+        .border-purple { border-top: 8px solid #a855f7; }
 
-<div class="header-banner">
-    <h1>Obsolescencia Programada</h1>
-</div>
+        .header-banner-sergio {
+            text-align: center;
+            padding: 30px;
+            border-radius: 15px;
+            background: linear-gradient(135deg, #6366f1, #a855f7);
+            color: white;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(168, 85, 247, 0.3);
+        }
 
-<h2>1. ¿Qué es exactamente?</h2>
+        /* Parche de seguridad para imágenes */
+        .img-cartoon {
+            max-width: 100% !important;
+            height: auto !important;
+            display: block;
+            margin: 20px auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
 
-<div class="card-premium border-green">
-    <span class="card-title">Definición Técnica</span>
-    <p>
-        La obsolescencia programada es el diseño intencionado de un producto para que tenga una 
-        <strong>vida útil limitada artificialmente</strong>.  
-        Los fabricantes calculan el momento aproximado en el que el dispositivo debe fallar, volverse lento
-        o incompatible, obligando al consumidor a comprar una nueva versión.
-    </p>
-</div>
+        /* Asegurar que la tabla sea responsiva */
+        .tabla-bonita {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            table-layout: fixed;
+            word-wrap: break-word;
+        }
 
-<img src="consecuencias-1.png" class="img-cartoon" alt="Obsolescencia programada">
+        .tabla-bonita thead tr {
+            background-color: #6366f1;
+            color: white;
+        }
+    </style>
+</head>
+<body>
 
-<h2>2. Un poco de historia: El Cartel Phoebus</h2>
+    <div id="layout-placeholder"></div>
 
-<div class="card-premium border-blue">
-    <span class="card-title">El primer caso documentado</span>
-    <p>
-        En 1924, los principales fabricantes de bombillas (Osram, Philips, General Electric…) formaron el 
-        <strong>Cartel Phoebus</strong>.  
-        Su objetivo fue reducir la duración de las bombillas de <strong>2.500 horas</strong> a solo 
-        <strong>1.000 horas</strong> para asegurar ventas constantes.
-    </p>
-</div>
+    <main>
+        <div class="content-card">
+            
+            <div class="header-banner-sergio">
+                <h1 style="margin: 0; font-size: 2.2em; text-transform: uppercase;">Obsolescencia Programada</h1>
+            </div>
 
-<img src="obsolescencia.jpg" class="img-cartoon" alt="Bombillas y obsolescencia">
+            <section>
+                <h2>1. ¿Qué es exactamente?</h2>
+                <div class="card-premium border-green">
+                    <div class="card-title" style="font-weight: bold; margin-bottom: 10px;">Definición Técnica</div>
+                    <p>
+                        Es el diseño intencionado de un producto para que tenga una 
+                        <strong>vida útil limitada artificialmente</strong>. Los fabricantes calculan el fallo para obligar al consumidor a comprar una nueva versión.
+                    </p>
+                </div>
+                <img src="consecuencias-1.png" class="img-cartoon" alt="Obsolescencia">
+            </section>
 
-<h2>3. Tipos de obsolescencia</h2>
+            <section>
+                <h2>2. Un poco de historia: El Cartel Phoebus</h2>
+                <div class="card-premium border-blue">
+                    <div class="card-title" style="font-weight: bold; margin-bottom: 10px;">El primer caso documentado</div>
+                    <p>
+                        En 1924, fabricantes de bombillas formaron el <strong>Cartel Phoebus</strong> para reducir la duración de las bombillas de 2.500 horas a solo 1.000 horas.
+                    </p>
+                </div>
+                <img src="obsolescencia.jpg" class="img-cartoon" alt="Bombillas">
+            </section>
 
-<div class="grid-visual">
+            <section>
+                <h2>3. Tipos de obsolescencia</h2>
+                <div class="grid-visual" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+                    <div class="card-premium border-orange">
+                        <div class="card-title" style="font-weight:bold;">Funcional</div>
+                        <p>Fallos deliberados en componentes clave.</p>
+                    </div>
+                    <div class="card-premium border-purple">
+                        <div class="card-title" style="font-weight:bold;">Software</div>
+                        <p>Actualizaciones que ralentizan el dispositivo.</p>
+                    </div>
+                    <div class="card-premium border-green">
+                        <div class="card-title" style="font-weight:bold;">Estética</div>
+                        <p>Nuevos diseños para que el tuyo parezca viejo.</p>
+                    </div>
+                </div>
+                <img src="4.webp" class="img-cartoon" alt="Hardware">
+            </section>
 
-    <div class="card-premium border-orange">
-        <span class="card-title">Obsolescencia Funcional</span>
-        <p>
-            El dispositivo deja de funcionar correctamente por fallos deliberados en componentes clave.
-        </p>
-    </div>
+            <section>
+                <h2>4. Consecuencias ambientales</h2>
+                <div style="overflow-x: auto;">
+                    <table class="tabla-bonita">
+                        <thead>
+                            <tr>
+                                <th>Problema</th>
+                                <th>Impacto</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Residuos</strong></td>
+                                <td>Toneladas de basura electrónica anual.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Metales</strong></td>
+                                <td>Contaminación de suelos y acuíferos.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Minería</strong></td>
+                                <td>Extracción intensiva de litio y coltán.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
 
-    <div class="card-premium border-purple">
-        <span class="card-title">Obsolescencia de Software</span>
-        <p>
-            Actualizaciones que vuelven lento el dispositivo o dejan de ser compatibles con apps modernas.
-        </p>
-    </div>
+            <section>
+                <h2>5. ¿Hay soluciones?</h2>
+                <div class="card-premium border-blue">
+                    <div class="card-title" style="font-weight:bold;">Right to Repair (Derecho a Reparar)</div>
+                    <p>Exigencia de piezas accesibles, manuales públicos y precios de reparación razonables.</p>
+                </div>
+                <img src="derecho_a_reparar.jpg" class="img-cartoon" alt="Reparación">
+                
+                <div class="card-premium border-purple" style="margin-top: 20px;">
+                    <div class="card-title" style="font-weight:bold;">Diseño sostenible</div>
+                    <p>Crear dispositivos modulares y duraderos para reducir el reemplazo constante.</p>
+                </div>
+            </section>
 
-    <div class="card-premium border-green">
-        <span class="card-title">Obsolescencia Estética</span>
-        <p>
-            Se lanza un modelo “más bonito” para que el anterior parezca viejo aunque funcione bien.
-        </p>
-    </div>
+            <section>
+                <h2>6. Conclusión</h2>
+                <p>
+                    La obsolescencia programada no es solo un problema económico, sino ambiental. 
+                    Conocer sus mecanismos nos permite tomar decisiones más responsables.
+                </p>
+            </section>
 
-</div>
+            <div class="bottom-nav" style="display: flex; justify-content: space-between; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd;">
+                <a href="index.html" style="text-decoration:none; color:#6366f1; font-weight:bold;">🏠 Volver al Inicio</a>
+                <a href="Sergio_informatica.html" style="text-decoration:none; color:#6366f1; font-weight:bold;">Informática Ecológica ➜</a>
+            </div>
+        </div>
+    </main>
 
-<img src="4.webp" class="img-cartoon" alt="Móviles desmontados">
-
-<h2>4. Consecuencias ambientales</h2>
-
-<table class="tabla-bonita">
-    <thead>
-        <tr>
-            <th>Problema</th>
-            <th>Impacto</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Residuos electrónicos</td>
-            <td>Toneladas de dispositivos terminan en vertederos cada año.</td>
-        </tr>
-        <tr>
-            <td>Metales pesados</td>
-            <td>Contaminan suelos y aguas subterráneas.</td>
-        </tr>
-        <tr>
-            <td>Extracción de minerales</td>
-            <td>Litio, coltán y tierras raras requieren minería intensiva.</td>
-        </tr>
-    </tbody>
-</table>
-
-<h2>5. ¿Hay soluciones?</h2>
-
-<div class="card-premium border-blue">
-    <span class="card-title">Right to Repair (Derecho a Reparar)</span>
-    <p>
-        Movimiento global que exige que los fabricantes permitan reparar los dispositivos:
-        piezas accesibles, manuales públicos y precios razonables.
-    </p>
-</div>
-
-<img src="derecho_a_reparar.jpg" class="img-cartoon" alt="Derecho a reparar">
-
-<div class="card-premium border-purple">
-    <span class="card-title">Diseño sostenible</span>
-    <p>
-        Crear dispositivos modulares, fáciles de reparar y con componentes duraderos reduce la necesidad
-        de reemplazo constante.
-    </p>
-</div>
-
-<h2>6. Conclusión</h2>
-
-<p>
-    La obsolescencia programada no es solo un problema económico, sino ambiental.  
-    Conocer sus mecanismos nos permite tomar decisiones más responsables y exigir productos más duraderos.
-</p>
-
-<div class="bottom-nav">
-    <a href="index.html" class="nav-link">🏠 Volver al Inicio</a>
-    <a href="Sergio_informatica.html" class="nav-link">Informática Ecológica ➜</a>
-</div>
+    <script>
+        fetch('layout_ambiental.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('layout-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
