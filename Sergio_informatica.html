@@ -1,104 +1,160 @@
----
-layout: default
-title: Informática Ecológica
----
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informática Ecológica | Informática Ambiental</title>
+    <link rel="stylesheet" href="style_ambiental.css">
+    
+    <style>
+        /* Colores temáticos específicos */
+        .border-green { border-top: 8px solid #2d6a4f; }
+        .border-blue { border-top: 8px solid #38bdf8; }
+        .border-orange { border-top: 8px solid #fb923c; }
+        .border-purple { border-top: 8px solid #a855f7; }
 
-<div class="header-banner">
-    <h1>Informática Ecológica</h1>
-</div>
+        .header-banner-eco {
+            text-align: center;
+            padding: 30px;
+            border-radius: 15px;
+            background: linear-gradient(135deg, #10b981, #3b82f6);
+            color: white;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+        }
 
-<h2>1. ¿Qué es la informática ecológica?</h2>
+        /* Parche de seguridad para imágenes */
+        .img-cartoon {
+            max-width: 100% !important;
+            height: auto !important;
+            display: block;
+            margin: 20px auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
 
-<div class="card-premium border-green">
-    <span class="card-title">Definición General</span>
-    <p>
-        La informática ecológica consiste en diseñar, fabricar, utilizar y desechar dispositivos tecnológicos
-        de forma que se reduzca al máximo su impacto ambiental.
-        Busca equilibrar el avance tecnológico con la sostenibilidad del planeta.
-    </p>
-</div>
+        /* Tabla responsiva */
+        .tabla-bonita {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            table-layout: fixed;
+            word-wrap: break-word;
+        }
 
-<img src="informatica-eco.jpeg" class="img-cartoon" alt="Informática ecológica">
+        .tabla-bonita thead tr {
+            background-color: #10b981;
+            color: white;
+        }
 
-<h2>2. ¿Qué pueden hacer los fabricantes?</h2>
+        .content-card {
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body>
 
-<div class="grid-visual">
+    <div id="layout-placeholder"></div>
 
-    <div class="card-premium border-blue">
-        <span class="card-title">Materiales sostenibles</span>
-        <p>Uso de plásticos reciclados, aluminio reutilizado y componentes menos contaminantes.</p>
-    </div>
+    <main>
+        <div class="content-card">
+            
+            <div class="header-banner-eco">
+                <h1 style="margin: 0; font-size: 2.2em; text-transform: uppercase;">Informática Ecológica</h1>
+            </div>
 
-    <div class="card-premium border-orange">
-        <span class="card-title">Eficiencia energética</span>
-        <p>Dispositivos que consumen menos energía y generan menos calor.</p>
-    </div>
+            <section>
+                <h2>1. ¿Qué es la informática ecológica?</h2>
+                <div class="card-premium border-green">
+                    <div class="card-title" style="font-weight: bold; margin-bottom: 10px;">Definición General</div>
+                    <p>
+                        Consiste en diseñar, fabricar, utilizar y desechar dispositivos tecnológicos de forma que se reduzca al máximo su impacto ambiental, equilibrando el progreso con la sostenibilidad.
+                    </p>
+                </div>
+                <img src="informatica-eco.jpeg" class="img-cartoon" alt="Informática ecológica">
+            </section>
 
-    <div class="card-premium border-purple">
-        <span class="card-title">Diseño modular</span>
-        <p>Permite cambiar piezas sin reemplazar el dispositivo completo.</p>
-    </div>
+            <section>
+                <h2>2. ¿Qué pueden hacer los fabricantes?</h2>
+                <div class="grid-visual" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+                    <div class="card-premium border-blue">
+                        <div class="card-title" style="font-weight:bold;">Materiales</div>
+                        <p>Uso de plásticos reciclados y aluminio reutilizado.</p>
+                    </div>
+                    <div class="card-premium border-orange">
+                        <div class="card-title" style="font-weight:bold;">Eficiencia</div>
+                        <p>Menor consumo de energía y menos generación de calor.</p>
+                    </div>
+                    <div class="card-premium border-purple">
+                        <div class="card-title" style="font-weight:bold;">Diseño Modular</div>
+                        <p>Cambiar piezas sin tirar el dispositivo completo.</p>
+                    </div>
+                </div>
+                <img src="tecno-eco.webp" class="img-cartoon" alt="Tecnología ecológica">
+            </section>
 
-</div>
+            <section>
+                <h2>3. ¿Qué pueden hacer las organizaciones?</h2>
+                <div style="overflow-x: auto;">
+                    <table class="tabla-bonita">
+                        <thead>
+                            <tr>
+                                <th>Acción</th>
+                                <th>Impacto Positivo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Teletrabajo</strong></td>
+                                <td>Reduce desplazamientos y emisiones de CO₂.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Servidores</strong></td>
+                                <td>Menor consumo en centros de datos.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Reciclaje</strong></td>
+                                <td>Fomenta la reutilización de componentes.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <img src="info-eco.jpg" class="img-cartoon" alt="Tecnología sostenible">
+            </section>
 
-<img src="tecno-eco.webp" class="img-cartoon" alt="Tecnología ecológica">
+            <section>
+                <h2>4. ¿Qué podemos hacer nosotros?</h2>
+                <div class="card-premium border-green">
+                    <div class="card-title" style="font-weight:bold;">Hábitos sostenibles</div>
+                    <p>Prolongar la vida útil, reparar antes de reemplazar y reciclar correctamente.</p>
+                </div>
+                <div class="card-premium border-blue" style="margin-top: 20px;">
+                    <div class="card-title" style="font-weight:bold;">Uso responsable</div>
+                    <p>Reducir el brillo, cerrar apps innecesarias y no sobrecargar la batería.</p>
+                </div>
+                <img src="reciclaje-cartuchos.webp" class="img-cartoon" alt="Reciclaje">
+            </section>
 
-<h2>3. ¿Qué pueden hacer las organizaciones?</h2>
+            <section>
+                <h2>5. Conclusión</h2>
+                <p>
+                    La informática ecológica no es solo una tendencia, sino una necesidad para proteger el planeta sin renunciar al progreso tecnológico.
+                </p>
+            </section>
 
-<table class="tabla-bonita">
-    <thead>
-        <tr>
-            <th>Acción</th>
-            <th>Impacto Positivo</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><strong>Teletrabajo</strong></td>
-            <td>Reduce desplazamientos y emisiones de CO₂.</td>
-        </tr>
-        <tr>
-            <td><strong>Servidores eficientes</strong></td>
-            <td>Menor consumo energético en centros de datos.</td>
-        </tr>
-        <tr>
-            <td><strong>Reciclaje interno</strong></td>
-            <td>Disminuye residuos electrónicos y fomenta la reutilización.</td>
-        </tr>
-    </tbody>
-</table>
+            <div class="bottom-nav" style="display: flex; justify-content: space-between; margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee;">
+                <a href="index.html" style="text-decoration:none; color:#10b981; font-weight:bold;">🏠 Inicio</a>
+                <a href="referencias.html" style="text-decoration:none; color:#10b981; font-weight:bold;">Referencias ➜</a>
+            </div>
+        </div>
+    </main>
 
-<img src="info-eco.jpg" class="img-cartoon" alt="Tecnología sostenible">
-
-<h2>4. ¿Qué podemos hacer nosotros?</h2>
-
-<div class="card-premium border-green">
-    <span class="card-title">Hábitos sostenibles</span>
-    <p>
-        Podemos prolongar la vida útil de nuestros dispositivos, evitar compras innecesarias,
-        reparar antes de reemplazar y reciclar correctamente los aparatos electrónicos.
-    </p>
-</div>
-
-<div class="card-premium border-blue">
-    <span class="card-title">Uso responsable</span>
-    <p>
-        Reducir el brillo de la pantalla, cerrar apps que no usamos y evitar cargar el móvil toda la noche
-        ayuda a ahorrar energía y alarga la vida del dispositivo.
-    </p>
-</div>
-
-<img src="reciclaje-cartuchos.webp" class="img-cartoon" alt="Reciclaje electrónico">
-
-<h2>5. Conclusión</h2>
-
-<p>
-    La informática ecológica no es solo una tendencia, sino una necesidad.
-    Adoptar prácticas sostenibles en el ámbito tecnológico es clave para proteger el planeta
-    sin renunciar al progreso.
-</p>
-
-<div class="bottom-nav">
-    <a href="index.html" class="nav-link">🏠 Volver al Inicio</a>
-    <a href="referencias.html" class="nav-link">Referencias ➜</a>
-</div>
+    <script>
+        fetch('layout_ambiental.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('layout-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
