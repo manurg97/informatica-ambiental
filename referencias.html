@@ -1,87 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referencias | Informática Ambiental</title>
+    <link rel="stylesheet" href="style_ambiental.css">
+    
+    <style>
+        /* Estilos de la Tabla de Referencias */
+        .tabla-ref-blue {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            font-size: 1em;
+            border-radius: 12px;
+            overflow: hidden;
+            background: #ffffff;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+            table-layout: fixed; /* Evita que se salga del margen */
+            word-wrap: break-word;
+        }
 
+        .tabla-ref-blue thead tr {
+            background: linear-gradient(90deg, #007bff, #00c6ff);
+            color: white;
+            font-weight: bold;
+            text-align: left;
+        }
 
-<style>
-  .tabla-ref-blue {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 30px 0;
-    font-size: 1em;
-    border-radius: 12px;
-    overflow: hidden;
-    background: #ffffff;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  }
+        .tabla-ref-blue th, .tabla-ref-blue td {
+            padding: 15px 20px;
+            border-bottom: 1px solid #e6f0ff;
+        }
 
-  .tabla-ref-blue thead tr {
-    background: linear-gradient(90deg, #007bff, #00c6ff);
-    color: white;
-    font-weight: bold;
-    text-align: left;
-  }
+        .tabla-ref-blue tbody tr:nth-child(even) {
+            background: #f2f8ff;
+        }
 
-  .tabla-ref-blue th, .tabla-ref-blue td {
-    padding: 15px 20px;
-    border-bottom: 1px solid #e6f0ff;
-  }
+        .tabla-ref-blue tbody tr:hover {
+            background: #dff0ff;
+            transition: 0.3s ease;
+        }
 
-  .tabla-ref-blue tbody tr:nth-child(even) {
-    background: #f2f8ff;
-  }
+        .tabla-ref-blue a {
+            color: #007bff;
+            font-weight: bold;
+            text-decoration: none;
+        }
 
-  .tabla-ref-blue tbody tr:hover {
-    background: #dff0ff;
-    transition: 0.3s ease;
-  }
+        .tabla-ref-blue a:hover {
+            text-decoration: underline;
+        }
 
-  .tabla-ref-blue a {
-    color: #007bff;
-    font-weight: bold;
-    text-decoration: none;
-  }
+        .header-banner-ref {
+            text-align: center;
+            padding: 30px;
+            border-radius: 15px;
+            background: linear-gradient(135deg, #007bff, #00c6ff);
+            color: white;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
 
-  .tabla-ref-blue a:hover {
-    text-decoration: underline;
-  }
-</style>
+    <div id="layout-placeholder"></div>
 
-<table class="tabla-ref-blue">
-  <thead>
-    <tr>
-      <th>Fuente</th>
-      <th>Enlace</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>IBM – Green Computing</td>
-      <td><a href="https://www.ibm.com/es-es/think/topics/green-computing">Visitar</a></td>
-    </tr>
-    <tr>
-      <td>Wikipedia – Obsolescencia Programada</td>
-      <td><a href="https://es.wikipedia.org/wiki/Obsolescencia_programada">Visitar</a></td>
-    </tr>
-    <tr>
-      <td> Green Peace España – Contaminacion </td>
-      <td><a href="https://es.greenpeace.org/es/trabajamos-en/consumismo/contaminacion/">Visitar</a></td>
-    </tr>
-  </tbody>
-</table>
+    <main>
+        <div class="content-card">
+            
+            <div class="header-banner-ref">
+                <h1 style="margin: 0; font-size: 2.2em; text-transform: uppercase;">Fuentes y Referencias</h1>
+                <p style="margin-top: 10px; opacity: 0.9;">Documentación utilizada para el proyecto</p>
+            </div>
 
-<div style="
-  width: 100%;
-  text-align: center;
-  margin-top: 80px;   /* espacio grande entre tabla y botón */
-  padding-bottom: 40px; /* espacio final para que quede abajo */
-">
+            <section>
+                <div style="overflow-x: auto;">
+                    <table class="tabla-ref-blue">
+                        <thead>
+                            <tr>
+                                <th style="width: 60%;">Fuente</th>
+                                <th>Enlace</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>IBM</strong> – Green Computing</td>
+                                <td><a href="https://www.ibm.com/es-es/think/topics/green-computing" target="_blank">Visitar sitio</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Wikipedia</strong> – Obsolescencia Programada</td>
+                                <td><a href="https://es.wikipedia.org/wiki/Obsolescencia_programada" target="_blank">Visitar sitio</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Green Peace España</strong> – Contaminación</td>
+                                <td><a href="https://es.greenpeace.org/es/trabajamos-en/consumismo/contaminacion/" target="_blank">Visitar sitio</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
 
-  <a href="index.html" 
-     style="
-       text-decoration:none; 
-       color:#2ea44f; 
-       font-weight:bold; 
-       font-size:1.3em;
-     ">
-     🏠 Volver al Inicio
-  </a>
+            <div style="width: 100%; text-align: center; margin-top: 60px; padding-bottom: 20px;">
+                <a href="index.html" style="text-decoration:none; color:#2ea44f; font-weight:bold; font-size:1.3em;">
+                    🏠 Volver al Inicio
+                </a>
+            </div>
+        </div>
+    </main>
 
-</div>
+    <script>
+        fetch('layout_ambiental.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('layout-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
