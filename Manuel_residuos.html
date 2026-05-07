@@ -7,52 +7,51 @@
     <link rel="stylesheet" href="style_ambiental.css">
     
     <style>
-        /* ESTILOS DE EMERGENCIA PARA CORREGIR DESBORDE (image_0.png) */
-        
-        /* Asegura que NADA se salga de la tarjeta de contenido */
-        .content-card {
-            overflow: hidden !important; 
-            max-width: 750px !important;
-            box-sizing: border-box !important;
-        }
-
-        /* Fuerza a TODAS las imágenes a quedarse dentro de su contenedor */
-        .content-card img {
-            max-width: 100% !important;
+        /* --- ARREGLO DEFINITIVO PARA IMÁGENES --- */
+        .img-cartoon {
+            max-width: 100% !important; /* No permite que sea más ancha que el texto */
             height: auto !important;
-            display: block !important;
-            margin-left: auto !important;
-            margin-right: auto !important;
-            border-radius: 12px;
-            box-sizing: border-box !important;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
-        /* Evita que la tabla empuje el diseño */
-        .tabla-bonita {
-            table-layout: fixed !important;
-            width: 100% !important;
-            word-wrap: break-word;
-        }
-
-        /* Contenedor extra para asegurar las imágenes */
-        .img-fixer {
-            width: 100% !important;
-            max-width: 100% !important;
-            overflow: hidden !important;
+        /* Contenedor de seguridad para las fotos dentro de las tarjetas */
+        .img-container {
+            width: 100%;
+            overflow: hidden;
             display: flex;
             justify-content: center;
-            margin: 20px 0;
         }
 
-        /* Estilos específicos para la temática de Manuel (Verdes) */
+        /* Estilos específicos para la temática de Manuel (Verdes/Ecológicos) */
         .border-forest { border-top: 8px solid #1b4332; }
         .border-mint { border-top: 8px solid #52b788; }
         .border-lime { border-top: 8px solid #b7e4c7; }
         .border-earth { border-top: 8px solid #95d5b2; }
 
+        .tabla-bonita {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            table-layout: fixed; /* Fuerza a la tabla a no estirarse */
+            word-wrap: break-word;
+        }
+
         .tabla-bonita thead tr {
             background-color: #2d6a4f;
             color: #ffffff;
+        }
+        .tabla-bonita tbody tr:nth-of-type(even) { background-color: #f7fffb; }
+
+        .highlight-box {
+            background-color: #f1f8e9;
+            border-left: 5px solid #2d6a4f;
+            padding: 20px;
+            margin: 25px 0;
+            font-style: italic;
+            color: #1b4332;
         }
 
         .header-banner-manuel {
@@ -62,6 +61,13 @@
             background: linear-gradient(135deg, #2d6a4f, #95d5b2);
             color: white;
             margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(45, 106, 79, 0.3);
+        }
+
+        /* Ajuste para que el contenido no choque con los paneles laterales */
+        .content-card {
+            box-sizing: border-box;
+            overflow-x: hidden; /* Evita scroll horizontal */
         }
     </style>
 </head>
@@ -73,47 +79,135 @@
         <div class="content-card">
             
             <div class="header-banner-manuel">
-                <h1 style="margin: 0; font-size: 2em; text-transform: uppercase;">Residuos Informáticos (e-Waste)</h1>
+                <h1 style="margin: 0; font-size: 2.2em; text-transform: uppercase;">Residuos Informáticos (e-Waste)</h1>
+                <p style="margin-top: 10px; opacity: 0.9;">El desafío ambiental de la era digital</p>
             </div>
 
             <section>
                 <h2 style="color: #1b4332;">El Ciclo de Vida del Hardware</h2>
                 <div class="card-premium border-forest">
                     <div class="card-title">¿Qué son realmente los RAEE?</div>
-                    <p>Los <strong>Residuos de Aparatos Eléctricos y Electrónicos (RAEE)</strong> son una mezcla compleja de materiales.</p>
+                    <p>
+                        Los <strong>Residuos de Aparatos Eléctricos y Electrónicos (RAEE)</strong> no son basura convencional. Son una mezcla compleja de materiales de alto valor y sustancias altamente peligrosas. Su gestión comienza cuando un dispositivo se vuelve inútil y termina en plantas de tratamiento especializadas.
+                    </p>
                 </div>
 
-                <div class="img-fixer">
-                    <img src="residuos 1.webp" alt="Ilustración hardware basura" style="max-height: 380px;">
+                <div class="img-container">
+                    <img src="residuos 1.webp" class="img-cartoon" alt="Ilustración hardware basura">
                 </div>
 
-                <div class="highlight-box" style="background: #f1f8e9; border-left: 5px solid #2d6a4f; padding: 15px;">
-                    <strong>¿Sabías que...?</strong> Se estima que para 2030 el mundo generará 74 millones de toneladas de e-waste.
+                <div class="highlight-box">
+                    <strong>¿Sabías que...?</strong> Se estima que para 2030 el mundo generará más de 74 millones de toneladas de residuos electrónicos anuales, el peso de 350 cruceros gigantes.
+                </div>
+            </section>
+
+            <section>
+                <h2 style="color: #1b4332;">Minería Urbana: El Tesoro en la Basura</h2>
+                <p>Se obtiene más oro de una tonelada de smartphones que de una tonelada de mineral extraído directamente de la tierra.</p>
+
+                <div class="grid-visual">
+                    <div class="card-premium border-mint">
+                        <div class="card-title">Metales Preciosos</div>
+                        <p>Contienen <strong>oro, plata y paladio</strong>. Su recuperación reduce la necesidad de minería destructiva.</p>
+                        <div class="img-container">
+                            <img src="residuos 2.jpg" class="img-cartoon" style="margin-top:10px;" alt="metales">
+                        </div>
+                    </div>
+
+                    <div class="card-premium border-lime">
+                        <div class="card-title">Tierras Raras</div>
+                        <p>Elementos como el neodimio son vitales pero escasos. El reciclaje es la única vía sostenible.</p>
+                        <div class="img-container">
+                            <img src="residuos 3.jpeg" class="img-cartoon" style="margin-top:10px;" alt="tierras raras">
+                        </div>
+                    </div>
+
+                    <div class="card-premium border-earth">
+                        <div class="card-title">Cobre y Aluminio</div>
+                        <p>Reciclar aluminio ahorra hasta un <strong>95% de la energía</strong> necesaria para producir material virgen.</p>
+                        <div class="img-container">
+                            <img src="residuos 4.webp" class="img-cartoon" style="margin-top:10px;" alt="aluminio">
+                        </div>
+                    </div>
+
+                    <div class="card-premium border-mint">
+                        <div class="card-title">Litio y Cobalto</div>
+                        <p>Fundamentales para <strong>baterías</strong>. Su recuperación evita daños en ecosistemas sensibles.</p>
+                        <div class="img-container">
+                            <img src="residuos 5.jpg" class="img-cartoon" style="margin-top:10px;" alt="baterías">
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <section>
                 <h2 style="color: #1b4332;">Impacto Químico y Toxicidad</h2>
-                <div style="overflow-x: auto; width: 100%;">
+                <p>La lluvia filtra los metales hacia los acuíferos en un proceso llamado <strong>lixiviación.</strong></p>
+
+                <div style="overflow-x: auto;">
                     <table class="tabla-bonita">
                         <thead>
                             <tr>
-                                <th style="width: 30%;">Componente</th>
+                                <th>Componente</th>
+                                <th>Ubicación</th>
                                 <th>Impacto</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr><td><strong>Cadmio</strong></td><td>Riñones y huesos.</td></tr>
-                            <tr><td><strong>Mercurio</strong></td><td>Neurotóxico persistente.</td></tr>
-                            <tr><td><strong>Plomo</strong></td><td>Desarrollo infantil.</td></tr>
+                            <tr>
+                                <td><strong>Cadmio</strong></td>
+                                <td>Baterías y resistencias.</td>
+                                <td>Afecta riñones y huesos.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Mercurio</strong></td>
+                                <td>Monitores planos.</td>
+                                <td>Neurotóxico persistente.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Bario</strong></td>
+                                <td>Tubos CRT (Viejos).</td>
+                                <td>Daños cardíacos.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Plomo</strong></td>
+                                <td>Soldaduras.</td>
+                                <td>Afecta el desarrollo infantil.</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
             </section>
 
-            <div class="bottom-nav" style="display: flex; justify-content: space-between; margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee;">
-                <a href="Pablo_contaminacion.html" style="color: #2d6a4f; font-weight: bold; text-decoration: none;">⬅️ Anterior</a>
-                <a href="Sergio_obsolescencia.html" style="color: #2d6a4f; font-weight: bold; text-decoration: none;">Siguiente ➜</a>
+            <section>
+                <h2 style="color: #1b4332;">La Cara Oculta: Agua y Energía</h2>
+                <ul style="line-height: 1.8; color: #1b4332;">
+                    <li><strong>Agua:</strong> Un solo microchip requiere miles de litros de agua ultra pura.</li>
+                    <li><strong>Energía:</strong> La producción de un portátil representa el <strong>70-80%</strong> de su huella de carbono total.</li>
+                </ul>
+                <div class="img-container">
+                    <img src="contaminacion.jpg" class="img-cartoon" alt="contaminación">
+                </div>
+            </section>
+
+            <section>
+                <h2 style="color: #1b4332;">Conclusión: Hacia una Tecnología Responsable</h2>
+                <div class="card-premium border-forest" style="background-color: #f1f8e9;">
+                    <p>La gestión de los residuos informáticos es un <strong>imperativo ético</strong>. La solución requiere:</p>
+                    <ul style="line-height: 1.8; color: #1b4332;">
+                        <li><strong>Empresas:</strong> Ecodiseño y fin de la obsolescencia.</li>
+                        <li><strong>Gobiernos:</strong> Leyes de "Derecho a Reparar".</li>
+                        <li><strong>Usuarios:</strong> Consumo consciente (reparar antes de comprar).</li>
+                    </ul>
+                    <p style="margin-top: 15px; font-weight: bold; text-align: center; color: #2d6a4f;">
+                        "La innovación debe coexistir con los límites biológicos de nuestro planeta."
+                    </p>
+                </div>
+            </section>
+
+            <div class="bottom-nav" style="display: flex; justify-content: space-between; margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee;">
+                <a href="Pablo_contaminacion.html" style="text-decoration:none; color:#2d6a4f; font-weight:bold;">⬅️ Anterior</a>
+                <a href="Sergio_obsolescencia.html" style="text-decoration:none; color:#2d6a4f; font-weight:bold;">Siguiente ➜</a>
             </div>
         </div>
     </main>
